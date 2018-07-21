@@ -12,7 +12,8 @@ exports.index = function (req, res, next){
 exports.getAllUsers = function(req, res, next){
     try{
         logger.debug("request body : " + JSON.stringify(req.body));
-        var data  = req.body.payload || {};
+        var data  = {};
+        data.payload = req.body.payload;
         data.serveFrom = constants.servingFromDB;
         data.route = "getAllUsers";
         async.waterfall([

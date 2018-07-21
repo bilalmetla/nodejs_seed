@@ -7,6 +7,6 @@ var utils = require('../../utils/') ;
 
 router.get('/', apis.index, utils.httpResponse);
 /* GET users listing. */
-router.get('/users', apis.getAllUsers, utils.httpResponse);
+router.get('/users', /*utils.parseReqBody,*/ apis.getAllUsers, utils.httpResponse);
 
 module.exports = router;
