@@ -1,5 +1,8 @@
 'use strict';
 
+var logger = require('../services/logger_service');
+
+
 exports.httpResponse =  function(response, req, res, next){
     return res.send(response);
 }
@@ -27,4 +30,13 @@ exports.serverError =  function(code, error, next){
         return error;
     }
 
+}
+
+exports.logHttpReq =  function(req, res, next){
+    logger.info("route : " + req.originalUrl || req.url);
+    logger.info("method : " + req.method);
+    logger.verbose("headers: "+JSON.stringify(req.headers));
+    logger.debug("body: "+JSON.stringify(req.body));
+
+    return next();
 }
