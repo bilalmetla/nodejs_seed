@@ -1,8 +1,8 @@
 var Datastore = require('nedb');
 var db = {};
-//db.users = new Datastore('./users.db');
-//db.users.loadDatabase();
-db.users = new Datastore({ filename: './users.db', autoload: true });
+db.users = new Datastore('./users.db');
+db.users.loadDatabase();
+//db.users = new Datastore({ filename: './users.db', autoload: true });
 
 //db.users = new Datastore({ filename: './users.db', autoload: true });
 var logger = require('../services/logger_service');
@@ -10,7 +10,7 @@ var logger = require('../services/logger_service');
 exports.read = function (data, callback) {
     logger.debug("read query data : "+ JSON.stringify(data));
     var collection = data.collection;
-    var where = data.where || {username:"bilal"};
+    var where = data.where || {}//{username:"bilal"};
     logger.debug("read query where : "+ JSON.stringify(where));
     db[collection].find(where, function(err, results){
         if(err){

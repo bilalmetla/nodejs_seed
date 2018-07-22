@@ -1,6 +1,7 @@
 
 var models = require('../models');
 var logger = require('../services/logger_service');
+var utils = require('../utils');
 
 
 
@@ -15,6 +16,7 @@ function sendRequest(route,data, next) {
     } catch (e) {
         logger.error("Exception:" )  ;
         logger.error(e.stack);
+        utils.serverException(e, next);
     }
 }
 

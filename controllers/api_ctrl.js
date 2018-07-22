@@ -3,6 +3,7 @@
 var requestBroker = require('./request_broker_ctrl');
 var logger = require('../services/logger_service');
 var constants = require('../constants/');
+var utils = require('../utils');
 var async = require('async');
 
 exports.index = function (req, res, next){
@@ -35,8 +36,9 @@ exports.getAllUsers = function(req, res, next){
 
 
     }catch(e){
-        logger.error("Exception:" )  ;
+        logger.error("Exception:" );
         logger.error(e.stack);
+        utils.serverException(e, next);
     }
 
 }
