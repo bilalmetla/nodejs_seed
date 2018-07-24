@@ -23,6 +23,23 @@ exports.read = function (data, callback) {
     });
 }
 
+//SignUP
+exports.signup = function (data, callback) {
+    logger.debug("read query data : "+ JSON.stringify(data));
+    var collection = data.collection;
+    var where = data.where || {username: "hamza"}//{username:"bilal"};
+    logger.debug("read query where : "+ JSON.stringify(where));
+    db[collection].find(where, function(err, results){
+        if(err){
+            logger.debug("db error : ");
+            logger.debug(err);
+            return callback(err, results);
+        }
+        logger.debug("db result : "+ JSON.stringify(results));
+        return callback(err, results);
+    });
+}
+
 
 exports.create = function (data, callback) {
     logger.debug("create query data : "+ JSON.stringify(data.payload));

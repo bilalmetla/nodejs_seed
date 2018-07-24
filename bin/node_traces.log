@@ -1,0 +1,168 @@
+{"level":"info","message":"Listening on port 3000","timestamp":"22:52:07"}
+{"level":"info","message":"route : /users","timestamp":"22:58:05"}
+{"level":"info","message":"method : GET","timestamp":"22:58:05"}
+{"level":"verbose","message":"headers: {\"host\":\"localhost:3000\",\"user-agent\":\"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0\",\"accept\":\"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\",\"accept-language\":\"en-GB,en;q=0.5\",\"accept-encoding\":\"gzip, deflate\",\"connection\":\"keep-alive\",\"upgrade-insecure-requests\":\"1\"}","timestamp":"22:58:05"}
+{"level":"debug","message":"body: {}","timestamp":"22:58:05"}
+{"level":"debug","message":"request body : {}","timestamp":"22:58:05"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllUsers\",\"collection\":\"users\"}","timestamp":"22:58:05"}
+{"level":"debug","message":"read query where : {}","timestamp":"22:58:05"}
+{"level":"debug","message":"db result : []","timestamp":"22:58:05"}
+{"level":"info","message":"route : /users","timestamp":"23:44:23"}
+{"level":"info","message":"method : GET","timestamp":"23:44:23"}
+{"level":"verbose","message":"headers: {\"host\":\"localhost:3000\",\"user-agent\":\"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0\",\"accept\":\"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\",\"accept-language\":\"en-GB,en;q=0.5\",\"accept-encoding\":\"gzip, deflate\",\"connection\":\"keep-alive\",\"upgrade-insecure-requests\":\"1\",\"if-none-match\":\"W/\\\"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w\\\"\"}","timestamp":"23:44:23"}
+{"level":"debug","message":"body: {}","timestamp":"23:44:23"}
+{"level":"debug","message":"request body : {}","timestamp":"23:44:23"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllUsers\",\"collection\":\"users\"}","timestamp":"23:44:23"}
+{"level":"debug","message":"read query where : {}","timestamp":"23:44:23"}
+{"level":"debug","message":"db result : []","timestamp":"23:44:23"}
+{"level":"info","message":"route : /users","timestamp":"23:45:57"}
+{"level":"info","message":"method : GET","timestamp":"23:45:57"}
+{"level":"verbose","message":"headers: {\"host\":\"localhost:3000\",\"user-agent\":\"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0\",\"accept\":\"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\",\"accept-language\":\"en-GB,en;q=0.5\",\"accept-encoding\":\"gzip, deflate\",\"connection\":\"keep-alive\",\"upgrade-insecure-requests\":\"1\",\"if-none-match\":\"W/\\\"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w\\\"\",\"cache-control\":\"max-age=0\"}","timestamp":"23:45:57"}
+{"level":"debug","message":"body: {}","timestamp":"23:45:57"}
+{"level":"debug","message":"request body : {}","timestamp":"23:45:57"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllUsers\",\"collection\":\"users\"}","timestamp":"23:45:57"}
+{"level":"debug","message":"read query where : {}","timestamp":"23:45:57"}
+{"level":"debug","message":"db result : []","timestamp":"23:45:57"}
+{"level":"info","message":"Listening on port 3000","timestamp":"23:48:51"}
+{"level":"info","message":"Listening on port 3000","timestamp":"23:58:43"}
+{"level":"info","message":"route : /users","timestamp":"23:58:54"}
+{"level":"info","message":"method : GET","timestamp":"23:58:54"}
+{"level":"verbose","message":"headers: {\"host\":\"localhost:3000\",\"user-agent\":\"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0\",\"accept\":\"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\",\"accept-language\":\"en-GB,en;q=0.5\",\"accept-encoding\":\"gzip, deflate\",\"connection\":\"keep-alive\",\"upgrade-insecure-requests\":\"1\",\"if-none-match\":\"W/\\\"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w\\\"\"}","timestamp":"23:58:54"}
+{"level":"debug","message":"body: {}","timestamp":"23:58:54"}
+{"level":"debug","message":"request body : {}","timestamp":"23:58:55"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllUsers\",\"collection\":\"users\"}","timestamp":"23:58:55"}
+{"level":"debug","message":"read query where : {}","timestamp":"23:58:55"}
+{"level":"error","message":"Exception:","timestamp":"23:58:55"}
+{"level":"error","message":"TypeError: Cannot read property 'find' of undefined\n    at Object.exports.read (/home/hafiz/Blockchain_Fyp/nodejs_seed/database/mongodb.js:11:20)\n    at Object.exports.getAllUsers (/home/hafiz/Blockchain_Fyp/nodejs_seed/models/user_model.js:9:19)\n    at Object.sendRequest (/home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/models_ctrl.js:13:30)\n    at Object.exports.send (/home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/request_broker_ctrl.js:12:24)\n    at /home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/api_ctrl.js:23:31\n    at fn (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/async/lib/async.js:582:34)\n    at Immediate._onImmediate (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/async/lib/async.js:498:34)\n    at runCallback (timers.js:763:18)\n    at tryOnImmediate (timers.js:734:5)\n    at processImmediate (timers.js:716:5)","timestamp":"23:58:55"}
+{"level":"info","message":"Listening on port 3000","timestamp":"00:03:01"}
+{"level":"info","message":"route : /users","timestamp":"00:03:06"}
+{"level":"info","message":"method : GET","timestamp":"00:03:06"}
+{"level":"verbose","message":"headers: {\"host\":\"localhost:3000\",\"user-agent\":\"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0\",\"accept\":\"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\",\"accept-language\":\"en-GB,en;q=0.5\",\"accept-encoding\":\"gzip, deflate\",\"connection\":\"keep-alive\",\"upgrade-insecure-requests\":\"1\",\"if-none-match\":\"W/\\\"84-UtsnumRtpbvMW87s9WWV4I6FhhU\\\"\",\"cache-control\":\"max-age=0\"}","timestamp":"00:03:06"}
+{"level":"debug","message":"body: {}","timestamp":"00:03:06"}
+{"level":"debug","message":"request body : {}","timestamp":"00:03:06"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllUsers\",\"collection\":\"users\"}","timestamp":"00:03:06"}
+{"level":"debug","message":"read query where : {}","timestamp":"00:03:06"}
+{"level":"error","message":"Exception:","timestamp":"00:03:06"}
+{"level":"error","message":"TypeError: Cannot read property 'find' of undefined\n    at Object.exports.read (/home/hafiz/Blockchain_Fyp/nodejs_seed/database/mongodb.js:11:20)\n    at Object.exports.getAllUsers (/home/hafiz/Blockchain_Fyp/nodejs_seed/models/user_model.js:9:19)\n    at Object.sendRequest (/home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/models_ctrl.js:13:30)\n    at Object.exports.send (/home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/request_broker_ctrl.js:12:24)\n    at /home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/api_ctrl.js:23:31\n    at fn (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/async/lib/async.js:582:34)\n    at Immediate._onImmediate (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/async/lib/async.js:498:34)\n    at runCallback (timers.js:763:18)\n    at tryOnImmediate (timers.js:734:5)\n    at processImmediate (timers.js:716:5)","timestamp":"00:03:06"}
+{"level":"info","message":"route : /users","timestamp":"00:03:07"}
+{"level":"info","message":"method : GET","timestamp":"00:03:07"}
+{"level":"verbose","message":"headers: {\"host\":\"localhost:3000\",\"user-agent\":\"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0\",\"accept\":\"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\",\"accept-language\":\"en-GB,en;q=0.5\",\"accept-encoding\":\"gzip, deflate\",\"connection\":\"keep-alive\",\"upgrade-insecure-requests\":\"1\",\"if-none-match\":\"W/\\\"84-UtsnumRtpbvMW87s9WWV4I6FhhU\\\"\",\"cache-control\":\"max-age=0\"}","timestamp":"00:03:07"}
+{"level":"debug","message":"body: {}","timestamp":"00:03:07"}
+{"level":"debug","message":"request body : {}","timestamp":"00:03:07"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllUsers\",\"collection\":\"users\"}","timestamp":"00:03:07"}
+{"level":"debug","message":"read query where : {}","timestamp":"00:03:07"}
+{"level":"error","message":"Exception:","timestamp":"00:03:07"}
+{"level":"error","message":"TypeError: Cannot read property 'find' of undefined\n    at Object.exports.read (/home/hafiz/Blockchain_Fyp/nodejs_seed/database/mongodb.js:11:20)\n    at Object.exports.getAllUsers (/home/hafiz/Blockchain_Fyp/nodejs_seed/models/user_model.js:9:19)\n    at Object.sendRequest (/home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/models_ctrl.js:13:30)\n    at Object.exports.send (/home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/request_broker_ctrl.js:12:24)\n    at /home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/api_ctrl.js:23:31\n    at fn (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/async/lib/async.js:582:34)\n    at Immediate._onImmediate (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/async/lib/async.js:498:34)\n    at runCallback (timers.js:763:18)\n    at tryOnImmediate (timers.js:734:5)\n    at processImmediate (timers.js:716:5)","timestamp":"00:03:07"}
+{"level":"info","message":"route : /users","timestamp":"00:03:08"}
+{"level":"info","message":"method : GET","timestamp":"00:03:08"}
+{"level":"verbose","message":"headers: {\"host\":\"localhost:3000\",\"user-agent\":\"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0\",\"accept\":\"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\",\"accept-language\":\"en-GB,en;q=0.5\",\"accept-encoding\":\"gzip, deflate\",\"connection\":\"keep-alive\",\"upgrade-insecure-requests\":\"1\",\"if-none-match\":\"W/\\\"84-UtsnumRtpbvMW87s9WWV4I6FhhU\\\"\",\"cache-control\":\"max-age=0\"}","timestamp":"00:03:08"}
+{"level":"debug","message":"body: {}","timestamp":"00:03:08"}
+{"level":"debug","message":"request body : {}","timestamp":"00:03:08"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllUsers\",\"collection\":\"users\"}","timestamp":"00:03:08"}
+{"level":"debug","message":"read query where : {}","timestamp":"00:03:08"}
+{"level":"error","message":"Exception:","timestamp":"00:03:08"}
+{"level":"error","message":"TypeError: Cannot read property 'find' of undefined\n    at Object.exports.read (/home/hafiz/Blockchain_Fyp/nodejs_seed/database/mongodb.js:11:20)\n    at Object.exports.getAllUsers (/home/hafiz/Blockchain_Fyp/nodejs_seed/models/user_model.js:9:19)\n    at Object.sendRequest (/home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/models_ctrl.js:13:30)\n    at Object.exports.send (/home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/request_broker_ctrl.js:12:24)\n    at /home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/api_ctrl.js:23:31\n    at fn (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/async/lib/async.js:582:34)\n    at Immediate._onImmediate (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/async/lib/async.js:498:34)\n    at runCallback (timers.js:763:18)\n    at tryOnImmediate (timers.js:734:5)\n    at processImmediate (timers.js:716:5)","timestamp":"00:03:08"}
+{"level":"info","message":"Listening on port 3000","timestamp":"00:08:18"}
+{"level":"info","message":"route : /users","timestamp":"00:08:31"}
+{"level":"info","message":"method : GET","timestamp":"00:08:31"}
+{"level":"verbose","message":"headers: {\"host\":\"localhost:3000\",\"user-agent\":\"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0\",\"accept\":\"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\",\"accept-language\":\"en-GB,en;q=0.5\",\"accept-encoding\":\"gzip, deflate\",\"connection\":\"keep-alive\",\"upgrade-insecure-requests\":\"1\",\"if-none-match\":\"W/\\\"84-UtsnumRtpbvMW87s9WWV4I6FhhU\\\"\",\"cache-control\":\"max-age=0\"}","timestamp":"00:08:31"}
+{"level":"debug","message":"body: {}","timestamp":"00:08:31"}
+{"level":"debug","message":"request body : {}","timestamp":"00:08:31"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllUsers\",\"collection\":\"users\"}","timestamp":"00:08:31"}
+{"level":"debug","message":"read query where : {}","timestamp":"00:08:31"}
+{"level":"error","message":"Exception:","timestamp":"00:08:31"}
+{"level":"error","message":"TypeError: Cannot read property 'find' of undefined\n    at Object.exports.read (/home/hafiz/Blockchain_Fyp/nodejs_seed/database/mongodb.js:11:20)\n    at Object.exports.getAllUsers (/home/hafiz/Blockchain_Fyp/nodejs_seed/models/user_model.js:9:19)\n    at Object.sendRequest (/home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/models_ctrl.js:13:30)\n    at Object.exports.send (/home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/request_broker_ctrl.js:12:24)\n    at /home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/api_ctrl.js:23:31\n    at fn (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/async/lib/async.js:582:34)\n    at Immediate._onImmediate (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/async/lib/async.js:498:34)\n    at runCallback (timers.js:763:18)\n    at tryOnImmediate (timers.js:734:5)\n    at processImmediate (timers.js:716:5)","timestamp":"00:08:31"}
+{"level":"info","message":"Listening on port 3000","timestamp":"00:12:28"}
+{"level":"info","message":"route : /users","timestamp":"00:12:32"}
+{"level":"info","message":"method : GET","timestamp":"00:12:32"}
+{"level":"verbose","message":"headers: {\"host\":\"localhost:3000\",\"user-agent\":\"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0\",\"accept\":\"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\",\"accept-language\":\"en-GB,en;q=0.5\",\"accept-encoding\":\"gzip, deflate\",\"connection\":\"keep-alive\",\"upgrade-insecure-requests\":\"1\",\"if-none-match\":\"W/\\\"84-UtsnumRtpbvMW87s9WWV4I6FhhU\\\"\",\"cache-control\":\"max-age=0\"}","timestamp":"00:12:32"}
+{"level":"debug","message":"body: {}","timestamp":"00:12:32"}
+{"level":"debug","message":"request body : {}","timestamp":"00:12:32"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllUsers\",\"collection\":\"users\"}","timestamp":"00:12:32"}
+{"level":"debug","message":"read query where : {}","timestamp":"00:12:32"}
+{"level":"error","message":"Exception:","timestamp":"00:12:32"}
+{"level":"error","message":"TypeError: Cannot read property 'find' of undefined\n    at Object.exports.read (/home/hafiz/Blockchain_Fyp/nodejs_seed/database/mongodb.js:11:20)\n    at Object.exports.getAllUsers (/home/hafiz/Blockchain_Fyp/nodejs_seed/models/user_model.js:9:19)\n    at Object.sendRequest (/home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/models_ctrl.js:13:30)\n    at Object.exports.send (/home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/request_broker_ctrl.js:12:24)\n    at /home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/api_ctrl.js:23:31\n    at fn (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/async/lib/async.js:582:34)\n    at Immediate._onImmediate (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/async/lib/async.js:498:34)\n    at runCallback (timers.js:763:18)\n    at tryOnImmediate (timers.js:734:5)\n    at processImmediate (timers.js:716:5)","timestamp":"00:12:32"}
+{"level":"info","message":"route : /users","timestamp":"00:12:33"}
+{"level":"info","message":"method : GET","timestamp":"00:12:33"}
+{"level":"verbose","message":"headers: {\"host\":\"localhost:3000\",\"user-agent\":\"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0\",\"accept\":\"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\",\"accept-language\":\"en-GB,en;q=0.5\",\"accept-encoding\":\"gzip, deflate\",\"connection\":\"keep-alive\",\"upgrade-insecure-requests\":\"1\",\"if-none-match\":\"W/\\\"84-UtsnumRtpbvMW87s9WWV4I6FhhU\\\"\",\"cache-control\":\"max-age=0\"}","timestamp":"00:12:33"}
+{"level":"debug","message":"body: {}","timestamp":"00:12:33"}
+{"level":"debug","message":"request body : {}","timestamp":"00:12:33"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllUsers\",\"collection\":\"users\"}","timestamp":"00:12:33"}
+{"level":"debug","message":"read query where : {}","timestamp":"00:12:33"}
+{"level":"error","message":"Exception:","timestamp":"00:12:33"}
+{"level":"error","message":"TypeError: Cannot read property 'find' of undefined\n    at Object.exports.read (/home/hafiz/Blockchain_Fyp/nodejs_seed/database/mongodb.js:11:20)\n    at Object.exports.getAllUsers (/home/hafiz/Blockchain_Fyp/nodejs_seed/models/user_model.js:9:19)\n    at Object.sendRequest (/home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/models_ctrl.js:13:30)\n    at Object.exports.send (/home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/request_broker_ctrl.js:12:24)\n    at /home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/api_ctrl.js:23:31\n    at fn (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/async/lib/async.js:582:34)\n    at Immediate._onImmediate (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/async/lib/async.js:498:34)\n    at runCallback (timers.js:763:18)\n    at tryOnImmediate (timers.js:734:5)\n    at processImmediate (timers.js:716:5)","timestamp":"00:12:33"}
+{"level":"info","message":"route : /users","timestamp":"00:12:34"}
+{"level":"info","message":"method : GET","timestamp":"00:12:34"}
+{"level":"verbose","message":"headers: {\"host\":\"localhost:3000\",\"user-agent\":\"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0\",\"accept\":\"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\",\"accept-language\":\"en-GB,en;q=0.5\",\"accept-encoding\":\"gzip, deflate\",\"connection\":\"keep-alive\",\"upgrade-insecure-requests\":\"1\",\"if-none-match\":\"W/\\\"84-UtsnumRtpbvMW87s9WWV4I6FhhU\\\"\",\"cache-control\":\"max-age=0\"}","timestamp":"00:12:34"}
+{"level":"debug","message":"body: {}","timestamp":"00:12:34"}
+{"level":"debug","message":"request body : {}","timestamp":"00:12:34"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllUsers\",\"collection\":\"users\"}","timestamp":"00:12:34"}
+{"level":"debug","message":"read query where : {}","timestamp":"00:12:34"}
+{"level":"error","message":"Exception:","timestamp":"00:12:34"}
+{"level":"error","message":"TypeError: Cannot read property 'find' of undefined\n    at Object.exports.read (/home/hafiz/Blockchain_Fyp/nodejs_seed/database/mongodb.js:11:20)\n    at Object.exports.getAllUsers (/home/hafiz/Blockchain_Fyp/nodejs_seed/models/user_model.js:9:19)\n    at Object.sendRequest (/home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/models_ctrl.js:13:30)\n    at Object.exports.send (/home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/request_broker_ctrl.js:12:24)\n    at /home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/api_ctrl.js:23:31\n    at fn (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/async/lib/async.js:582:34)\n    at Immediate._onImmediate (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/async/lib/async.js:498:34)\n    at runCallback (timers.js:763:18)\n    at tryOnImmediate (timers.js:734:5)\n    at processImmediate (timers.js:716:5)","timestamp":"00:12:34"}
+{"level":"info","message":"route : /users","timestamp":"00:23:07"}
+{"level":"info","message":"method : GET","timestamp":"00:23:07"}
+{"level":"verbose","message":"headers: {\"host\":\"localhost:3000\",\"user-agent\":\"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0\",\"accept\":\"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\",\"accept-language\":\"en-GB,en;q=0.5\",\"accept-encoding\":\"gzip, deflate\",\"connection\":\"keep-alive\",\"upgrade-insecure-requests\":\"1\",\"if-none-match\":\"W/\\\"84-UtsnumRtpbvMW87s9WWV4I6FhhU\\\"\"}","timestamp":"00:23:07"}
+{"level":"debug","message":"body: {}","timestamp":"00:23:07"}
+{"level":"debug","message":"request body : {}","timestamp":"00:23:07"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllUsers\",\"collection\":\"users\"}","timestamp":"00:23:07"}
+{"level":"debug","message":"read query where : {}","timestamp":"00:23:07"}
+{"level":"error","message":"Exception:","timestamp":"00:23:07"}
+{"level":"error","message":"TypeError: Cannot read property 'find' of undefined\n    at Object.exports.read (/home/hafiz/Blockchain_Fyp/nodejs_seed/database/mongodb.js:11:20)\n    at Object.exports.getAllUsers (/home/hafiz/Blockchain_Fyp/nodejs_seed/models/user_model.js:9:19)\n    at Object.sendRequest (/home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/models_ctrl.js:13:30)\n    at Object.exports.send (/home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/request_broker_ctrl.js:12:24)\n    at /home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/api_ctrl.js:23:31\n    at fn (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/async/lib/async.js:582:34)\n    at Immediate._onImmediate (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/async/lib/async.js:498:34)\n    at runCallback (timers.js:763:18)\n    at tryOnImmediate (timers.js:734:5)\n    at processImmediate (timers.js:716:5)","timestamp":"00:23:07"}
+{"level":"info","message":"Listening on port 3000","timestamp":"00:42:42"}
+{"level":"info","message":"route : /users","timestamp":"00:43:30"}
+{"level":"info","message":"method : GET","timestamp":"00:43:30"}
+{"level":"verbose","message":"headers: {\"host\":\"localhost:3000\",\"user-agent\":\"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0\",\"accept\":\"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\",\"accept-language\":\"en-GB,en;q=0.5\",\"accept-encoding\":\"gzip, deflate\",\"connection\":\"keep-alive\",\"upgrade-insecure-requests\":\"1\",\"if-none-match\":\"W/\\\"84-UtsnumRtpbvMW87s9WWV4I6FhhU\\\"\",\"cache-control\":\"max-age=0\"}","timestamp":"00:43:30"}
+{"level":"debug","message":"body: {}","timestamp":"00:43:30"}
+{"level":"debug","message":"request body : {}","timestamp":"00:43:30"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllUsers\",\"collection\":\"users\"}","timestamp":"00:43:30"}
+{"level":"error","message":"Exception:","timestamp":"00:43:30"}
+{"level":"error","message":"TypeError: Cannot read property 'find' of undefined\n    at Object.exports.read (/home/hafiz/Blockchain_Fyp/nodejs_seed/database/mongodb.js:28:20)\n    at Object.exports.getAllUsers (/home/hafiz/Blockchain_Fyp/nodejs_seed/models/user_model.js:9:19)\n    at Object.sendRequest (/home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/models_ctrl.js:13:30)\n    at Object.exports.send (/home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/request_broker_ctrl.js:12:24)\n    at /home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/api_ctrl.js:23:31\n    at fn (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/async/lib/async.js:582:34)\n    at Immediate._onImmediate (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/async/lib/async.js:498:34)\n    at runCallback (timers.js:763:18)\n    at tryOnImmediate (timers.js:734:5)\n    at processImmediate (timers.js:716:5)","timestamp":"00:43:30"}
+{"level":"info","message":"Listening on port 3000","timestamp":"00:45:55"}
+{"level":"info","message":"route : /users","timestamp":"00:45:59"}
+{"level":"info","message":"method : GET","timestamp":"00:45:59"}
+{"level":"verbose","message":"headers: {\"host\":\"localhost:3000\",\"user-agent\":\"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0\",\"accept\":\"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\",\"accept-language\":\"en-GB,en;q=0.5\",\"accept-encoding\":\"gzip, deflate\",\"connection\":\"keep-alive\",\"upgrade-insecure-requests\":\"1\",\"if-none-match\":\"W/\\\"84-UtsnumRtpbvMW87s9WWV4I6FhhU\\\"\",\"cache-control\":\"max-age=0\"}","timestamp":"00:45:59"}
+{"level":"debug","message":"body: {}","timestamp":"00:45:59"}
+{"level":"debug","message":"request body : {}","timestamp":"00:45:59"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllUsers\",\"collection\":\"users\"}","timestamp":"00:45:59"}
+{"level":"error","message":"Exception:","timestamp":"00:45:59"}
+{"level":"error","message":"TypeError: Cannot read property 'find' of undefined\n    at Object.exports.read (/home/hafiz/Blockchain_Fyp/nodejs_seed/database/mongodb.js:28:20)\n    at Object.exports.getAllUsers (/home/hafiz/Blockchain_Fyp/nodejs_seed/models/user_model.js:9:19)\n    at Object.sendRequest (/home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/models_ctrl.js:13:30)\n    at Object.exports.send (/home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/request_broker_ctrl.js:12:24)\n    at /home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/api_ctrl.js:23:31\n    at fn (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/async/lib/async.js:582:34)\n    at Immediate._onImmediate (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/async/lib/async.js:498:34)\n    at runCallback (timers.js:763:18)\n    at tryOnImmediate (timers.js:734:5)\n    at processImmediate (timers.js:716:5)","timestamp":"00:45:59"}
+{"level":"info","message":"Listening on port 3000","timestamp":"01:03:10"}
+{"level":"info","message":"route : /users","timestamp":"01:03:16"}
+{"level":"info","message":"method : GET","timestamp":"01:03:16"}
+{"level":"verbose","message":"headers: {\"host\":\"localhost:3000\",\"user-agent\":\"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0\",\"accept\":\"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\",\"accept-language\":\"en-GB,en;q=0.5\",\"accept-encoding\":\"gzip, deflate\",\"connection\":\"keep-alive\",\"upgrade-insecure-requests\":\"1\",\"if-none-match\":\"W/\\\"84-UtsnumRtpbvMW87s9WWV4I6FhhU\\\"\",\"cache-control\":\"max-age=0\"}","timestamp":"01:03:16"}
+{"level":"debug","message":"body: {}","timestamp":"01:03:16"}
+{"level":"debug","message":"request body : {}","timestamp":"01:03:16"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllUsers\",\"collection\":\"users\"}","timestamp":"01:03:16"}
+{"level":"debug","message":"read query where : {}","timestamp":"01:03:16"}
+{"level":"error","message":"Exception:","timestamp":"01:03:16"}
+{"level":"error","message":"TypeError: Cannot read property 'find' of undefined\n    at Object.exports.read (/home/hafiz/Blockchain_Fyp/nodejs_seed/database/mongodb.js:10:20)\n    at Object.exports.getAllUsers (/home/hafiz/Blockchain_Fyp/nodejs_seed/models/user_model.js:9:19)\n    at Object.sendRequest (/home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/models_ctrl.js:13:30)\n    at Object.exports.send (/home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/request_broker_ctrl.js:12:24)\n    at /home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/api_ctrl.js:23:31\n    at fn (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/async/lib/async.js:582:34)\n    at Immediate._onImmediate (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/async/lib/async.js:498:34)\n    at runCallback (timers.js:763:18)\n    at tryOnImmediate (timers.js:734:5)\n    at processImmediate (timers.js:716:5)","timestamp":"01:03:16"}
+{"level":"info","message":"Listening on port 3000","timestamp":"01:15:54"}
+{"level":"info","message":"route : /users","timestamp":"01:16:10"}
+{"level":"info","message":"method : GET","timestamp":"01:16:10"}
+{"level":"verbose","message":"headers: {\"host\":\"localhost:3000\",\"user-agent\":\"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0\",\"accept\":\"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\",\"accept-language\":\"en-GB,en;q=0.5\",\"accept-encoding\":\"gzip, deflate\",\"connection\":\"keep-alive\",\"upgrade-insecure-requests\":\"1\",\"if-none-match\":\"W/\\\"84-UtsnumRtpbvMW87s9WWV4I6FhhU\\\"\"}","timestamp":"01:16:10"}
+{"level":"debug","message":"body: {}","timestamp":"01:16:10"}
+{"level":"debug","message":"request body : {}","timestamp":"01:16:10"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllUsers\",\"collection\":\"users\"}","timestamp":"01:16:10"}
+{"level":"debug","message":"read query where : {}","timestamp":"01:16:10"}
+{"level":"error","message":"Exception:","timestamp":"01:16:10"}
+{"level":"error","message":"TypeError: Cannot read property 'find' of undefined\n    at Object.exports.read (/home/hafiz/Blockchain_Fyp/nodejs_seed/database/mongodb.js:10:20)\n    at Object.exports.getAllUsers (/home/hafiz/Blockchain_Fyp/nodejs_seed/models/user_model.js:9:19)\n    at Object.sendRequest (/home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/models_ctrl.js:13:30)\n    at Object.exports.send (/home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/request_broker_ctrl.js:12:24)\n    at /home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/api_ctrl.js:23:31\n    at fn (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/async/lib/async.js:582:34)\n    at Immediate._onImmediate (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/async/lib/async.js:498:34)\n    at runCallback (timers.js:763:18)\n    at tryOnImmediate (timers.js:734:5)\n    at processImmediate (timers.js:716:5)","timestamp":"01:16:10"}
+{"level":"info","message":"Listening on port 3000","timestamp":"01:18:00"}
+{"level":"info","message":"route : /users","timestamp":"01:18:09"}
+{"level":"info","message":"method : GET","timestamp":"01:18:09"}
+{"level":"verbose","message":"headers: {\"host\":\"localhost:3000\",\"user-agent\":\"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0\",\"accept\":\"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\",\"accept-language\":\"en-GB,en;q=0.5\",\"accept-encoding\":\"gzip, deflate\",\"connection\":\"keep-alive\",\"upgrade-insecure-requests\":\"1\",\"if-none-match\":\"W/\\\"84-UtsnumRtpbvMW87s9WWV4I6FhhU\\\"\"}","timestamp":"01:18:09"}
+{"level":"debug","message":"body: {}","timestamp":"01:18:09"}
+{"level":"debug","message":"request body : {}","timestamp":"01:18:09"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllUsers\",\"collection\":\"users\"}","timestamp":"01:18:09"}
+{"level":"debug","message":"read query where : {}","timestamp":"01:18:09"}
+{"level":"error","message":"Exception:","timestamp":"01:18:09"}
+{"level":"error","message":"TypeError: Cannot read property 'find' of undefined\n    at Object.exports.read (/home/hafiz/Blockchain_Fyp/nodejs_seed/database/mongodb.js:10:20)\n    at Object.exports.getAllUsers (/home/hafiz/Blockchain_Fyp/nodejs_seed/models/user_model.js:9:19)\n    at Object.sendRequest (/home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/models_ctrl.js:13:30)\n    at Object.exports.send (/home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/request_broker_ctrl.js:12:24)\n    at /home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/api_ctrl.js:23:31\n    at fn (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/async/lib/async.js:582:34)\n    at Immediate._onImmediate (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/async/lib/async.js:498:34)\n    at runCallback (timers.js:763:18)\n    at tryOnImmediate (timers.js:734:5)\n    at processImmediate (timers.js:716:5)","timestamp":"01:18:09"}
+{"level":"info","message":"Listening on port 3000","timestamp":"01:26:04"}
+{"level":"info","message":"route : /users","timestamp":"01:26:15"}
+{"level":"info","message":"method : GET","timestamp":"01:26:15"}
+{"level":"verbose","message":"headers: {\"host\":\"localhost:3000\",\"user-agent\":\"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0\",\"accept\":\"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\",\"accept-language\":\"en-GB,en;q=0.5\",\"accept-encoding\":\"gzip, deflate\",\"connection\":\"keep-alive\",\"upgrade-insecure-requests\":\"1\",\"if-none-match\":\"W/\\\"84-UtsnumRtpbvMW87s9WWV4I6FhhU\\\"\"}","timestamp":"01:26:15"}
+{"level":"debug","message":"body: {}","timestamp":"01:26:15"}
+{"level":"debug","message":"request body : {}","timestamp":"01:26:15"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllUsers\",\"collection\":\"users\"}","timestamp":"01:26:15"}
+{"level":"debug","message":"read query where : {}","timestamp":"01:26:15"}
+{"level":"debug","message":"db result : [{\"_id\":\"5b5621e92768e91d58c46fa0\",\"name\":\"Rana\",\"fatherName\":\"Javed\",\"Qualification\":\"BS\"},{\"_id\":\"5b57867a23e00f2d6e091d83\",\"name\":\"Hamza Javed\",\"Qualification\":\"BS\"},{\"_id\":\"5b57869d3ebb562d947ca2ce\",\"name\":\"Abdullah Masood\",\"Qualification\":\"BS\"},{\"_id\":\"5b57887e6089c82e61e023ab\",\"name\":\"Saad Khan\",\"Qualification\":\"BS\"},{\"_id\":\"5b578892b8a4de2e79e7684f\",\"name\":\"Suleman Javed\",\"Qualification\":\"BS\"}]","timestamp":"01:26:15"}
