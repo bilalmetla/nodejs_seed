@@ -1,18 +1,25 @@
+
+var configs = require("../configurations");
 var db = require('mongodb').MongoClient;
-var url = "mongodb://localhost:27017/";
-var dbConnection = "";
 var logger = require('../services/logger_service');
+
+
+var url = configs.database.mongodb.prefix + configs.database.mongodb.ip + ":"+configs.database.mongodb.port+ "/";
+var dbConnection = "";
+
 //Connecting to database
- function doConnect(){
+ exports.doConnect = function (next){
     db.connect(url, function(err, client) {
         if (err){
              logger.error("db connection error: "+err);
+             return next(err);
         }
-        dbConnection= client.db("database");
+        dbConnection= client.db(configs.database.mongodb.database);
+        return next(null);
     });
 }
 
-doConnect();
+
 exports.read = function (data, callback) {
     logger.debug("read query data : "+ JSON.stringify(data));
     var collection = data.collection;

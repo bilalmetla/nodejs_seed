@@ -1,3 +1,5 @@
+var constants = require("../constants");
+
 module.exports = {
 
     port : 3000,
@@ -5,5 +7,16 @@ module.exports = {
         level : "debug",
         consoleMode : true,
         fileMode : true,
-    }
+    },
+    database :{
+        mongodb :{
+            ip : "localhost",
+            port : "27017",
+            prefix : "mongodb://",
+            database : "trustcash",
+            username :"",
+            password :"",
+        }
+    },
+    supportedDB : constants.supportedDatabases.mongodb
 }

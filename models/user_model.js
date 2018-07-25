@@ -1,5 +1,5 @@
 var logger = require('../services/logger_service');
-var dbService = require('../database/mongodb');
+var dbService = require('../database');
 var utils = require('../utils');
 
 // we will use our db layer in all our models
