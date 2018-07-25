@@ -1,6 +1,6 @@
 'use strict';
 
-var joi = require("joi")
+var joi = require("joi");
 
 
 module.exports = {
@@ -15,7 +15,6 @@ module.exports = {
                 lastName: joi.string().required(),
                 username: joi.string().required(),
 
-                sessionId: joi.string().required(),
             }),
             requestId: joi.string().required()
         }
