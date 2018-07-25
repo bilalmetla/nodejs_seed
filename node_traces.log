@@ -21,3 +21,55 @@
 {"level":"error","message":"TypeError: Cannot set property 'serveFrom' of undefined\n    at exports.getAllUsers (/home/bilalmetla/work/blockchain_study/trustcash/controllers/api_ctrl.js:15:24)\n    at Layer.handle [as handle_request] (/home/bilalmetla/work/blockchain_study/trustcash/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/bilalmetla/work/blockchain_study/trustcash/node_modules/express/lib/router/route.js:137:13)\n    at Route.dispatch (/home/bilalmetla/work/blockchain_study/trustcash/node_modules/express/lib/router/route.js:112:3)\n    at Layer.handle [as handle_request] (/home/bilalmetla/work/blockchain_study/trustcash/node_modules/express/lib/router/layer.js:95:5)\n    at /home/bilalmetla/work/blockchain_study/trustcash/node_modules/express/lib/router/index.js:281:22\n    at Function.process_params (/home/bilalmetla/work/blockchain_study/trustcash/node_modules/express/lib/router/index.js:335:12)\n    at next (/home/bilalmetla/work/blockchain_study/trustcash/node_modules/express/lib/router/index.js:275:10)\n    at Function.handle (/home/bilalmetla/work/blockchain_study/trustcash/node_modules/express/lib/router/index.js:174:3)\n    at router (/home/bilalmetla/work/blockchain_study/trustcash/node_modules/express/lib/router/index.js:47:12)","timestamp":"17:19:46"}
 {"level":"debug","message":"request body : {}","timestamp":"17:19:56"}
 {"level":"debug","message":"request body : {}","timestamp":"17:21:17"}
+{"level":"info","message":"Listening on port 3000","timestamp":"14:31:10"}
+{"level":"info","message":"route : /users","timestamp":"14:34:58"}
+{"level":"info","message":"method : GET","timestamp":"14:34:58"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/json\",\"cache-control\":\"no-cache\",\"postman-token\":\"d6594f50-4833-4489-8508-436d94e4fa58\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"connection\":\"keep-alive\"}","timestamp":"14:34:58"}
+{"level":"debug","message":"body: {}","timestamp":"14:34:58"}
+{"level":"debug","message":"request body : {}","timestamp":"14:34:58"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllUsers\",\"collection\":\"users\"}","timestamp":"14:39:27"}
+{"level":"debug","message":"read query where : {}","timestamp":"14:40:10"}
+{"level":"debug","message":"db result : [{\"_id\":\"5b5621e92768e91d58c46fa0\",\"name\":\"Rana\",\"fatherName\":\"Javed\",\"Qualification\":\"BS\"},{\"_id\":\"5b57867a23e00f2d6e091d83\",\"name\":\"Hamza Javed\",\"Qualification\":\"BS\"},{\"_id\":\"5b57869d3ebb562d947ca2ce\",\"name\":\"Abdullah Masood\",\"Qualification\":\"BS\"},{\"_id\":\"5b57887e6089c82e61e023ab\",\"name\":\"Saad Khan\",\"Qualification\":\"BS\"},{\"_id\":\"5b578892b8a4de2e79e7684f\",\"name\":\"Suleman Javed\",\"Qualification\":\"BS\"},{\"_id\":\"5b583f9158c066293325731a\",\"firstName\":\"suleman\",\"email\":\"suleman.bsse2565@iiu.edu.pk\",\"username\":\"suleman2565\",\"passward\":2565,\"coinId\":2,\"contactNumber\":3120560593}]","timestamp":"14:40:10"}
+{"level":"info","message":"Listening on port 3000","timestamp":"14:55:52"}
+{"level":"info","message":"route : /login","timestamp":"14:56:46"}
+{"level":"info","message":"method : POST","timestamp":"14:56:46"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/json\",\"cache-control\":\"no-cache\",\"postman-token\":\"5a6bf9f2-005f-488f-b849-21a48e037258\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"content-length\":\"60\",\"connection\":\"keep-alive\"}","timestamp":"14:56:46"}
+{"level":"debug","message":"body: {\"abc\":{\"username\":\"suleman2565\",\"passward\":2565}}","timestamp":"14:56:46"}
+{"level":"info","message":"route : /login","timestamp":"14:57:46"}
+{"level":"info","message":"method : POST","timestamp":"14:57:46"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/json\",\"cache-control\":\"no-cache\",\"postman-token\":\"8b56b900-7f85-43bf-a966-2f00e5df6940\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"content-length\":\"64\",\"connection\":\"keep-alive\"}","timestamp":"14:57:46"}
+{"level":"debug","message":"body: {\"payload\":{\"username\":\"suleman2565\",\"passward\":2565}}","timestamp":"14:57:46"}
+{"level":"info","message":"route : /login","timestamp":"14:58:05"}
+{"level":"info","message":"method : POST","timestamp":"14:58:05"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/json\",\"cache-control\":\"no-cache\",\"postman-token\":\"6f8cf3d8-665d-4c52-a814-c6f6181ff4f2\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"content-length\":\"66\",\"connection\":\"keep-alive\"}","timestamp":"14:58:05"}
+{"level":"debug","message":"body: {\"payload\":{\"username\":\"suleman2565\",\"passward\":\"2565\"}}","timestamp":"14:58:05"}
+{"level":"debug","message":"request body : {\"payload\":{\"username\":\"suleman2565\",\"passward\":\"2565\"}}","timestamp":"14:58:05"}
+{"level":"debug","message":"read query data : {\"payload\":{\"username\":\"suleman2565\",\"passward\":\"2565\"},\"serveFrom\":\"database\",\"route\":\"login\",\"collection\":\"users\",\"where\":{\"username\":\"suleman2565\"}}","timestamp":"14:58:05"}
+{"level":"debug","message":"read query where : {\"username\":\"suleman2565\"}","timestamp":"14:58:05"}
+{"level":"debug","message":"db result : [{\"_id\":\"5b583f9158c066293325731a\",\"firstName\":\"suleman\",\"email\":\"suleman.bsse2565@iiu.edu.pk\",\"username\":\"suleman2565\",\"passward\":2565,\"coinId\":2,\"contactNumber\":3120560593}]","timestamp":"14:58:05"}
+{"level":"info","message":"Listening on port 3000","timestamp":"15:02:14"}
+{"level":"info","message":"route : /login","timestamp":"15:02:29"}
+{"level":"info","message":"method : POST","timestamp":"15:02:29"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/json\",\"cache-control\":\"no-cache\",\"postman-token\":\"6d3c130d-f467-4bbd-9953-9eeb31881335\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"content-length\":\"66\",\"connection\":\"keep-alive\"}","timestamp":"15:02:29"}
+{"level":"debug","message":"body: {\"payload\":{\"username\":\"suleman2565\",\"passward\":\"2565\"}}","timestamp":"15:02:29"}
+{"level":"debug","message":"request body : {\"payload\":{\"username\":\"suleman2565\",\"passward\":\"2565\"}}","timestamp":"15:02:29"}
+{"level":"debug","message":"read query data : {\"payload\":{\"username\":\"suleman2565\",\"passward\":\"2565\"},\"serveFrom\":\"database\",\"route\":\"login\",\"collection\":\"users\",\"where\":{\"username\":\"suleman2565\"}}","timestamp":"15:02:29"}
+{"level":"debug","message":"read query where : {\"username\":\"suleman2565\"}","timestamp":"15:02:29"}
+{"level":"info","message":"Listening on port 3000","timestamp":"15:06:55"}
+{"level":"info","message":"route : /login","timestamp":"15:07:04"}
+{"level":"info","message":"method : POST","timestamp":"15:07:04"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/json\",\"cache-control\":\"no-cache\",\"postman-token\":\"e9cb92dd-09a6-4e8b-a8fa-c06b92effb91\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"content-length\":\"66\",\"connection\":\"keep-alive\"}","timestamp":"15:07:04"}
+{"level":"debug","message":"body: {\"payload\":{\"username\":\"suleman2565\",\"passward\":\"2565\"}}","timestamp":"15:07:04"}
+{"level":"debug","message":"request body : {\"payload\":{\"username\":\"suleman2565\",\"passward\":\"2565\"}}","timestamp":"15:07:04"}
+{"level":"debug","message":"read query data : {\"payload\":{\"username\":\"suleman2565\",\"passward\":\"2565\"},\"serveFrom\":\"database\",\"route\":\"login\",\"collection\":\"users\",\"where\":{\"username\":\"suleman2565\"}}","timestamp":"15:07:04"}
+{"level":"debug","message":"read query where : {\"username\":\"suleman2565\"}","timestamp":"15:07:04"}
+{"level":"debug","message":"db result : [{\"_id\":\"5b583f9158c066293325731a\",\"firstName\":\"suleman\",\"email\":\"suleman.bsse2565@iiu.edu.pk\",\"username\":\"suleman2565\",\"passward\":2565,\"coinId\":2,\"contactNumber\":3120560593}]","timestamp":"15:07:04"}
+{"level":"info","message":"Listening on port 3000","timestamp":"15:08:23"}
+{"level":"info","message":"route : /login","timestamp":"15:08:27"}
+{"level":"info","message":"method : POST","timestamp":"15:08:27"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/json\",\"cache-control\":\"no-cache\",\"postman-token\":\"546d0f19-eaa1-4a09-8eb2-216e36feed95\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"content-length\":\"66\",\"connection\":\"keep-alive\"}","timestamp":"15:08:27"}
+{"level":"debug","message":"body: {\"payload\":{\"username\":\"suleman2565\",\"passward\":\"2565\"}}","timestamp":"15:08:27"}
+{"level":"debug","message":"request body : {\"payload\":{\"username\":\"suleman2565\",\"passward\":\"2565\"}}","timestamp":"15:08:27"}
+{"level":"debug","message":"read query data : {\"payload\":{\"username\":\"suleman2565\",\"passward\":\"2565\"},\"serveFrom\":\"database\",\"route\":\"login\",\"collection\":\"users\",\"where\":{\"username\":\"suleman2565\"}}","timestamp":"15:08:27"}
+{"level":"debug","message":"read query where : {\"username\":\"suleman2565\"}","timestamp":"15:08:27"}
+{"level":"debug","message":"db result : [{\"_id\":\"5b583f9158c066293325731a\",\"firstName\":\"suleman\",\"email\":\"suleman.bsse2565@iiu.edu.pk\",\"username\":\"suleman2565\",\"passward\":2565,\"coinId\":2,\"contactNumber\":3120560593}]","timestamp":"15:08:27"}
