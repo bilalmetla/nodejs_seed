@@ -15,6 +15,9 @@ function sendRequest(route,data, next) {
             case 'signup':
                 models.users.signup(data, next);
                 break;
+            case 'login':
+                models.users.login(data, next);
+                break;
         }
     } catch (e) {
         logger.error("Exception:" )  ;

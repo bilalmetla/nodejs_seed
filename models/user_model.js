@@ -20,8 +20,24 @@ exports.getAllUsers = function(data, next){
 
 exports.signup = function(data, next){
     try{
-        data.collection = "signup";
-        dbService.signup(data, function (err, result) {
+        data.collection = "users";
+        dbService.create(data, function (err, result) {
+            return next(err, result);
+        });
+
+    }catch (e) {
+        logger.error("Exception:" );
+        logger.error(e.stack);
+        utils.serverException(e, next);
+    }
+
+}
+
+exports.login = function(data, next){
+    try{
+        data.collection = "users";
+        data.where = {username: data.payload.username};
+        dbService.read(data, function (err, result) {
             return next(err, result);
         });
 

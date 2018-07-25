@@ -13,4 +13,6 @@ router.get('/users', utils.logHttpReq, expressValidate(validations.getUsers), ap
 //POST request for Signup
 router.post('/signup', utils.logHttpReq, expressValidate(validations.signup), apis.signup, utils.httpResponse);
 
+router.post('/login', utils.logHttpReq, expressValidate(validations.login), apis.login, utils.httpResponse);
+
 module.exports = router;
