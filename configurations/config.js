@@ -13,7 +13,7 @@ module.exports = {
             ip : "localhost",
             port : "27017",
             prefix : "mongodb://",
-            database : "trustcash",
+            database : "database",
             username :"",
             password :"",
         }

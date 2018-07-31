@@ -7,6 +7,8 @@ var logger = require('morgan');
 var session = require('express-session');
 var indexRouter = require('./routes/http/index');
 
+var app = express();
+
 // initialize express-session to allow us track the logged-in user across sessions.
 app.use(session({
   key: 'user_sid',
@@ -17,9 +19,7 @@ app.use(session({
       expires: 600000
   }
 }));
-app.use(express.static(path.join(__dirname, 'public')));
-
-var app = express();
+app.use(express.static(path.join(__dirname, 'public'))); 
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
