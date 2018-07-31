@@ -4,8 +4,20 @@ var bodyParser = require('body-parser');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-
+var session = require('express-session');
 var indexRouter = require('./routes/http/index');
+
+// initialize express-session to allow us track the logged-in user across sessions.
+app.use(session({
+  key: 'user_sid',
+  secret: 'somerandonstuffs',
+  resave: false,
+  saveUninitialized: false,
+  cookie: {
+      expires: 600000
+  }
+}));
+app.use(express.static(path.join(__dirname, 'public')));
 
 var app = express();
 
@@ -22,6 +34,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
+
+
 
 
 // catch 404 and forward to error handler

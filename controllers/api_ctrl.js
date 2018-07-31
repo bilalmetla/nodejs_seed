@@ -5,6 +5,7 @@ var logger = require('../services/logger_service');
 var constants = require('../constants/');
 var utils = require('../utils');
 var async = require('async');
+var sessionManager = require('./session_manager_ctrl');
 
 exports.index = function (req, res, next){
     return next("Hello word")
@@ -99,6 +100,7 @@ exports.login = function(req, res, next){
                     var error ={code: "RC001", message: "Passward does not match" }
                     return callback(error);
                 }
+                sessionManager.createSession(req, response);
                 var result = {code: "RC0200", message: "Successfull",result:response};
                 return callback(null,result);
             }
