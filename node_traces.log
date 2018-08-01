@@ -73,3 +73,13 @@
 {"level":"debug","message":"read query data : {\"payload\":{\"username\":\"suleman2565\",\"passward\":\"2565\"},\"serveFrom\":\"database\",\"route\":\"login\",\"collection\":\"users\",\"where\":{\"username\":\"suleman2565\"}}","timestamp":"15:08:27"}
 {"level":"debug","message":"read query where : {\"username\":\"suleman2565\"}","timestamp":"15:08:27"}
 {"level":"debug","message":"db result : [{\"_id\":\"5b583f9158c066293325731a\",\"firstName\":\"suleman\",\"email\":\"suleman.bsse2565@iiu.edu.pk\",\"username\":\"suleman2565\",\"passward\":2565,\"coinId\":2,\"contactNumber\":3120560593}]","timestamp":"15:08:27"}
+{"level":"info","message":"Listening on port 3000","timestamp":"14:48:33"}
+{"level":"info","message":"route : /login","timestamp":"14:48:42"}
+{"level":"info","message":"method : POST","timestamp":"14:48:42"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/json\",\"cache-control\":\"no-cache\",\"postman-token\":\"ee240cb5-b98e-4503-a715-c96af4ff211a\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"cookie\":\"user_sid=s%3AiYc_VqmPdUp0Ih4dY-9Si-N-iRTuJIAM.3ZF3%2BzSdzSVyQoJF5oAY2H2gamZV4w7Ew5XmaNtYYVQ\",\"accept-encoding\":\"gzip, deflate\",\"content-length\":\"65\",\"connection\":\"keep-alive\"}","timestamp":"14:48:42"}
+{"level":"debug","message":"body: {\"payload\":{\"username\":\"suleman2565\",\"passward\":\"2565\"}}","timestamp":"14:48:42"}
+{"level":"debug","message":"request body : {\"payload\":{\"username\":\"suleman2565\",\"passward\":\"2565\"}}","timestamp":"14:48:42"}
+{"level":"debug","message":"read query data : {\"payload\":{\"username\":\"suleman2565\",\"passward\":\"2565\"},\"serveFrom\":\"database\",\"route\":\"login\",\"collection\":\"users\",\"where\":{\"username\":\"suleman2565\"}}","timestamp":"14:48:42"}
+{"level":"debug","message":"read query where : {\"username\":\"suleman2565\"}","timestamp":"14:48:42"}
+{"level":"debug","message":"db result : [{\"_id\":\"5b6060c8b0d6e132a73dbc9a\",\"firstName\":\"Suleman Javed\",\"email\":\"suleman.bsse2565@iiu.edu.pk\",\"username\":\"suleman2565\",\"passward\":\"2565\",\"coinId\":1,\"contactNumber\":3323737593}]","timestamp":"14:48:42"}
+{"level":"info","message":"Listening on port 3000","timestamp":"15:57:05"}
