@@ -48,3 +48,33 @@ exports.login = function(data, next){
     }
 
 }
+
+exports.getAllCoins = function(data, next){
+    try{
+        data.collection = "coins";
+        dbService.read(data, function (err, result) {
+            return next(err, result);
+        });
+
+    }catch (e) {
+        logger.error("Exception:" );
+        logger.error(e.stack);
+        utils.serverException(e, next);
+    }
+
+}
+
+exports.getAllAccounts = function(data, next){
+    try{
+        data.collection = "accounts";
+        dbService.read(data, function (err, result) {
+            return next(err, result);
+        });
+
+    }catch (e) {
+        logger.error("Exception:" );
+        logger.error(e.stack);
+        utils.serverException(e, next);
+    }
+
+}

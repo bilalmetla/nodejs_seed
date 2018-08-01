@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38a472a4-39f0-4337-aaf2-0270bef14e4e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/api_ctrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/api_ctrl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/models_ctrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/models_ctrl.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/session_manager_ctrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/session_manager_ctrl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/nedb.js" beforeDir="false" afterPath="$PROJECT_DIR$/database/nedb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/user_model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/user_model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_traces.log" beforeDir="false" afterPath="$PROJECT_DIR$/node_traces.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/http/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/http/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/validations/validations.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/validations/validations.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/routes/http/routes.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="11" column="60" lean-forward="true" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
+              <caret line="11" column="60" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -37,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="session_manager_ctrl.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="session_manager_ctrl.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controllers/session_manager_ctrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="56" lean-forward="true" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
+            <state relative-caret-position="150">
+              <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -49,8 +55,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+            <state relative-caret-position="210">
+              <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -77,7 +83,7 @@
         <entry file="file://$PROJECT_DIR$/database/nedb.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="54">
-              <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+              <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -91,7 +97,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/configurations/config.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
@@ -147,9 +153,9 @@
         <option value="$PROJECT_DIR$/database/mongodb.js" />
         <option value="$PROJECT_DIR$/bin/data/users.db" />
         <option value="$PROJECT_DIR$/controllers/api_ctrl.js" />
-        <option value="$PROJECT_DIR$/controllers/session_manager_ctrl.js" />
         <option value="$PROJECT_DIR$/database/nedb.js" />
         <option value="$PROJECT_DIR$/configurations/config.js" />
+        <option value="$PROJECT_DIR$/controllers/session_manager_ctrl.js" />
       </list>
     </option>
   </component>
@@ -189,7 +195,7 @@
             <path>
               <item name="nodejs_seed" type="b2602c69:ProjectViewProjectNode" />
               <item name="nodejs_seed" type="462c0819:PsiDirectoryNode" />
-              <item name="configurations" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -249,7 +255,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28989000" />
+    <option name="totallyTimeSpent" value="29087000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1366" height="706" extended-state="6" />
@@ -263,7 +269,7 @@
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.6060606" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.6060606" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5597148" />
       <window_info anchor="bottom" id="Thumbnails" order="8" weight="0.32976827" />
@@ -625,15 +631,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        <state relative-caret-position="210">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/http/routes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="11" column="60" lean-forward="true" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
+          <caret line="11" column="60" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -651,17 +657,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/session_manager_ctrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="56" lean-forward="true" selection-start-line="6" selection-start-column="56" selection-end-line="6" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/nedb.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
-          <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+          <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -669,6 +668,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="20" column="54" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/session_manager_ctrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
         </state>
       </provider>
     </entry>

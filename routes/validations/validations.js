@@ -36,4 +36,14 @@ module.exports = {
         }
         
     },
+    getCoins: {
+        body:{
+
+        }
+    },
+    getAllAccounts:{
+        body:{
+
+        }
+    },
 }

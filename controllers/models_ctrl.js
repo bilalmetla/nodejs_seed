@@ -18,6 +18,12 @@ function sendRequest(route,data, next) {
             case 'login':
                 models.users.login(data, next);
                 break;
+            case 'getAllCoins':
+                models.users.getAllCoins(data, next);
+                break;
+            case 'getAllAccounts':
+                models.users.getAllAccounts(data, next);
+                break;
         }
     } catch (e) {
         logger.error("Exception:" )  ;
