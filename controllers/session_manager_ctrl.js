@@ -5,8 +5,9 @@ exports.createSession = function(req, userInfo, next){
     }
 
     exports.sessionChecker = function (req, res, next) {
-        if (req.session.user && req.cookies.user_sid) {
-            res.send({code:"RC0300", message:"Login Required!"})
+        if (!req.session.user && !req.cookies.user_sid) {
+            res.send({code:"RC0300", message:"Login Required!"});
+            return
         } else {
             next();
         }    

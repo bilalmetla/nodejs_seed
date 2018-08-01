@@ -100,7 +100,7 @@ exports.login = function(req, res, next){
                     var error ={code: "RC001", message: "Passward does not match" }
                     return callback(error);
                 }
-                sessionManager.createSession(req, response);
+                sessionManager.createSession(req, response[0]);
                 var result = {code: "RC0200", message: "Successfull",result:response};
                 return callback(null,result);
             }

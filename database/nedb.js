@@ -5,12 +5,13 @@ var logger = require('../services/logger_service');
 
 //Connecting to database
 exports.doConnect = function (next){
-    db.users = new Datastore('./users.db');
-    db.users.loadDatabase();
+    //db.users = new Datastore('./users.db');
+    //db.users.loadDatabase();
 //db.users = new Datastore({ filename: './users.db', autoload: true });
 
 //db.users = new Datastore({ filename: './users.db', autoload: true });
 
+    return next(null);
 }
 
 
@@ -19,9 +20,10 @@ exports.doConnect = function (next){
 exports.read = function (data, callback) {
     logger.debug("read query data : "+ JSON.stringify(data));
     var collection = data.collection;
+    db = new Datastore({ filename: './data/'+collection+'.db', autoload: true });
     var where = data.where || {}//{username:"bilal"};
     logger.debug("read query where : "+ JSON.stringify(where));
-    db[collection].find(where, function(err, results){
+    db.find(where, function(err, results){
         if(err){
             logger.debug("db error : ");
             logger.debug(err);
@@ -36,7 +38,7 @@ exports.read = function (data, callback) {
 exports.signup = function (data, callback) {
     logger.debug("read query data : "+ JSON.stringify(data));
     var collection = data.collection;
-    var where = data.where || {username: "hamza"}//{username:"bilal"};
+    var where = data.where || //{username: "hamza"}//{username:"bilal"};
     logger.debug("read query where : "+ JSON.stringify(where));
     db[collection].find(where, function(err, results){
         if(err){
@@ -53,7 +55,8 @@ exports.signup = function (data, callback) {
 exports.create = function (data, callback) {
     logger.debug("create query data : "+ JSON.stringify(data.payload));
     var collection = data.collection;
-    db[collection].create(data.payload, function(err, results){
+    db = new Datastore({ filename: './data/'+collection+'.db', autoload: true });
+    db.create(data.payload, function(err, results){
         if(err){
             logger.debug("db error : ");
             logger.debug(err);
