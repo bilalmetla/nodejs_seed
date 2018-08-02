@@ -18,5 +18,5 @@ module.exports = {
             password :"",
         }
     },
-    supportedDB : constants.supportedDatabases.nedb
+    supportedDB : constants.supportedDatabases.mongodb
 }

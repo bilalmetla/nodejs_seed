@@ -57,7 +57,23 @@ exports.update = function (data, callback) {
     var collection = data.collection;
     var where = data.where || {};
     logger.debug("update query where : "+ JSON.stringify(where));
-    db[collection].update(data.payload, where, function(err, results){
+    dbConnection.collection(collection).updateOne({_id: data.payload.accountId},{ $set: {accountTitle: data.payload.accountTitle} }, function(err, results){
+        if(err){
+            logger.debug("db error : ");
+            logger.debug(err);
+            return callback(err, results);
+        }
+        logger.debug("db result : "+ JSON.stringify(results));
+        return callback(err, results);
+    });
+}
+
+exports.delete = function (data, callback) {
+    logger.debug("delete query data : "+ JSON.stringify(data.payload));
+    var collection = data.collection;
+    var where = data.where || {};
+    logger.debug("delete query where : "+ JSON.stringify(where));
+    dbConnection.collection(collection).deleteOne(data.payload, function(err, results){
         if(err){
             logger.debug("db error : ");
             logger.debug(err);

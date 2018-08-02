@@ -123,6 +123,105 @@ exports.login = function(req, res, next){
 
 }
 
+exports.createAccount = function(req, res, next){
+    try{
+        logger.debug("request body : " + JSON.stringify(req.body));
+        var data  = {};
+        data.payload = req.body.payload;
+        data.serveFrom = constants.servingFromDB;
+        data.route = "createAccount";
+        async.waterfall([
+
+            function(callback){
+                requestBroker.send(data, function (error, response) {
+                    return callback(error, response);
+                });
+            }
+
+        ], function(err, results){
+            if(err){
+                return next(err);
+            }
+            else{
+                return next(results);
+            }
+        });
+
+
+    }catch(e){
+        logger.error("Exception:" );
+        logger.error(e.stack);
+        utils.serverException(e, next);
+    }
+
+}
+
+exports.updateAccount = function(req, res, next){
+    try{
+        logger.debug("request body : " + JSON.stringify(req.body));
+        var data  = {};
+        data.payload = req.body.payload;
+        data.serveFrom = constants.servingFromDB;
+        data.route = "updateAccount";
+        async.waterfall([
+
+            function(callback){
+                requestBroker.send(data, function (error, response) {
+                    return callback(error, response);
+                });
+            }
+
+        ], function(err, results){
+            if(err){
+                return next(err);
+            }
+            else{
+                return next(results);
+            }
+        });
+
+
+    }catch(e){
+        logger.error("Exception:" );
+        logger.error(e.stack);
+        utils.serverException(e, next);
+    }
+
+}
+
+exports.deleteAccount = function(req, res, next){
+    try{
+        logger.debug("request body : " + JSON.stringify(req.body));
+        var data  = {};
+        data.payload = req.body.payload;
+        data.serveFrom = constants.servingFromDB;
+        data.route = "deleteAccount";
+        async.waterfall([
+
+            function(callback){
+                requestBroker.send(data, function (error, response) {
+                    return callback(error, response);
+                });
+            }
+
+        ], function(err, results){
+            if(err){
+                return next(err);
+            }
+            else{
+                return next(results);
+            }
+        });
+
+
+    }catch(e){
+        logger.error("Exception:" );
+        logger.error(e.stack);
+        utils.serverException(e, next);
+    }
+
+}
+
 /* for getting all coins*/
 exports.getAllCoins = function(req, res, next){
     try{
@@ -158,13 +257,13 @@ exports.getAllCoins = function(req, res, next){
 }
 
 /* for getting all accounts of specific user*/
-exports.getAllAccounts = function(req, res, next){
+exports.getAccounts = function(req, res, next){
     try{
         logger.debug("request body : " + JSON.stringify(req.body));
         var data  = {};
         data.payload = req.body.payload;
         data.serveFrom = constants.servingFromDB;
-        data.route = "getAllAccounts";
+        data.route = "getAccounts";
         async.waterfall([
 
             function(callback){

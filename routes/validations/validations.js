@@ -15,7 +15,7 @@ module.exports = {
                 email: joi.string().email().required(),
                 username: joi.string().required(),
                 passward: joi.string().required(),
-                coinId: joi.number().required(),
+                coinId: joi.string().required(),
                 contactNumber: joi.number().required()
                 
                // sessionId: joi.string().required(),
@@ -36,14 +36,41 @@ module.exports = {
         }
         
     },
+    createAccount:{
+        body:{
+            payload: joi.object({
+                accountTitle: joi.string().required(),
+                coinId: joi.string().required(),
+                Balance: joi.number().required(),
+                userId: joi.string().required()
+
+            }).required(),
+        }
+    },
+    getAccounts:{
+        body:{
+
+        }
+    },
+    updateAccount:{
+        body:{
+            payload: joi.object({
+                accountTitle: joi.string().required(),
+                accountId: joi.string().required()
+            }).required(),
+        }
+    },
+    deleteAccount:{
+        body:{
+            payload: joi.object({
+                accountTitle: joi.string().required()
+            }).required(),
+        }
+    },
     getCoins: {
         body:{
 
         }
     },
-    getAllAccounts:{
-        body:{
-
-        }
-    },
+    
 }
