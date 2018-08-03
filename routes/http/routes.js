@@ -15,13 +15,13 @@ router.post('/signup', utils.logHttpReq, expressValidate(validations.signup), ap
 //POST request for login 
 router.post('/login', utils.logHttpReq, expressValidate(validations.login), apis.login, utils.httpResponse);
 //POST request for Signup
-router.post('/accounts', utils.logHttpReq, expressValidate(validations.createAccount), apis.createAccount, utils.httpResponse);
+router.post('/accounts', utils.logHttpReq, sessionManager.sessionChecker,expressValidate(validations.createAccount), apis.createAccount, utils.httpResponse);
 /*GET accounts of specific users.  */
-router.get('/accounts', utils.logHttpReq, expressValidate(validations.getAccounts), apis.getAccounts, utils.httpResponse);
+router.get('/accounts', utils.logHttpReq, sessionManager.sessionChecker ,expressValidate(validations.getAccounts), apis.getAccounts, utils.httpResponse);
 /*GET accounts of specific users.  */
-router.put('/accounts', utils.logHttpReq, expressValidate(validations.updateAccount), apis.updateAccount, utils.httpResponse);
+router.put('/accounts', utils.logHttpReq,sessionManager.sessionChecker ,expressValidate(validations.updateAccount), apis.updateAccount, utils.httpResponse);
 /*GET accounts of specific users.  */
-router.delete('/accounts', utils.logHttpReq, expressValidate(validations.deleteAccount), apis.deleteAccount, utils.httpResponse);
+router.delete('/accounts', utils.logHttpReq, sessionManager.sessionChecker ,expressValidate(validations.deleteAccount), apis.deleteAccount, utils.httpResponse);
 /*GET coins listing.  */
 router.get('/coins', utils.logHttpReq, expressValidate(validations.getCoins), apis.getAllCoins, utils.httpResponse );
 
