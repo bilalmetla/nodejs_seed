@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38a472a4-39f0-4337-aaf2-0270bef14e4e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/bin/data/accounts.db" beforeDir="false" afterPath="$PROJECT_DIR$/bin/data/accounts.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/data/coins.db" beforeDir="false" afterPath="$PROJECT_DIR$/bin/data/coins.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/http/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/http/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/utility.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/utility.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,7 +16,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="routes.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="routes.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/http/routes.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
@@ -41,6 +39,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret column="123" selection-start-column="123" selection-end-column="123" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utility.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/utils/utility.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="61" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -125,7 +132,6 @@
         <option value="$PROJECT_DIR$/controllers/request_broker_ctrl.js" />
         <option value="$PROJECT_DIR$/controllers/models_ctrl.js" />
         <option value="$PROJECT_DIR$/routes/validations/index.js" />
-        <option value="$PROJECT_DIR$/utils/utility.js" />
         <option value="$PROJECT_DIR$/routes/validations/validations.js" />
         <option value="$PROJECT_DIR$/models/user_model.js" />
         <option value="$PROJECT_DIR$/constants/constants.js" />
@@ -148,6 +154,7 @@
         <option value="$PROJECT_DIR$/bin/data/accounts.db" />
         <option value="$PROJECT_DIR$/bin/data/coins.db" />
         <option value="$PROJECT_DIR$/routes/http/routes.js" />
+        <option value="$PROJECT_DIR$/utils/utility.js" />
       </list>
     </option>
   </component>
@@ -188,18 +195,12 @@
             <path>
               <item name="nodejs_seed" type="b2602c69:ProjectViewProjectNode" />
               <item name="nodejs_seed" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs_seed" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs_seed" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nodejs_seed" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nodejs_seed" type="462c0819:PsiDirectoryNode" />
               <item name="configurations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nodejs_seed" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodejs_seed" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -256,12 +257,12 @@
       <workItem from="1532421486020" duration="1204000" />
       <workItem from="1532505214271" duration="2836000" />
       <workItem from="1533191632589" duration="2033000" />
-      <workItem from="1533321506687" duration="8879000" />
+      <workItem from="1533321506687" duration="9439000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46722000" />
+    <option name="totallyTimeSpent" value="47282000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1366" height="706" extended-state="6" />
@@ -276,7 +277,7 @@
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.65418893" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.65418893" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.5597148" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Thumbnails" order="10" weight="0.32976827" />
@@ -475,13 +476,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/utility.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="59" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/constants/index.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -622,13 +616,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/data/accounts.db">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="123" selection-start-column="123" selection-end-column="123" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bin/data/coins.db">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -640,6 +627,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="19" column="73" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/data/accounts.db">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="123" selection-start-column="123" selection-end-column="123" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/utility.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="61" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="61" />
         </state>
       </provider>
     </entry>

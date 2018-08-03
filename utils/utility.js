@@ -4,6 +4,7 @@ var logger = require('../services/logger_service');
 
 
 exports.httpResponse =  function(response, req, res, next){
+    logger.debug("final response: " + JSON.stringify(response));
     return res.send(response);
 }
 
