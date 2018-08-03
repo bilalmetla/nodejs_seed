@@ -9,21 +9,21 @@ var validations = require('../validations');
 
 router.get('/', apis.index, utils.httpResponse);
 /* GET users listing. */
-router.get('/users', utils.logHttpReq, sessionManager.sessionChecker , expressValidate(validations.getUsers), apis.getAllUsers, utils.httpResponse);
+router.get('/users', utils.logHttpReq, sessionManager.sessionChecker , expressValidate(validations.getUsers), utils.validationResponse, apis.getAllUsers, utils.httpResponse);
 //POST request for Signup
-router.post('/signup', utils.logHttpReq, expressValidate(validations.signup), apis.signup, utils.httpResponse);
+router.post('/signup', utils.logHttpReq, expressValidate(validations.signup), utils.validationResponse, apis.signup, utils.httpResponse);
 //POST request for login 
-router.post('/login', utils.logHttpReq, expressValidate(validations.login), apis.login, utils.httpResponse);
+router.post('/login', utils.logHttpReq, expressValidate(validations.login), utils.validationResponse, apis.login, utils.httpResponse);
 //POST request for Signup
-router.post('/accounts', utils.logHttpReq, sessionManager.sessionChecker,expressValidate(validations.createAccount), apis.createAccount, utils.httpResponse);
+router.post('/accounts', utils.logHttpReq, sessionManager.sessionChecker,expressValidate(validations.createAccount), utils.validationResponse, apis.createAccount, utils.httpResponse);
 /*GET accounts of specific users.  */
-router.get('/accounts', utils.logHttpReq, sessionManager.sessionChecker ,expressValidate(validations.getAccounts), apis.getAccounts, utils.httpResponse);
+router.get('/accounts', utils.logHttpReq, sessionManager.sessionChecker ,expressValidate(validations.getAccounts), utils.validationResponse, apis.getAccounts, utils.httpResponse);
 /*GET accounts of specific users.  */
-router.put('/accounts', utils.logHttpReq,sessionManager.sessionChecker ,expressValidate(validations.updateAccount), apis.updateAccount, utils.httpResponse);
+router.put('/accounts', utils.logHttpReq,sessionManager.sessionChecker ,expressValidate(validations.updateAccount), utils.validationResponse, apis.updateAccount, utils.httpResponse);
 /*GET accounts of specific users.  */
-router.delete('/accounts', utils.logHttpReq, sessionManager.sessionChecker ,expressValidate(validations.deleteAccount), apis.deleteAccount, utils.httpResponse);
+router.delete('/accounts', utils.logHttpReq, sessionManager.sessionChecker ,expressValidate(validations.deleteAccount), utils.validationResponse, apis.deleteAccount, utils.httpResponse);
 /*GET coins listing.  */
-router.get('/coins', utils.logHttpReq, expressValidate(validations.getCoins), apis.getAllCoins, utils.httpResponse );
+router.get('/coins', utils.logHttpReq, expressValidate(validations.getCoins), utils.validationResponse, apis.getAllCoins, utils.httpResponse );
 
 module.exports = router;
 

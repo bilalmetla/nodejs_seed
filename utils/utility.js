@@ -8,6 +8,20 @@ exports.httpResponse =  function(response, req, res, next){
     return res.send(response);
 }
 
+exports.validationResponse =  function(validation_resp, req, res, next){
+    logger.debug("validation response: " + JSON.stringify(validation_resp));
+
+    if(validation_resp && validation_resp.status == 400){
+        var x_response = {code:"RC0600", message:validation_resp.statusText + ", "+ validation_resp.errors[0].messages[0], errorDescription:JSON.stringify(validation_resp.errors) };
+        logger.debug("Response sent: "+ JSON.stringify(x_response));
+        res.status(200).json(x_response);
+        return
+    }
+    else{
+        return next();
+    }
+}
+
 exports.parseReqBody =  function(req, res, next){
     var body = req.body;
     return next(null, body);
