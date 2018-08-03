@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38a472a4-39f0-4337-aaf2-0270bef14e4e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/bin/data/accounts.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/data/coins.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/data/accounts.db" beforeDir="false" afterPath="$PROJECT_DIR$/bin/data/accounts.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/data/coins.db" beforeDir="false" afterPath="$PROJECT_DIR$/bin/data/coins.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/http/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/http/routes.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="routes.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="routes.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/http/routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="19" column="75" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="77" />
+            <state relative-caret-position="105">
+              <caret line="19" column="73" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="73" />
             </state>
           </provider>
         </entry>
@@ -40,17 +39,17 @@
       <file leaf-file-name="accounts.db" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bin/data/accounts.db">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state>
+              <caret column="123" selection-start-column="123" selection-end-column="123" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="coins.db" pinned="false" current-in-tab="true">
+      <file leaf-file-name="coins.db" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bin/data/coins.db">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="93" lean-forward="true" selection-start-column="93" selection-end-column="93" />
+              <caret column="84" selection-start-column="84" selection-end-column="84" />
             </state>
           </provider>
         </entry>
@@ -146,9 +145,9 @@
         <option value="$PROJECT_DIR$/models/accounts_model.js" />
         <option value="$PROJECT_DIR$/controllers/session_store.js" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/routes/http/routes.js" />
         <option value="$PROJECT_DIR$/bin/data/accounts.db" />
         <option value="$PROJECT_DIR$/bin/data/coins.db" />
+        <option value="$PROJECT_DIR$/routes/http/routes.js" />
       </list>
     </option>
   </component>
@@ -257,12 +256,12 @@
       <workItem from="1532421486020" duration="1204000" />
       <workItem from="1532505214271" duration="2836000" />
       <workItem from="1533191632589" duration="2033000" />
-      <workItem from="1533321506687" duration="8568000" />
+      <workItem from="1533321506687" duration="8879000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46411000" />
+    <option name="totallyTimeSpent" value="46722000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1366" height="706" extended-state="6" />
@@ -277,8 +276,8 @@
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.65418893" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.5597148" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.65418893" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5597148" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Thumbnails" order="10" weight="0.32976827" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -623,24 +622,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/http/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="19" column="75" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bin/data/accounts.db">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state>
+          <caret column="123" selection-start-column="123" selection-end-column="123" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bin/data/coins.db">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="93" lean-forward="true" selection-start-column="93" selection-end-column="93" />
+          <caret column="84" selection-start-column="84" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/http/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="19" column="73" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="73" />
         </state>
       </provider>
     </entry>
