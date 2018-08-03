@@ -1,0 +1,25 @@
+
+
+module.exports = function(session) {
+    var configs = require('../configurations')
+    var constants = require('../constants')
+    if(configs.supportedDB == constants.supportedDatabases.nedb){
+
+        var NedbStore = require('nedb-session-store')(session);
+
+        var store = new NedbStore({
+            filename: './data/sessions.db'
+        });
+    }
+    else if(configs.supportedDB == constants.supportedDatabases.mongodb){
+
+        var MongoStore = require('connect-mongo')(session);
+
+      var store = new MongoStore({ url: configs.database.mongodb.prefix + configs.database.mongodb.ip + ":"+configs.database.mongodb.port+ "/"+configs.database.mongodb.database })
+    }
+
+
+
+    module.exports.store = store; // export the store
+}
+

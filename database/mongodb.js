@@ -53,11 +53,11 @@ exports.create = function (data, callback) {
 }
 
 exports.update = function (data, callback) {
-    logger.debug("update query data : "+ JSON.stringify(data.payload));
+    logger.debug("update query data : "+ JSON.stringify(data.updatePayload));
     var collection = data.collection;
-    var where = data.where || {};
+    var where = data.where;
     logger.debug("update query where : "+ JSON.stringify(where));
-    dbConnection.collection(collection).updateOne({_id: data.payload.accountId},{ $set: {accountTitle: data.payload.accountTitle} }, function(err, results){
+    dbConnection.collection(collection).update(where, data.updatePayload, function(err, results){
         if(err){
             logger.debug("db error : ");
             logger.debug(err);

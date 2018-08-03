@@ -4,7 +4,12 @@ var bodyParser = require('body-parser');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var configs = require("./configurations");
 var session = require('express-session');
+var sessionStore = require('./controllers/session_store')(session);
+
+
+
 var indexRouter = require('./routes/http/index');
 
 var app = express();
@@ -17,7 +22,8 @@ app.use(session({
   saveUninitialized: false,
   cookie: {
       expires: 600000
-  }
+  },
+  //  store: sessionStore.store
 }));
 app.use(express.static(path.join(__dirname, 'public'))); 
 
