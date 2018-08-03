@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38a472a4-39f0-4337-aaf2-0270bef14e4e" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/bin/data/accounts.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/data/coins.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/session_store.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/session_store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/accounts_model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/accounts_model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/http/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/http/routes.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,17 +22,8 @@
       <file leaf-file-name="routes.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/http/routes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="17" column="108" lean-forward="true" selection-start-line="17" selection-start-column="108" selection-end-line="17" selection-end-column="108" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mongodb.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/mongodb.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="59" column="63" selection-start-line="59" selection-start-column="63" selection-end-line="59" selection-end-column="63" />
+            <state relative-caret-position="158">
+              <caret line="19" column="75" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="77" />
             </state>
           </provider>
         </entry>
@@ -40,8 +31,26 @@
       <file leaf-file-name="accounts_model.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/accounts_model.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+            <state relative-caret-position="315">
+              <caret line="21" column="35" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="accounts.db" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bin/data/accounts.db">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="coins.db" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bin/data/coins.db">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="93" lean-forward="true" selection-start-column="93" selection-end-column="93" />
             </state>
           </provider>
         </entry>
@@ -55,20 +64,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="validations.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/validations/validations.js">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="58" column="25" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="25" />
+            <state relative-caret-position="52">
+              <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app.js">
+      <file leaf-file-name="users.db" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bin/data/users.db">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+            <state>
+              <caret column="29" selection-start-column="29" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -76,8 +85,17 @@
       <file leaf-file-name="session_store.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/session_store.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+            <state relative-caret-position="75">
+              <caret line="5" column="43" lean-forward="true" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/configurations/config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -110,7 +128,6 @@
         <option value="$PROJECT_DIR$/routes/validations/index.js" />
         <option value="$PROJECT_DIR$/utils/utility.js" />
         <option value="$PROJECT_DIR$/routes/validations/validations.js" />
-        <option value="$PROJECT_DIR$/routes/http/routes.js" />
         <option value="$PROJECT_DIR$/models/user_model.js" />
         <option value="$PROJECT_DIR$/constants/constants.js" />
         <option value="$PROJECT_DIR$/database/index.js" />
@@ -129,6 +146,9 @@
         <option value="$PROJECT_DIR$/models/accounts_model.js" />
         <option value="$PROJECT_DIR$/controllers/session_store.js" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/routes/http/routes.js" />
+        <option value="$PROJECT_DIR$/bin/data/accounts.db" />
+        <option value="$PROJECT_DIR$/bin/data/coins.db" />
       </list>
     </option>
   </component>
@@ -165,6 +185,22 @@
             <path>
               <item name="nodejs_seed" type="b2602c69:ProjectViewProjectNode" />
               <item name="nodejs_seed" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nodejs_seed" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodejs_seed" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nodejs_seed" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodejs_seed" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nodejs_seed" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nodejs_seed" type="462c0819:PsiDirectoryNode" />
+              <item name="configurations" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -221,18 +257,18 @@
       <workItem from="1532421486020" duration="1204000" />
       <workItem from="1532505214271" duration="2836000" />
       <workItem from="1533191632589" duration="2033000" />
-      <workItem from="1533321506687" duration="7969000" />
+      <workItem from="1533321506687" duration="8568000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45812000" />
+    <option name="totallyTimeSpent" value="46411000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1366" height="706" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24962743" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962743" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
@@ -242,7 +278,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.65418893" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.5597148" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.5597148" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Thumbnails" order="10" weight="0.32976827" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -261,45 +297,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/app.js</url>
-          <line>18</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/app.js</url>
-          <line>16</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="22" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/models/user_model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/http/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/validations/validations.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utils/utility.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -521,13 +522,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/data/users.db">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="29" selection-start-column="29" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/nedb.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
@@ -577,31 +571,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/http/routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="17" column="108" lean-forward="true" selection-start-line="17" selection-start-column="108" selection-end-line="17" selection-end-column="108" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/validations/validations.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="397">
           <caret line="58" column="25" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/configurations/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/accounts_model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -612,17 +585,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/session_store.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/bin/data/sessions.db">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+        <state relative-caret-position="52">
+          <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/session_store.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="43" lean-forward="true" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/accounts_model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="35" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/data/users.db">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="29" selection-start-column="29" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configurations/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/http/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="19" column="75" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/data/accounts.db">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/data/coins.db">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="93" lean-forward="true" selection-start-column="93" selection-end-column="93" />
         </state>
       </provider>
     </entry>
