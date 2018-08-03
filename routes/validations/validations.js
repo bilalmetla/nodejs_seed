@@ -41,7 +41,7 @@ module.exports = {
             payload: joi.object({
                 accountTitle: joi.string().required(),
                 coinId: joi.string().required(),
-                Balance: joi.number().required(),
+                balance: joi.number().required(),
                 userId: joi.string().required()
 
             }).required(),

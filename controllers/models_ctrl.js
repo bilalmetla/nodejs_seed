@@ -19,19 +19,19 @@ function sendRequest(route,data, next) {
                 models.users.login(data, next);
                 break;
             case 'createAccount':
-                models.users.createAccount(data, next);
+                models.accounts.createAccount(data, next);
                 break;
             case 'updateAccount':
-                models.users.updateAccount(data, next);
+                models.accounts.updateAccount(data, next);
                 break;
             case 'deleteAccount':
-                models.users.deleteAccount(data, next);
+                models.accounts.deleteAccount(data, next);
                 break;
             case 'getAllCoins':
-                models.users.getAllCoins(data, next);
+                models.coins.getAllCoins(data, next);
                 break;
             case 'getAccounts':
-                models.users.getAccounts(data, next);
+                models.accounts.getAccounts(data, next);
                 break;
         }
     } catch (e) {
