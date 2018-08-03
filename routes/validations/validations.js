@@ -72,5 +72,10 @@ module.exports = {
 
         }
     },
+    createCoins: {
+        body:{
+
+        }
+    },
     
 }

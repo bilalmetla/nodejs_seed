@@ -33,6 +33,9 @@ function sendRequest(route,data, next) {
             case 'getAccounts':
                 models.accounts.getAccounts(data, next);
                 break;
+            case 'createCoins':
+                models.coins.createCoins(data, next);
+                break;
         }
     } catch (e) {
         logger.error("Exception:" )  ;
