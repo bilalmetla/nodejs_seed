@@ -56,7 +56,7 @@ exports.create = function (data, callback) {
     logger.debug("create query data : "+ JSON.stringify(data.payload));
     var collection = data.collection;
     db = new Datastore({ filename: './data/'+collection+'.db', autoload: true });
-    db.create(data.payload, function(err, results){
+    db.insert(data.payload, function(err, results){
         if(err){
             logger.debug("db error : ");
             logger.debug(err);
