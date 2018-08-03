@@ -74,7 +74,11 @@ module.exports = {
     },
     createCoins: {
         body:{
-
+            payload: joi.object({
+                symbol: joi.string().required(),
+                rate: joi.number().required(),
+                coinName: joi.string().required()
+            }).required(),
         }
     },
     

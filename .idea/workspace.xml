@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38a472a4-39f0-4337-aaf2-0270bef14e4e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/controllers/api_ctrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/api_ctrl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/models_ctrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/models_ctrl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/nedb.js" beforeDir="false" afterPath="$PROJECT_DIR$/database/nedb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/coins_model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/coins_model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/http/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/http/routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/validations/validations.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/validations/validations.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -63,20 +58,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="coins_model.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="coins_model.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/coins_model.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
+            <state relative-caret-position="397">
               <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="validations.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="validations.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/validations/validations.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="74" column="10" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="15" />
+            <state relative-caret-position="322">
+              <caret line="78" column="28" selection-start-line="78" selection-start-column="28" selection-end-line="78" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -162,11 +157,11 @@
         <option value="$PROJECT_DIR$/bin/data/coins.db" />
         <option value="$PROJECT_DIR$/utils/utility.js" />
         <option value="$PROJECT_DIR$/database/nedb.js" />
-        <option value="$PROJECT_DIR$/routes/validations/validations.js" />
         <option value="$PROJECT_DIR$/routes/http/routes.js" />
         <option value="$PROJECT_DIR$/controllers/api_ctrl.js" />
         <option value="$PROJECT_DIR$/controllers/models_ctrl.js" />
         <option value="$PROJECT_DIR$/models/coins_model.js" />
+        <option value="$PROJECT_DIR$/routes/validations/validations.js" />
       </list>
     </option>
   </component>
@@ -279,18 +274,18 @@
       <workItem from="1532421486020" duration="1204000" />
       <workItem from="1532505214271" duration="2836000" />
       <workItem from="1533191632589" duration="2033000" />
-      <workItem from="1533321506687" duration="11925000" />
+      <workItem from="1533321506687" duration="12005000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49768000" />
+    <option name="totallyTimeSpent" value="49848000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1366" height="706" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962743" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24962743" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
@@ -632,13 +627,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/validations/validations.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="74" column="10" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/http/routes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="367">
@@ -675,8 +663,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/models/coins_model.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
+        <state relative-caret-position="397">
           <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/validations/validations.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="78" column="28" selection-start-line="78" selection-start-column="28" selection-end-line="78" selection-end-column="28" />
         </state>
       </provider>
     </entry>
