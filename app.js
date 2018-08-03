@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var configs = require("./configurations");
 var session = require('express-session');
-var sessionStore = require('./controllers/session_store')(session);
+var sessionStore = require('./controllers/session_store');
 
 
 
@@ -14,6 +14,7 @@ var indexRouter = require('./routes/http/index');
 
 var app = express();
 
+ //var store = sessionStore.getStore(session);
 // initialize express-session to allow us track the logged-in user across sessions.
 app.use(session({
   key: 'user_sid',
@@ -23,7 +24,7 @@ app.use(session({
   cookie: {
       expires: 600000
   },
-  //  store: sessionStore.store
+    store: sessionStore.getStore(session)
 }));
 app.use(express.static(path.join(__dirname, 'public'))); 
 

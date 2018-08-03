@@ -20,7 +20,8 @@ exports.createAccount = function(data, next){
 exports.updateAccount = function(data, next){
     try{
         data.collection = "accounts";
-        data.updatePayload = { $set: {accountTitle: data.payload.accountTitle} };
+      //  data.updatePayload = { $set: {accountTitle: data.payload.accountTitle} };
+        data.updatePayload = {$set: {accountTitle:data.payload.accountTitle}};
         data.where = {_id : data.payload.accountId};
         dbService.update(data, function (err, result) {
             return next(err, result);
