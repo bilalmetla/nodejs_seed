@@ -24,6 +24,7 @@ exports.signup = function(data, next){
         dbService.create(data, function (err, result) {
             return next(err, result);
         });
+        
 
     }catch (e) {
         logger.error("Exception:" );

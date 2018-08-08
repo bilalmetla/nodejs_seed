@@ -18,5 +18,14 @@ module.exports = {
             password :"",
         }
     },
-    supportedDB : constants.supportedDatabases.nedb
+    otpOwner:{
+        otp :{
+            services: "gmail",
+            email : "sender email",
+            password : "passward",
+            subject : "no-reply-emailVerification",
+            html : "Type this code to signup ",
+        }
+    },
+    supportedDB : constants.supportedDatabases.mongodb
 }

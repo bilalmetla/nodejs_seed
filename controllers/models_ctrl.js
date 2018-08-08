@@ -15,6 +15,9 @@ function sendRequest(route,data, next) {
             case 'signup':
                 models.users.signup(data, next);
                 break;
+            case 'otpConf':
+                models.otp.otpConf(data, next);
+                break;
             case 'login':
                 models.users.login(data, next);
                 break;
@@ -35,6 +38,9 @@ function sendRequest(route,data, next) {
                 break;
             case 'createCoins':
                 models.coins.createCoins(data, next);
+                break;
+            case 'sendOtp':
+                models.otp.sendOtp(data, next);
                 break;
         }
     } catch (e) {

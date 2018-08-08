@@ -16,8 +16,8 @@ module.exports = {
                 username: joi.string().required(),
                 passward: joi.string().required(),
                 coinId: joi.string().required(),
-                contactNumber: joi.number().required()
-                
+                contactNumber: joi.number().required(),
+                otpCode: joi.number().required()
                // sessionId: joi.string().required(),
             }).required(),
             //requestId: joi.string().required()
@@ -81,5 +81,14 @@ module.exports = {
             }).required(),
         }
     },
+    sendotp:{
+        body:{
+            payload: joi.object({
+                email: joi.string().email().required(),
+                contactNumber: joi.number().required()
+            }).required(),
+        }
+    },
+    
     
 }
