@@ -85,7 +85,7 @@ module.exports = {
         body:{
             payload: joi.object({
                 email: joi.string().email().required(),
-                contactNumber: joi.number().required()
+                    contactNumber: joi.number().required()
             }).required(),
         }
     },

@@ -25,7 +25,6 @@ exports.signup = function(data, next){
             return next(err, result);
         });
         
-
     }catch (e) {
         logger.error("Exception:" );
         logger.error(e.stack);

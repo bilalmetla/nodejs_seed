@@ -6,8 +6,9 @@ var constants = require('../constants/');
 var utils = require('../utils');
 var async = require('async');
 var sessionManager = require('./session_manager_ctrl');
-var nodemailer = require('nodemailer');
-var configs = require("../configurations");
+var emailSender = require('../services/email_service');
+var configs = require('../configurations');
+var flag = true;
 
 exports.index = function (req, res, next){
     return next("Hello word")
@@ -52,14 +53,31 @@ exports.signup = function(req, res, next){
         var data  = {};
         data.payload = req.body.payload;
         data.serveFrom = constants.servingFromDB;
-        data.route = "users";
         async.waterfall([      
             function(callback){
+                data.route = "otpConf";
                 requestBroker.send(data, function (error, response) {
+                    if(error){
+                        return callback(error, response);
+                    }else{
+                        return callback(error, response);
+                    }
+                    
+                });
+            },
+            function(response, callback){
+                if(response.contactNumber==data.contactNumber && response.otp == data.otp){
+                    data.route = "signup";
+                    requestBroker.send(data, function (error, response) {
                     return callback(error, response);
                 });
-            }
-
+                }else{
+                    var error ={code: "RC005", message: "Not AUthorize to signup" }
+                    return callback(error); 
+                }
+                
+            },
+            
         ], function(err, results){
             if(err){
                 return next(err);
@@ -335,30 +353,7 @@ exports.sendOtp = function(req, res, next){
         otpObj.contactNumber = req.body.payload.contactNumber;
         data.payload = otpObj;
         //Sending mail
-        var transporter = nodemailer.createTransport({
-            service: configs.otpOwner.otp.services,
-            auth: {
-                   user: configs.otpOwner.otp.email,			//email ID
-                   pass: configs.otpOwner.otp.password			//Password 
-               }
-           });
-           function sendMail(otp){
-               var details = {
-                   from: configs.otpOwner.otp.email, // sender address same as above
-                   to: 'reciever mail', 					// Receiver's email id
-                   subject: configs.otpOwner.otp.subject, // Subject of the mail.
-                   html: configs.otpOwner.otp.html + otp					// Sending OTP 
-               };
-           
-           
-               transporter.sendMail(details, function (error, data) {
-                   if(error)
-                       console.log(error)
-                   else
-                       console.log(data);
-                   });
-               }
-               sendMail(otp.toString() );
+        emailSender.sendMail(otp);
         //end       
         data.serveFrom = constants.servingFromDB;
         data.route = "sendOtp";

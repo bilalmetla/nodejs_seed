@@ -24,7 +24,7 @@ router.put('/accounts', utils.logHttpReq,sessionManager.sessionChecker ,expressV
 router.delete('/accounts', utils.logHttpReq, sessionManager.sessionChecker ,expressValidate(validations.deleteAccount), utils.validationResponse, apis.deleteAccount, utils.httpResponse);
 /*GET coins listing.  */
 router.get('/coins', utils.logHttpReq, expressValidate(validations.getCoins), utils.validationResponse, apis.getAllCoins, utils.httpResponse );
-/*POST new account.  */
+/*POST new coin.  */
 router.post('/coins', utils.logHttpReq, expressValidate(validations.createCoins), utils.validationResponse, apis.createCoins, utils.httpResponse );
 /*POST sendiOtp request.  */
 router.post('/otp', utils.logHttpReq, expressValidate(validations.sendotp), utils.validationResponse, apis.sendOtp, utils.httpResponse );

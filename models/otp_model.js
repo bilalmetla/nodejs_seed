@@ -20,7 +20,7 @@ exports.sendOtp = function(data, next){
 exports.otpConf = function(data, next){
     try{
         data.collection = "otp";
-        data.where = {otp: data.payload.otpCode};
+        data.where = {contactNumber: data.payload.contactNumber};
         dbService.read(data, function (err, result) {
             return next(err, result);
         });

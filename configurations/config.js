@@ -18,11 +18,11 @@ module.exports = {
             password :"",
         }
     },
-    otpOwner:{
-        otp :{
-            services: "gmail",
-            email : "sender email",
-            password : "passward",
+    email:{
+        from:"suleman.bsse2565@iiu.edu.pk",
+        services: "gmail",
+        password : "emotional",
+        otp :{           
             subject : "no-reply-emailVerification",
             html : "Type this code to signup ",
         }
