@@ -67,9 +67,10 @@ exports.update = function (data, callback) {
 }
 
 exports.delete = function (data, callback) {
-    logger.debug("delete query data : "+ JSON.stringify(data.payload));
+    logger.debug("delete query data : "+ JSON.stringify(data));
     var collection = data.collection;
-    var where = data.where || {};
+    db = new Datastore({ filename: './data/'+collection+'.db', autoload: true });
+    var where = data.where || {}//{username:"bilal"};
     logger.debug("delete query where : "+ JSON.stringify(where));
     db.remove(where, function(err, results){
         if(err){
