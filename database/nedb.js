@@ -71,7 +71,7 @@ exports.delete = function (data, callback) {
     var collection = data.collection;
     var where = data.where || {};
     logger.debug("delete query where : "+ JSON.stringify(where));
-    dbConnection.collection(collection).deleteOne(data.payload, function(err, results){
+    db[collection].delete(data.payload, where, function(err, results){
         if(err){
             logger.debug("db error : ");
             logger.debug(err);
