@@ -53,9 +53,10 @@ exports.create = function (data, callback) {
 exports.update = function (data, callback) {
     logger.debug("update query data : "+ JSON.stringify(data.payload));
     var collection = data.collection;
+    db = new Datastore({ filename: './data/'+collection+'.db', autoload: true });
     var where = data.where || {};
     logger.debug("update query where : "+ JSON.stringify(where));
-    db[collection].update(data.payload, where, function(err, results){
+    db.update(where,data.updatePayload,{}, function(err, results){
         if(err){
             logger.debug("db error : ");
             logger.debug(err);
