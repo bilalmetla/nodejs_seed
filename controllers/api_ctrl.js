@@ -62,7 +62,6 @@ exports.signup = function(req, res, next){
                     }else{
                         return callback(error, response);
                     }
-                    
                 });
             },
             function(response, callback){
@@ -351,9 +350,11 @@ exports.sendOtp = function(req, res, next){
         var otp = Math.floor(100000 + Math.random() * 900000)
         otpObj.otp = otp;
         otpObj.contactNumber = req.body.payload.contactNumber;
+        var emailReciever = req.body.payload.email;
+
         data.payload = otpObj;
         //Sending mail
-        emailSender.sendMail(otp);
+        emailSender.sendMail(otp,emailReciever);
         //end       
         data.serveFrom = constants.servingFromDB;
         data.route = "sendOtp";

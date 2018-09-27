@@ -27,7 +27,7 @@ router.get('/coins', utils.logHttpReq, expressValidate(validations.getCoins), ut
 /*POST new coin.  */
 router.post('/coins', utils.logHttpReq, expressValidate(validations.createCoins), utils.validationResponse, apis.createCoins, utils.httpResponse );
 /*POST sendiOtp request.  */
-router.post('/otp', utils.logHttpReq, expressValidate(validations.sendotp), utils.validationResponse, apis.sendOtp, utils.httpResponse );
+router.post('/otp', utils.logHttpReq, utils.validationResponse, apis.sendOtp, utils.httpResponse );
 
 module.exports = router;
 

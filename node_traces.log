@@ -1,0 +1,728 @@
+{"level":"info","message":"Listening on port 3000","timestamp":"21:08:55"}
+{"level":"debug","message":"final response: \"Hello word\"","timestamp":"21:10:32"}
+{"level":"info","message":"Listening on port 3000","timestamp":"21:33:40"}
+{"level":"debug","message":"final response: \"Hello word\"","timestamp":"21:34:50"}
+{"level":"info","message":"Listening on port 3000","timestamp":"21:36:24"}
+{"level":"info","message":"route : /otp","timestamp":"21:40:04"}
+{"level":"info","message":"method : POST","timestamp":"21:40:04"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/x-www-form-urlencoded; charset=UTF-8\",\"user-agent\":\"Dalvik/1.6.0 (Linux; U; Android 4.4.4; GT-I9195I Build/KTU84P)\",\"host\":\"192.168.10.14:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\",\"content-length\":\"95\"}","timestamp":"21:40:04"}
+{"level":"debug","message":"body: {\"payload\":\"{\\\"email\\\":\\\"sulema@yahoo.com\\\",\\\"contactNumber\\\":\\\"03323737593\\\"}\"}","timestamp":"21:40:04"}
+{"level":"debug","message":"request body : {\"payload\":\"{\\\"email\\\":\\\"sulema@yahoo.com\\\",\\\"contactNumber\\\":\\\"03323737593\\\"}\"}","timestamp":"21:40:04"}
+{"level":"debug","message":"create query data : {\"otp\":999720}","timestamp":"21:40:04"}
+{"level":"debug","message":"db result : {\"otp\":999720,\"_id\":\"8kumsG1sLuNgqpiX\"}","timestamp":"21:40:04"}
+{"level":"debug","message":"final response: {\"otp\":999720,\"_id\":\"8kumsG1sLuNgqpiX\"}","timestamp":"21:40:04"}
+{"level":"info","message":"Listening on port 3000","timestamp":"01:22:18"}
+{"level":"debug","message":"final response: \"Hello word\"","timestamp":"01:27:32"}
+{"level":"info","message":"route : /coins","timestamp":"01:34:28"}
+{"level":"info","message":"method : GET","timestamp":"01:34:28"}
+{"level":"verbose","message":"headers: {\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 5.0.1; GT-I9500 Build/LRX22C)\",\"host\":\"192.168.8.103:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\"}","timestamp":"01:34:28"}
+{"level":"debug","message":"body: {}","timestamp":"01:34:28"}
+{"level":"debug","message":"request body : {}","timestamp":"01:34:28"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllCoins\",\"collection\":\"coins\"}","timestamp":"01:34:28"}
+{"level":"debug","message":"read query where : {}","timestamp":"01:34:28"}
+{"level":"debug","message":"db result : []","timestamp":"01:34:28"}
+{"level":"debug","message":"final response: []","timestamp":"01:34:28"}
+{"level":"info","message":"route : /coins","timestamp":"01:35:09"}
+{"level":"info","message":"method : GET","timestamp":"01:35:09"}
+{"level":"verbose","message":"headers: {\"cache-control\":\"no-cache\",\"postman-token\":\"edb96377-6a82-481f-bd37-b4bb158eec04\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"connection\":\"keep-alive\"}","timestamp":"01:35:09"}
+{"level":"debug","message":"body: {}","timestamp":"01:35:09"}
+{"level":"debug","message":"request body : {}","timestamp":"01:35:09"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllCoins\",\"collection\":\"coins\"}","timestamp":"01:35:09"}
+{"level":"debug","message":"read query where : {}","timestamp":"01:35:09"}
+{"level":"debug","message":"db result : []","timestamp":"01:35:09"}
+{"level":"debug","message":"final response: []","timestamp":"01:35:09"}
+{"level":"info","message":"route : /coins","timestamp":"01:35:14"}
+{"level":"info","message":"method : POST","timestamp":"01:35:14"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/json\",\"cache-control\":\"no-cache\",\"postman-token\":\"8941e146-6761-4aa5-a1f7-504048b5506f\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"content-length\":\"76\",\"connection\":\"keep-alive\"}","timestamp":"01:35:14"}
+{"level":"debug","message":"body: {\"payload\":{\"symbol\":\"ETH\",\"rate\":\"1047\",\"coinName\":\"Ethereum\"}}","timestamp":"01:35:14"}
+{"level":"debug","message":"request body : {\"payload\":{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\"}}","timestamp":"01:35:14"}
+{"level":"debug","message":"create query data : {\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\"}","timestamp":"01:35:14"}
+{"level":"debug","message":"db result : {\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"}","timestamp":"01:35:14"}
+{"level":"debug","message":"final response: {\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"}","timestamp":"01:35:14"}
+{"level":"info","message":"route : /coins","timestamp":"01:35:29"}
+{"level":"info","message":"method : POST","timestamp":"01:35:29"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/json\",\"cache-control\":\"no-cache\",\"postman-token\":\"d5b21607-ea6e-41ea-9fff-134febfcc964\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"content-length\":\"75\",\"connection\":\"keep-alive\"}","timestamp":"01:35:29"}
+{"level":"debug","message":"body: {\"payload\":{\"symbol\":\"BTC\",\"rate\":\"1047\",\"coinName\":\"Bitcoin\"}}","timestamp":"01:35:29"}
+{"level":"debug","message":"request body : {\"payload\":{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\"}}","timestamp":"01:35:29"}
+{"level":"debug","message":"create query data : {\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\"}","timestamp":"01:35:29"}
+{"level":"debug","message":"db result : {\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}","timestamp":"01:35:29"}
+{"level":"debug","message":"final response: {\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}","timestamp":"01:35:29"}
+{"level":"info","message":"route : /coins","timestamp":"01:35:39"}
+{"level":"info","message":"method : POST","timestamp":"01:35:39"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/json\",\"cache-control\":\"no-cache\",\"postman-token\":\"c0c346d6-1d38-405c-86be-4f1927144693\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"content-length\":\"74\",\"connection\":\"keep-alive\"}","timestamp":"01:35:39"}
+{"level":"debug","message":"body: {\"payload\":{\"symbol\":\"XPR\",\"rate\":\"1047\",\"coinName\":\"Ripple\"}}","timestamp":"01:35:39"}
+{"level":"debug","message":"request body : {\"payload\":{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\"}}","timestamp":"01:35:39"}
+{"level":"debug","message":"create query data : {\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\"}","timestamp":"01:35:39"}
+{"level":"debug","message":"db result : {\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"}","timestamp":"01:35:39"}
+{"level":"debug","message":"final response: {\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"}","timestamp":"01:35:39"}
+{"level":"info","message":"route : /coins","timestamp":"01:35:42"}
+{"level":"info","message":"method : GET","timestamp":"01:35:42"}
+{"level":"verbose","message":"headers: {\"cache-control\":\"no-cache\",\"postman-token\":\"7192b41a-2e1d-438f-9403-485074c10d98\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"connection\":\"keep-alive\"}","timestamp":"01:35:42"}
+{"level":"debug","message":"body: {}","timestamp":"01:35:42"}
+{"level":"debug","message":"request body : {}","timestamp":"01:35:42"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllCoins\",\"collection\":\"coins\"}","timestamp":"01:35:42"}
+{"level":"debug","message":"read query where : {}","timestamp":"01:35:42"}
+{"level":"debug","message":"db result : [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"01:35:42"}
+{"level":"debug","message":"final response: [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"01:35:42"}
+{"level":"info","message":"route : /coins","timestamp":"01:35:59"}
+{"level":"info","message":"method : GET","timestamp":"01:35:59"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w\\\"\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 5.0.1; GT-I9500 Build/LRX22C)\",\"host\":\"192.168.8.103:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\"}","timestamp":"01:35:59"}
+{"level":"debug","message":"body: {}","timestamp":"01:35:59"}
+{"level":"debug","message":"request body : {}","timestamp":"01:35:59"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllCoins\",\"collection\":\"coins\"}","timestamp":"01:35:59"}
+{"level":"debug","message":"read query where : {}","timestamp":"01:35:59"}
+{"level":"debug","message":"db result : [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"01:35:59"}
+{"level":"debug","message":"final response: [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"01:35:59"}
+{"level":"info","message":"route : /coins","timestamp":"02:19:27"}
+{"level":"info","message":"method : GET","timestamp":"02:19:27"}
+{"level":"verbose","message":"headers: {\"cache-control\":\"no-cache\",\"postman-token\":\"e1d78217-fc7d-4eb2-be27-3959e0e6f0aa\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"connection\":\"keep-alive\"}","timestamp":"02:19:27"}
+{"level":"debug","message":"body: {}","timestamp":"02:19:27"}
+{"level":"debug","message":"request body : {}","timestamp":"02:19:27"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllCoins\",\"collection\":\"coins\"}","timestamp":"02:19:27"}
+{"level":"debug","message":"read query where : {}","timestamp":"02:19:27"}
+{"level":"debug","message":"db result : [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"02:19:27"}
+{"level":"debug","message":"final response: [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"02:19:27"}
+{"level":"info","message":"route : /coins","timestamp":"02:19:37"}
+{"level":"info","message":"method : GET","timestamp":"02:19:37"}
+{"level":"verbose","message":"headers: {\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 5.0.1; GT-I9500 Build/LRX22C)\",\"host\":\"192.168.8.103:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\"}","timestamp":"02:19:37"}
+{"level":"debug","message":"body: {}","timestamp":"02:19:37"}
+{"level":"debug","message":"request body : {}","timestamp":"02:19:37"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllCoins\",\"collection\":\"coins\"}","timestamp":"02:19:37"}
+{"level":"debug","message":"read query where : {}","timestamp":"02:19:37"}
+{"level":"debug","message":"db result : [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"02:19:37"}
+{"level":"debug","message":"final response: [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"02:19:37"}
+{"level":"info","message":"route : /coins","timestamp":"02:30:04"}
+{"level":"info","message":"method : GET","timestamp":"02:30:04"}
+{"level":"verbose","message":"headers: {\"cache-control\":\"no-cache\",\"postman-token\":\"951b6de0-66de-4003-bce7-a0af4d897776\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"connection\":\"keep-alive\"}","timestamp":"02:30:04"}
+{"level":"debug","message":"body: {}","timestamp":"02:30:04"}
+{"level":"debug","message":"request body : {}","timestamp":"02:30:04"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllCoins\",\"collection\":\"coins\"}","timestamp":"02:30:04"}
+{"level":"debug","message":"read query where : {}","timestamp":"02:30:04"}
+{"level":"debug","message":"db result : [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"02:30:04"}
+{"level":"debug","message":"final response: [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"02:30:04"}
+{"level":"info","message":"route : /coins","timestamp":"02:31:29"}
+{"level":"info","message":"method : GET","timestamp":"02:31:29"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"e2-B9l8lI9I8Kod9iRCmj6NulxhqH0\\\"\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 5.0.1; GT-I9500 Build/LRX22C)\",\"host\":\"192.168.8.103:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\"}","timestamp":"02:31:29"}
+{"level":"debug","message":"body: {}","timestamp":"02:31:29"}
+{"level":"debug","message":"request body : {}","timestamp":"02:31:29"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllCoins\",\"collection\":\"coins\"}","timestamp":"02:31:29"}
+{"level":"debug","message":"read query where : {}","timestamp":"02:31:29"}
+{"level":"debug","message":"db result : [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"02:31:29"}
+{"level":"debug","message":"final response: [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"02:31:29"}
+{"level":"info","message":"route : /coins","timestamp":"02:34:21"}
+{"level":"info","message":"method : GET","timestamp":"02:34:21"}
+{"level":"verbose","message":"headers: {\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 8.0.0; LDN-L21 Build/HUAWEILDN-L21)\",\"host\":\"192.168.8.103:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\"}","timestamp":"02:34:21"}
+{"level":"debug","message":"body: {}","timestamp":"02:34:21"}
+{"level":"debug","message":"request body : {}","timestamp":"02:34:21"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllCoins\",\"collection\":\"coins\"}","timestamp":"02:34:21"}
+{"level":"debug","message":"read query where : {}","timestamp":"02:34:21"}
+{"level":"debug","message":"db result : [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"02:34:21"}
+{"level":"debug","message":"final response: [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"02:34:21"}
+{"level":"info","message":"route : /coins","timestamp":"02:37:05"}
+{"level":"info","message":"method : GET","timestamp":"02:37:05"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"e2-B9l8lI9I8Kod9iRCmj6NulxhqH0\\\"\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 8.0.0; LDN-L21 Build/HUAWEILDN-L21)\",\"host\":\"192.168.8.103:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\"}","timestamp":"02:37:05"}
+{"level":"debug","message":"body: {}","timestamp":"02:37:05"}
+{"level":"debug","message":"request body : {}","timestamp":"02:37:05"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllCoins\",\"collection\":\"coins\"}","timestamp":"02:37:05"}
+{"level":"debug","message":"read query where : {}","timestamp":"02:37:05"}
+{"level":"debug","message":"db result : [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"02:37:05"}
+{"level":"debug","message":"final response: [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"02:37:05"}
+{"level":"info","message":"route : /coins","timestamp":"02:37:34"}
+{"level":"info","message":"method : GET","timestamp":"02:37:34"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"e2-B9l8lI9I8Kod9iRCmj6NulxhqH0\\\"\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 8.0.0; LDN-L21 Build/HUAWEILDN-L21)\",\"host\":\"192.168.8.103:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\"}","timestamp":"02:37:34"}
+{"level":"debug","message":"body: {}","timestamp":"02:37:34"}
+{"level":"debug","message":"request body : {}","timestamp":"02:37:34"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllCoins\",\"collection\":\"coins\"}","timestamp":"02:37:34"}
+{"level":"debug","message":"read query where : {}","timestamp":"02:37:34"}
+{"level":"debug","message":"db result : [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"02:37:34"}
+{"level":"debug","message":"final response: [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"02:37:34"}
+{"level":"info","message":"route : /coins","timestamp":"02:37:45"}
+{"level":"info","message":"method : GET","timestamp":"02:37:45"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"e2-B9l8lI9I8Kod9iRCmj6NulxhqH0\\\"\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 8.0.0; LDN-L21 Build/HUAWEILDN-L21)\",\"host\":\"192.168.8.103:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\"}","timestamp":"02:37:45"}
+{"level":"debug","message":"body: {}","timestamp":"02:37:45"}
+{"level":"debug","message":"request body : {}","timestamp":"02:37:45"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllCoins\",\"collection\":\"coins\"}","timestamp":"02:37:45"}
+{"level":"debug","message":"read query where : {}","timestamp":"02:37:45"}
+{"level":"debug","message":"db result : [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"02:37:45"}
+{"level":"debug","message":"final response: [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"02:37:45"}
+{"level":"info","message":"route : /coins","timestamp":"02:38:16"}
+{"level":"info","message":"method : GET","timestamp":"02:38:16"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"e2-B9l8lI9I8Kod9iRCmj6NulxhqH0\\\"\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 8.0.0; LDN-L21 Build/HUAWEILDN-L21)\",\"host\":\"192.168.8.103:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\"}","timestamp":"02:38:16"}
+{"level":"debug","message":"body: {}","timestamp":"02:38:16"}
+{"level":"debug","message":"request body : {}","timestamp":"02:38:16"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllCoins\",\"collection\":\"coins\"}","timestamp":"02:38:16"}
+{"level":"debug","message":"read query where : {}","timestamp":"02:38:16"}
+{"level":"debug","message":"db result : [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"02:38:16"}
+{"level":"debug","message":"final response: [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"02:38:16"}
+{"level":"info","message":"route : /coins","timestamp":"02:38:48"}
+{"level":"info","message":"method : GET","timestamp":"02:38:48"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"e2-B9l8lI9I8Kod9iRCmj6NulxhqH0\\\"\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 8.0.0; LDN-L21 Build/HUAWEILDN-L21)\",\"host\":\"192.168.8.103:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\"}","timestamp":"02:38:48"}
+{"level":"debug","message":"body: {}","timestamp":"02:38:48"}
+{"level":"debug","message":"request body : {}","timestamp":"02:38:48"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllCoins\",\"collection\":\"coins\"}","timestamp":"02:38:48"}
+{"level":"debug","message":"read query where : {}","timestamp":"02:38:48"}
+{"level":"debug","message":"db result : [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"02:38:48"}
+{"level":"debug","message":"final response: [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"02:38:48"}
+{"level":"info","message":"route : /coins","timestamp":"02:39:00"}
+{"level":"info","message":"method : GET","timestamp":"02:39:00"}
+{"level":"verbose","message":"headers: {\"cache-control\":\"no-cache\",\"postman-token\":\"952d78a0-a6e9-41a6-a818-dde11e00a15d\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"connection\":\"keep-alive\"}","timestamp":"02:39:00"}
+{"level":"debug","message":"body: {}","timestamp":"02:39:00"}
+{"level":"debug","message":"request body : {}","timestamp":"02:39:00"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllCoins\",\"collection\":\"coins\"}","timestamp":"02:39:00"}
+{"level":"debug","message":"read query where : {}","timestamp":"02:39:00"}
+{"level":"debug","message":"db result : [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"02:39:00"}
+{"level":"debug","message":"final response: [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"02:39:00"}
+{"level":"info","message":"route : /coins","timestamp":"02:50:08"}
+{"level":"info","message":"method : GET","timestamp":"02:50:08"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"e2-B9l8lI9I8Kod9iRCmj6NulxhqH0\\\"\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 8.0.0; LDN-L21 Build/HUAWEILDN-L21)\",\"host\":\"192.168.8.103:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\"}","timestamp":"02:50:08"}
+{"level":"debug","message":"body: {}","timestamp":"02:50:08"}
+{"level":"debug","message":"request body : {}","timestamp":"02:50:08"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllCoins\",\"collection\":\"coins\"}","timestamp":"02:50:08"}
+{"level":"debug","message":"read query where : {}","timestamp":"02:50:08"}
+{"level":"debug","message":"db result : [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"02:50:08"}
+{"level":"debug","message":"final response: [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"02:50:08"}
+{"level":"info","message":"route : /coins","timestamp":"03:06:22"}
+{"level":"info","message":"method : GET","timestamp":"03:06:22"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"e2-B9l8lI9I8Kod9iRCmj6NulxhqH0\\\"\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 8.0.0; LDN-L21 Build/HUAWEILDN-L21)\",\"host\":\"192.168.8.103:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\"}","timestamp":"03:06:22"}
+{"level":"debug","message":"body: {}","timestamp":"03:06:22"}
+{"level":"debug","message":"request body : {}","timestamp":"03:06:22"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllCoins\",\"collection\":\"coins\"}","timestamp":"03:06:22"}
+{"level":"debug","message":"read query where : {}","timestamp":"03:06:22"}
+{"level":"debug","message":"db result : [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"03:06:22"}
+{"level":"debug","message":"final response: [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"03:06:22"}
+{"level":"info","message":"route : /coins","timestamp":"03:06:30"}
+{"level":"info","message":"method : GET","timestamp":"03:06:30"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"e2-B9l8lI9I8Kod9iRCmj6NulxhqH0\\\"\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 8.0.0; LDN-L21 Build/HUAWEILDN-L21)\",\"host\":\"192.168.8.103:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\"}","timestamp":"03:06:30"}
+{"level":"debug","message":"body: {}","timestamp":"03:06:30"}
+{"level":"debug","message":"request body : {}","timestamp":"03:06:30"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllCoins\",\"collection\":\"coins\"}","timestamp":"03:06:30"}
+{"level":"debug","message":"read query where : {}","timestamp":"03:06:30"}
+{"level":"debug","message":"db result : [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"03:06:30"}
+{"level":"debug","message":"final response: [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"03:06:30"}
+{"level":"info","message":"route : /coins","timestamp":"03:25:41"}
+{"level":"info","message":"method : GET","timestamp":"03:25:41"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"e2-B9l8lI9I8Kod9iRCmj6NulxhqH0\\\"\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 8.0.0; LDN-L21 Build/HUAWEILDN-L21)\",\"host\":\"192.168.8.103:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\"}","timestamp":"03:25:41"}
+{"level":"debug","message":"body: {}","timestamp":"03:25:41"}
+{"level":"debug","message":"request body : {}","timestamp":"03:25:41"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllCoins\",\"collection\":\"coins\"}","timestamp":"03:25:41"}
+{"level":"debug","message":"read query where : {}","timestamp":"03:25:41"}
+{"level":"debug","message":"db result : [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"03:25:41"}
+{"level":"debug","message":"final response: [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"03:25:41"}
+{"level":"info","message":"route : /coins","timestamp":"03:26:38"}
+{"level":"info","message":"method : GET","timestamp":"03:26:38"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"e2-B9l8lI9I8Kod9iRCmj6NulxhqH0\\\"\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 8.0.0; LDN-L21 Build/HUAWEILDN-L21)\",\"host\":\"192.168.8.103:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\"}","timestamp":"03:26:38"}
+{"level":"debug","message":"body: {}","timestamp":"03:26:38"}
+{"level":"debug","message":"request body : {}","timestamp":"03:26:38"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllCoins\",\"collection\":\"coins\"}","timestamp":"03:26:38"}
+{"level":"debug","message":"read query where : {}","timestamp":"03:26:38"}
+{"level":"debug","message":"db result : [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"03:26:38"}
+{"level":"debug","message":"final response: [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"03:26:38"}
+{"level":"info","message":"route : /coins","timestamp":"03:26:47"}
+{"level":"info","message":"method : GET","timestamp":"03:26:47"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"e2-B9l8lI9I8Kod9iRCmj6NulxhqH0\\\"\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 8.0.0; LDN-L21 Build/HUAWEILDN-L21)\",\"host\":\"192.168.8.103:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\"}","timestamp":"03:26:47"}
+{"level":"debug","message":"body: {}","timestamp":"03:26:47"}
+{"level":"debug","message":"request body : {}","timestamp":"03:26:47"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllCoins\",\"collection\":\"coins\"}","timestamp":"03:26:47"}
+{"level":"debug","message":"read query where : {}","timestamp":"03:26:47"}
+{"level":"debug","message":"db result : [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"03:26:47"}
+{"level":"debug","message":"final response: [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"03:26:47"}
+{"level":"info","message":"route : /coins","timestamp":"03:26:51"}
+{"level":"info","message":"method : GET","timestamp":"03:26:51"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"e2-B9l8lI9I8Kod9iRCmj6NulxhqH0\\\"\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 8.0.0; LDN-L21 Build/HUAWEILDN-L21)\",\"host\":\"192.168.8.103:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\"}","timestamp":"03:26:51"}
+{"level":"debug","message":"body: {}","timestamp":"03:26:51"}
+{"level":"debug","message":"request body : {}","timestamp":"03:26:51"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllCoins\",\"collection\":\"coins\"}","timestamp":"03:26:51"}
+{"level":"debug","message":"read query where : {}","timestamp":"03:26:51"}
+{"level":"debug","message":"db result : [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"03:26:51"}
+{"level":"debug","message":"final response: [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"03:26:51"}
+{"level":"info","message":"route : /coins","timestamp":"03:26:57"}
+{"level":"info","message":"method : GET","timestamp":"03:26:57"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"e2-B9l8lI9I8Kod9iRCmj6NulxhqH0\\\"\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 8.0.0; LDN-L21 Build/HUAWEILDN-L21)\",\"host\":\"192.168.8.103:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\"}","timestamp":"03:26:57"}
+{"level":"debug","message":"body: {}","timestamp":"03:26:57"}
+{"level":"debug","message":"request body : {}","timestamp":"03:26:57"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllCoins\",\"collection\":\"coins\"}","timestamp":"03:26:57"}
+{"level":"debug","message":"read query where : {}","timestamp":"03:26:57"}
+{"level":"debug","message":"db result : [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"03:26:57"}
+{"level":"debug","message":"final response: [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"03:26:57"}
+{"level":"info","message":"route : /coins","timestamp":"03:32:19"}
+{"level":"info","message":"method : GET","timestamp":"03:32:19"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"e2-B9l8lI9I8Kod9iRCmj6NulxhqH0\\\"\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 8.0.0; LDN-L21 Build/HUAWEILDN-L21)\",\"host\":\"192.168.8.103:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\"}","timestamp":"03:32:19"}
+{"level":"debug","message":"body: {}","timestamp":"03:32:19"}
+{"level":"debug","message":"request body : {}","timestamp":"03:32:19"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllCoins\",\"collection\":\"coins\"}","timestamp":"03:32:19"}
+{"level":"debug","message":"read query where : {}","timestamp":"03:32:19"}
+{"level":"debug","message":"db result : [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"03:32:19"}
+{"level":"debug","message":"final response: [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"03:32:19"}
+{"level":"info","message":"route : /otp","timestamp":"03:32:38"}
+{"level":"info","message":"method : POST","timestamp":"03:32:38"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/x-www-form-urlencoded; charset=UTF-8\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 8.0.0; LDN-L21 Build/HUAWEILDN-L21)\",\"host\":\"192.168.8.103:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\",\"content-length\":\"107\"}","timestamp":"03:32:38"}
+{"level":"debug","message":"body: {\"payload\":\"{\\\"email\\\":\\\"maliksuleman007@outlook.com\\\",\\\"contactNumber\\\":\\\"03323737593 \\\"}\"}","timestamp":"03:32:38"}
+{"level":"debug","message":"request body : {\"payload\":\"{\\\"email\\\":\\\"maliksuleman007@outlook.com\\\",\\\"contactNumber\\\":\\\"03323737593 \\\"}\"}","timestamp":"03:32:38"}
+{"level":"debug","message":"create query data : {\"otp\":812372}","timestamp":"03:32:38"}
+{"level":"debug","message":"db result : {\"otp\":812372,\"_id\":\"FsptCA9BZlHOx0TZ\"}","timestamp":"03:32:38"}
+{"level":"debug","message":"final response: {\"otp\":812372,\"_id\":\"FsptCA9BZlHOx0TZ\"}","timestamp":"03:32:38"}
+{"level":"info","message":"route : /otp","timestamp":"03:33:27"}
+{"level":"info","message":"method : POST","timestamp":"03:33:27"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"27-1HJM3DRuBsnxFWOE8UAOKbgSTDw\\\"\",\"content-type\":\"application/x-www-form-urlencoded; charset=UTF-8\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 8.0.0; LDN-L21 Build/HUAWEILDN-L21)\",\"host\":\"192.168.8.103:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\",\"content-length\":\"107\"}","timestamp":"03:33:27"}
+{"level":"debug","message":"body: {\"payload\":\"{\\\"email\\\":\\\"maliksuleman007@outlook.com\\\",\\\"contactNumber\\\":\\\"03323737593 \\\"}\"}","timestamp":"03:33:27"}
+{"level":"debug","message":"request body : {\"payload\":\"{\\\"email\\\":\\\"maliksuleman007@outlook.com\\\",\\\"contactNumber\\\":\\\"03323737593 \\\"}\"}","timestamp":"03:33:27"}
+{"level":"debug","message":"create query data : {\"otp\":925004}","timestamp":"03:33:27"}
+{"level":"debug","message":"db result : {\"otp\":925004,\"_id\":\"HspRzuddTIYDyv8f\"}","timestamp":"03:33:27"}
+{"level":"debug","message":"final response: {\"otp\":925004,\"_id\":\"HspRzuddTIYDyv8f\"}","timestamp":"03:33:27"}
+{"level":"info","message":"route : /signup","timestamp":"03:44:09"}
+{"level":"info","message":"method : POST","timestamp":"03:44:09"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/json\",\"cache-control\":\"no-cache\",\"postman-token\":\"6878dfc9-755a-4b9f-ba70-b7273bf89107\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"content-length\":\"201\",\"connection\":\"keep-alive\"}","timestamp":"03:44:09"}
+{"level":"debug","message":"body: {\"payload\":{\"firstName\":\"hamza\",\"email\":\"suleman.bsse2565@iiu.edu.pk\",\"username\":\"hafiz\",\"passward\":\"2605\",\"coinId\":\"nasjkdl742839jkfhs\",\"contactNumber\":12345678,\"otpCode\":943511}}","timestamp":"03:44:09"}
+{"level":"debug","message":"request body : {\"payload\":{\"firstName\":\"hamza\",\"email\":\"suleman.bsse2565@iiu.edu.pk\",\"username\":\"hafiz\",\"passward\":\"2605\",\"coinId\":\"nasjkdl742839jkfhs\",\"contactNumber\":12345678,\"otpCode\":943511}}","timestamp":"03:44:09"}
+{"level":"debug","message":"read query data : {\"payload\":{\"firstName\":\"hamza\",\"email\":\"suleman.bsse2565@iiu.edu.pk\",\"username\":\"hafiz\",\"passward\":\"2605\",\"coinId\":\"nasjkdl742839jkfhs\",\"contactNumber\":12345678,\"otpCode\":943511},\"serveFrom\":\"database\",\"route\":\"otpConf\",\"collection\":\"otp\",\"where\":{\"contactNumber\":12345678}}","timestamp":"03:44:09"}
+{"level":"debug","message":"read query where : {\"contactNumber\":12345678}","timestamp":"03:44:09"}
+{"level":"debug","message":"db result : []","timestamp":"03:44:09"}
+{"level":"debug","message":"create query data : {\"firstName\":\"hamza\",\"email\":\"suleman.bsse2565@iiu.edu.pk\",\"username\":\"hafiz\",\"passward\":\"2605\",\"coinId\":\"nasjkdl742839jkfhs\",\"contactNumber\":12345678,\"otpCode\":943511}","timestamp":"03:44:09"}
+{"level":"debug","message":"db result : {\"firstName\":\"hamza\",\"email\":\"suleman.bsse2565@iiu.edu.pk\",\"username\":\"hafiz\",\"passward\":\"2605\",\"coinId\":\"nasjkdl742839jkfhs\",\"contactNumber\":12345678,\"otpCode\":943511,\"_id\":\"GCPqHDmTeo2ldQTI\"}","timestamp":"03:44:09"}
+{"level":"debug","message":"final response: {\"firstName\":\"hamza\",\"email\":\"suleman.bsse2565@iiu.edu.pk\",\"username\":\"hafiz\",\"passward\":\"2605\",\"coinId\":\"nasjkdl742839jkfhs\",\"contactNumber\":12345678,\"otpCode\":943511,\"_id\":\"GCPqHDmTeo2ldQTI\"}","timestamp":"03:44:09"}
+{"level":"info","message":"route : /otp","timestamp":"03:44:17"}
+{"level":"info","message":"method : POST","timestamp":"03:44:17"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"27-BJk2BJ91C+Wd12e2XIULT8vBRPI\\\"\",\"content-type\":\"application/x-www-form-urlencoded; charset=UTF-8\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 8.0.0; LDN-L21 Build/HUAWEILDN-L21)\",\"host\":\"192.168.8.103:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\",\"content-length\":\"107\"}","timestamp":"03:44:17"}
+{"level":"debug","message":"body: {\"payload\":\"{\\\"email\\\":\\\"maliksuleman007@outlook.com\\\",\\\"contactNumber\\\":\\\"03323737593 \\\"}\"}","timestamp":"03:44:17"}
+{"level":"debug","message":"request body : {\"payload\":\"{\\\"email\\\":\\\"maliksuleman007@outlook.com\\\",\\\"contactNumber\\\":\\\"03323737593 \\\"}\"}","timestamp":"03:44:17"}
+{"level":"debug","message":"create query data : {\"otp\":898101}","timestamp":"03:44:17"}
+{"level":"debug","message":"db result : {\"otp\":898101,\"_id\":\"ogPgvUvN61N7DQvz\"}","timestamp":"03:44:17"}
+{"level":"debug","message":"final response: {\"otp\":898101,\"_id\":\"ogPgvUvN61N7DQvz\"}","timestamp":"03:44:17"}
+{"level":"info","message":"route : /otp","timestamp":"03:46:35"}
+{"level":"info","message":"method : POST","timestamp":"03:46:35"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/json\",\"cache-control\":\"no-cache\",\"postman-token\":\"7c610db1-7b92-427a-9ffb-36df4af88ae5\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"content-length\":\"86\",\"connection\":\"keep-alive\"}","timestamp":"03:46:35"}
+{"level":"debug","message":"body: {\"payload\":{\"email\":\"hafiz.bsse2605@iiu.edu.pk\",\"contactNumber\":\"12345678\"}}","timestamp":"03:46:35"}
+{"level":"debug","message":"request body : {\"payload\":{\"email\":\"hafiz.bsse2605@iiu.edu.pk\",\"contactNumber\":\"12345678\"}}","timestamp":"03:46:35"}
+{"level":"debug","message":"create query data : {\"otp\":726204,\"contactNumber\":\"12345678\"}","timestamp":"03:46:35"}
+{"level":"debug","message":"db result : {\"otp\":726204,\"contactNumber\":\"12345678\",\"_id\":\"AyPqKIFcMNSkAVmM\"}","timestamp":"03:46:35"}
+{"level":"debug","message":"final response: {\"otp\":726204,\"contactNumber\":\"12345678\",\"_id\":\"AyPqKIFcMNSkAVmM\"}","timestamp":"03:46:35"}
+{"level":"info","message":"Listening on port 3000","timestamp":"03:56:32"}
+{"level":"info","message":"route : /coins","timestamp":"03:57:08"}
+{"level":"info","message":"method : GET","timestamp":"03:57:08"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"e2-B9l8lI9I8Kod9iRCmj6NulxhqH0\\\"\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 8.0.0; LDN-L21 Build/HUAWEILDN-L21)\",\"host\":\"192.168.8.103:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\"}","timestamp":"03:57:08"}
+{"level":"debug","message":"body: {}","timestamp":"03:57:08"}
+{"level":"debug","message":"request body : {}","timestamp":"03:57:08"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllCoins\",\"collection\":\"coins\"}","timestamp":"03:57:08"}
+{"level":"debug","message":"read query where : {}","timestamp":"03:57:08"}
+{"level":"debug","message":"db result : [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"03:57:08"}
+{"level":"debug","message":"final response: [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"03:57:08"}
+{"level":"info","message":"route : /otp","timestamp":"03:57:48"}
+{"level":"info","message":"method : POST","timestamp":"03:57:48"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"27-UqklNWFqsUXoHPNSoWoOJbn5Jb8\\\"\",\"content-type\":\"application/x-www-form-urlencoded; charset=UTF-8\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 8.0.0; LDN-L21 Build/HUAWEILDN-L21)\",\"host\":\"192.168.8.103:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\",\"content-length\":\"107\"}","timestamp":"03:57:48"}
+{"level":"debug","message":"body: {\"payload\":\"{\\\"email\\\":\\\"abdullahmasood186@gmail.com\\\",\\\"contactNumber\\\":\\\"03323737593 \\\"}\"}","timestamp":"03:57:48"}
+{"level":"debug","message":"request body : {\"payload\":\"{\\\"email\\\":\\\"abdullahmasood186@gmail.com\\\",\\\"contactNumber\\\":\\\"03323737593 \\\"}\"}","timestamp":"03:57:48"}
+{"level":"error","message":"Exception:","timestamp":"03:57:48"}
+{"level":"error","message":"ReferenceError: emailReciever is not defined\n    at exports.sendOtp (/home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/api_ctrl.js:358:34)\n    at Layer.handle [as handle_request] (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/express/lib/router/route.js:137:13)\n    at Layer.handle [as handle_request] (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/express/lib/router/layer.js:91:12)\n    at next (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/express/lib/router/route.js:137:13)\n    at exports.logHttpReq (/home/hafiz/Blockchain_Fyp/nodejs_seed/utils/utility.js:56:12)\n    at Layer.handle [as handle_request] (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/express/lib/router/route.js:137:13)\n    at Route.dispatch (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/express/lib/router/route.js:112:3)\n    at Layer.handle [as handle_request] (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/express/lib/router/layer.js:95:5)","timestamp":"03:57:48"}
+{"level":"debug","message":"final response: {\"code\":\"RC0500\",\"message\":\"Internal Server Error!\",\"errorDescription\":\"emailReciever is not defined, type : undefined\"}","timestamp":"03:57:48"}
+{"level":"info","message":"route : /coins","timestamp":"03:59:51"}
+{"level":"info","message":"method : GET","timestamp":"03:59:51"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"e2-B9l8lI9I8Kod9iRCmj6NulxhqH0\\\"\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 8.0.0; LDN-L21 Build/HUAWEILDN-L21)\",\"host\":\"192.168.8.103:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\"}","timestamp":"03:59:51"}
+{"level":"debug","message":"body: {}","timestamp":"03:59:51"}
+{"level":"debug","message":"request body : {}","timestamp":"03:59:51"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllCoins\",\"collection\":\"coins\"}","timestamp":"03:59:51"}
+{"level":"debug","message":"read query where : {}","timestamp":"03:59:51"}
+{"level":"debug","message":"db result : [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"03:59:51"}
+{"level":"debug","message":"final response: [{\"symbol\":\"XPR\",\"rate\":1047,\"coinName\":\"Ripple\",\"_id\":\"5uYzx0xq8Msv5QgU\"},{\"symbol\":\"ETH\",\"rate\":1047,\"coinName\":\"Ethereum\",\"_id\":\"LIA9WGU1biL3LDdt\"},{\"symbol\":\"BTC\",\"rate\":1047,\"coinName\":\"Bitcoin\",\"_id\":\"Rsig4muISVaUUG2Q\"}]","timestamp":"03:59:51"}
+{"level":"info","message":"route : /otp","timestamp":"04:00:23"}
+{"level":"info","message":"method : POST","timestamp":"04:00:23"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"78-zY25CZa4+56idvgDNcFdiGc/Yuk\\\"\",\"content-type\":\"application/x-www-form-urlencoded; charset=UTF-8\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 8.0.0; LDN-L21 Build/HUAWEILDN-L21)\",\"host\":\"192.168.8.103:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\",\"content-length\":\"107\"}","timestamp":"04:00:23"}
+{"level":"debug","message":"body: {\"payload\":\"{\\\"email\\\":\\\"abdullahmasood186@gmail.com\\\",\\\"contactNumber\\\":\\\"03323737593 \\\"}\"}","timestamp":"04:00:23"}
+{"level":"debug","message":"request body : {\"payload\":\"{\\\"email\\\":\\\"abdullahmasood186@gmail.com\\\",\\\"contactNumber\\\":\\\"03323737593 \\\"}\"}","timestamp":"04:00:23"}
+{"level":"error","message":"Exception:","timestamp":"04:00:23"}
+{"level":"error","message":"ReferenceError: emailReciever is not defined\n    at exports.sendOtp (/home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/api_ctrl.js:358:34)\n    at Layer.handle [as handle_request] (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/express/lib/router/route.js:137:13)\n    at Layer.handle [as handle_request] (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/express/lib/router/layer.js:91:12)\n    at next (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/express/lib/router/route.js:137:13)\n    at exports.logHttpReq (/home/hafiz/Blockchain_Fyp/nodejs_seed/utils/utility.js:56:12)\n    at Layer.handle [as handle_request] (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/express/lib/router/route.js:137:13)\n    at Route.dispatch (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/express/lib/router/route.js:112:3)\n    at Layer.handle [as handle_request] (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/express/lib/router/layer.js:95:5)","timestamp":"04:00:23"}
+{"level":"debug","message":"final response: {\"code\":\"RC0500\",\"message\":\"Internal Server Error!\",\"errorDescription\":\"emailReciever is not defined, type : undefined\"}","timestamp":"04:00:23"}
+{"level":"info","message":"Listening on port 3000","timestamp":"04:01:55"}
+{"level":"info","message":"route : /otp","timestamp":"04:02:08"}
+{"level":"info","message":"method : POST","timestamp":"04:02:08"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"78-zY25CZa4+56idvgDNcFdiGc/Yuk\\\"\",\"content-type\":\"application/x-www-form-urlencoded; charset=UTF-8\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 8.0.0; LDN-L21 Build/HUAWEILDN-L21)\",\"host\":\"192.168.8.103:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\",\"content-length\":\"107\"}","timestamp":"04:02:08"}
+{"level":"debug","message":"body: {\"payload\":\"{\\\"email\\\":\\\"abdullahmasood186@gmail.com\\\",\\\"contactNumber\\\":\\\"03323737593 \\\"}\"}","timestamp":"04:02:08"}
+{"level":"debug","message":"request body : {\"payload\":\"{\\\"email\\\":\\\"abdullahmasood186@gmail.com\\\",\\\"contactNumber\\\":\\\"03323737593 \\\"}\"}","timestamp":"04:02:08"}
+{"level":"debug","message":"create query data : {\"otp\":872487}","timestamp":"04:02:08"}
+{"level":"debug","message":"db result : {\"otp\":872487,\"_id\":\"Aww0UAEpUHQr6KLS\"}","timestamp":"04:02:08"}
+{"level":"debug","message":"final response: {\"otp\":872487,\"_id\":\"Aww0UAEpUHQr6KLS\"}","timestamp":"04:02:08"}
+{"level":"info","message":"Listening on port 3000","timestamp":"04:04:45"}
+{"level":"info","message":"route : /otp","timestamp":"04:04:48"}
+{"level":"info","message":"method : POST","timestamp":"04:04:48"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"27-BtyNhqTesyWShaYbp67f9EfdeZQ\\\"\",\"content-type\":\"application/x-www-form-urlencoded; charset=UTF-8\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 8.0.0; LDN-L21 Build/HUAWEILDN-L21)\",\"host\":\"192.168.8.103:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\",\"content-length\":\"107\"}","timestamp":"04:04:48"}
+{"level":"debug","message":"body: {\"payload\":\"{\\\"email\\\":\\\"abdullahmasood186@gmail.com\\\",\\\"contactNumber\\\":\\\"03323737593 \\\"}\"}","timestamp":"04:04:48"}
+{"level":"debug","message":"request body : {\"payload\":\"{\\\"email\\\":\\\"abdullahmasood186@gmail.com\\\",\\\"contactNumber\\\":\\\"03323737593 \\\"}\"}","timestamp":"04:04:48"}
+{"level":"debug","message":"create query data : {\"otp\":142814}","timestamp":"04:04:48"}
+{"level":"debug","message":"db result : {\"otp\":142814,\"_id\":\"BLxuYfF1D57myQ0R\"}","timestamp":"04:04:48"}
+{"level":"debug","message":"final response: {\"otp\":142814,\"_id\":\"BLxuYfF1D57myQ0R\"}","timestamp":"04:04:48"}
+{"level":"info","message":"Listening on port 3000","timestamp":"04:06:35"}
+{"level":"info","message":"route : /otp","timestamp":"04:06:54"}
+{"level":"info","message":"method : POST","timestamp":"04:06:54"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"27-W0WQjCh1VwVoYPAmSrYVFj0W7vU\\\"\",\"content-type\":\"application/x-www-form-urlencoded; charset=UTF-8\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 8.0.0; LDN-L21 Build/HUAWEILDN-L21)\",\"host\":\"192.168.8.103:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\",\"content-length\":\"107\"}","timestamp":"04:06:54"}
+{"level":"debug","message":"body: {\"payload\":\"{\\\"email\\\":\\\"abdullahmasood186@gmail.com\\\",\\\"contactNumber\\\":\\\"03323737593 \\\"}\"}","timestamp":"04:06:54"}
+{"level":"debug","message":"request body : {\"payload\":\"{\\\"email\\\":\\\"abdullahmasood186@gmail.com\\\",\\\"contactNumber\\\":\\\"03323737593 \\\"}\"}","timestamp":"04:06:54"}
+{"level":"debug","message":"create query data : {\"otp\":535440}","timestamp":"04:06:54"}
+{"level":"debug","message":"db result : {\"otp\":535440,\"_id\":\"UJCvaF28J7I9mFpf\"}","timestamp":"04:06:54"}
+{"level":"debug","message":"final response: {\"otp\":535440,\"_id\":\"UJCvaF28J7I9mFpf\"}","timestamp":"04:06:54"}
+{"level":"info","message":"route : /otp","timestamp":"04:07:33"}
+{"level":"info","message":"method : POST","timestamp":"04:07:33"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/json\",\"cache-control\":\"no-cache\",\"postman-token\":\"90e2456a-3cb2-4636-8511-5e404bbab810\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"content-length\":\"83\",\"connection\":\"keep-alive\"}","timestamp":"04:07:33"}
+{"level":"debug","message":"body: {\"payload\":{\"email\":\"saadkhan2696@gmail.com\",\"contactNumber\":\"12345678\"}}","timestamp":"04:07:33"}
+{"level":"debug","message":"request body : {\"payload\":{\"email\":\"saadkhan2696@gmail.com\",\"contactNumber\":\"12345678\"}}","timestamp":"04:07:33"}
+{"level":"debug","message":"create query data : {\"otp\":708594,\"contactNumber\":\"12345678\"}","timestamp":"04:07:33"}
+{"level":"debug","message":"db result : {\"otp\":708594,\"contactNumber\":\"12345678\",\"_id\":\"ozrbiA8JBuO1aqrs\"}","timestamp":"04:07:33"}
+{"level":"debug","message":"final response: {\"otp\":708594,\"contactNumber\":\"12345678\",\"_id\":\"ozrbiA8JBuO1aqrs\"}","timestamp":"04:07:33"}
+{"level":"info","message":"Listening on port 3000","timestamp":"04:11:43"}
+{"level":"info","message":"route : /otp","timestamp":"04:12:12"}
+{"level":"info","message":"Listening on port 3000","timestamp":"04:28:46"}
+{"level":"info","message":"route : /coins","timestamp":"04:28:54"}
+{"level":"info","message":"method : GET","timestamp":"04:28:54"}
+{"level":"verbose","message":"headers: {\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 7.0; SM-G925F Build/NRD90M)\",\"host\":\"192.168.8.103:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\"}","timestamp":"04:28:54"}
+{"level":"debug","message":"body: {}","timestamp":"04:28:54"}
+{"level":"debug","message":"request body : {}","timestamp":"04:28:54"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllCoins\",\"collection\":\"coins\"}","timestamp":"04:28:54"}
+{"level":"debug","message":"read query where : {}","timestamp":"04:28:54"}
+{"level":"debug","message":"db result : [{\"_id\":\"5b61a0fd189bc5374c868f4b\",\"symbol\":\"BTC\",\"rate\":\"700$\",\"coinName\":\"Bitcoin\"},{\"_id\":\"5b61a1448df052376b1b003c\",\"symbol\":\"ETH\",\"rate\":\"10$\",\"coinName\":\"Ethereum\"},{\"_id\":\"5b61a1700570d83790c33f73\",\"symbol\":\"XRP\",\"rate\":\"1$\",\"coinName\":\"Ripple\"}]","timestamp":"04:28:54"}
+{"level":"debug","message":"final response: [{\"_id\":\"5b61a0fd189bc5374c868f4b\",\"symbol\":\"BTC\",\"rate\":\"700$\",\"coinName\":\"Bitcoin\"},{\"_id\":\"5b61a1448df052376b1b003c\",\"symbol\":\"ETH\",\"rate\":\"10$\",\"coinName\":\"Ethereum\"},{\"_id\":\"5b61a1700570d83790c33f73\",\"symbol\":\"XRP\",\"rate\":\"1$\",\"coinName\":\"Ripple\"}]","timestamp":"04:28:54"}
+{"level":"info","message":"route : /otp","timestamp":"04:29:44"}
+{"level":"info","message":"method : POST","timestamp":"04:29:44"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/x-www-form-urlencoded; charset=UTF-8\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 7.0; SM-G925F Build/NRD90M)\",\"host\":\"192.168.8.103:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\",\"content-length\":\"98\"}","timestamp":"04:29:44"}
+{"level":"debug","message":"body: {\"payload\":\"{\\\"email\\\":\\\"saadkhan2696@gmail.com\\\",\\\"contactNumber\\\":\\\"12345678\\\"}\"}","timestamp":"04:29:44"}
+{"level":"debug","message":"request body : {\"payload\":\"{\\\"email\\\":\\\"saadkhan2696@gmail.com\\\",\\\"contactNumber\\\":\\\"12345678\\\"}\"}","timestamp":"04:29:44"}
+{"level":"debug","message":"create query data : {\"otp\":683653}","timestamp":"04:29:44"}
+{"level":"debug","message":"db result : {\"n\":1,\"ok\":1}","timestamp":"04:29:44"}
+{"level":"debug","message":"final response: {\"n\":1,\"ok\":1}","timestamp":"04:29:44"}
+{"level":"info","message":"route : /coins","timestamp":"04:30:15"}
+{"level":"info","message":"method : GET","timestamp":"04:30:15"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"fd-TmITJhjKCjjkddFgrft3ZEOnhyc\\\"\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 7.0; SM-G925F Build/NRD90M)\",\"host\":\"192.168.8.103:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\"}","timestamp":"04:30:15"}
+{"level":"debug","message":"body: {}","timestamp":"04:30:15"}
+{"level":"debug","message":"request body : {}","timestamp":"04:30:15"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllCoins\",\"collection\":\"coins\"}","timestamp":"04:30:15"}
+{"level":"debug","message":"read query where : {}","timestamp":"04:30:15"}
+{"level":"debug","message":"db result : [{\"_id\":\"5b61a0fd189bc5374c868f4b\",\"symbol\":\"BTC\",\"rate\":\"700$\",\"coinName\":\"Bitcoin\"},{\"_id\":\"5b61a1448df052376b1b003c\",\"symbol\":\"ETH\",\"rate\":\"10$\",\"coinName\":\"Ethereum\"},{\"_id\":\"5b61a1700570d83790c33f73\",\"symbol\":\"XRP\",\"rate\":\"1$\",\"coinName\":\"Ripple\"}]","timestamp":"04:30:15"}
+{"level":"debug","message":"final response: [{\"_id\":\"5b61a0fd189bc5374c868f4b\",\"symbol\":\"BTC\",\"rate\":\"700$\",\"coinName\":\"Bitcoin\"},{\"_id\":\"5b61a1448df052376b1b003c\",\"symbol\":\"ETH\",\"rate\":\"10$\",\"coinName\":\"Ethereum\"},{\"_id\":\"5b61a1700570d83790c33f73\",\"symbol\":\"XRP\",\"rate\":\"1$\",\"coinName\":\"Ripple\"}]","timestamp":"04:30:15"}
+{"level":"info","message":"route : /otp","timestamp":"04:30:54"}
+{"level":"info","message":"method : POST","timestamp":"04:30:54"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/json\",\"cache-control\":\"no-cache\",\"postman-token\":\"e13aff28-0023-43b5-9aa3-6002910e259d\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"content-length\":\"83\",\"connection\":\"keep-alive\"}","timestamp":"04:30:54"}
+{"level":"debug","message":"body: {\"payload\":{\"email\":\"saadkhan2696@gmail.com\",\"contactNumber\":\"12345678\"}}","timestamp":"04:30:54"}
+{"level":"debug","message":"request body : {\"payload\":{\"email\":\"saadkhan2696@gmail.com\",\"contactNumber\":\"12345678\"}}","timestamp":"04:30:54"}
+{"level":"debug","message":"create query data : {\"otp\":343974,\"contactNumber\":\"12345678\"}","timestamp":"04:30:54"}
+{"level":"debug","message":"db result : {\"n\":1,\"ok\":1}","timestamp":"04:30:54"}
+{"level":"debug","message":"final response: {\"n\":1,\"ok\":1}","timestamp":"04:30:54"}
+{"level":"info","message":"Listening on port 3000","timestamp":"04:49:10"}
+{"level":"info","message":"route : /coins","timestamp":"04:49:14"}
+{"level":"info","message":"method : GET","timestamp":"04:49:14"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"e2-B9l8lI9I8Kod9iRCmj6NulxhqH0\\\"\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 8.0.0; LDN-L21 Build/HUAWEILDN-L21)\",\"host\":\"192.168.8.103:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\"}","timestamp":"04:49:14"}
+{"level":"debug","message":"body: {}","timestamp":"04:49:14"}
+{"level":"debug","message":"request body : {}","timestamp":"04:49:14"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllCoins\",\"collection\":\"coins\"}","timestamp":"04:49:14"}
+{"level":"debug","message":"read query where : {}","timestamp":"04:49:14"}
+{"level":"debug","message":"db result : [{\"_id\":\"5b61a0fd189bc5374c868f4b\",\"symbol\":\"BTC\",\"rate\":\"700$\",\"coinName\":\"Bitcoin\"},{\"_id\":\"5b61a1448df052376b1b003c\",\"symbol\":\"ETH\",\"rate\":\"10$\",\"coinName\":\"Ethereum\"},{\"_id\":\"5b61a1700570d83790c33f73\",\"symbol\":\"XRP\",\"rate\":\"1$\",\"coinName\":\"Ripple\"}]","timestamp":"04:49:14"}
+{"level":"debug","message":"final response: [{\"_id\":\"5b61a0fd189bc5374c868f4b\",\"symbol\":\"BTC\",\"rate\":\"700$\",\"coinName\":\"Bitcoin\"},{\"_id\":\"5b61a1448df052376b1b003c\",\"symbol\":\"ETH\",\"rate\":\"10$\",\"coinName\":\"Ethereum\"},{\"_id\":\"5b61a1700570d83790c33f73\",\"symbol\":\"XRP\",\"rate\":\"1$\",\"coinName\":\"Ripple\"}]","timestamp":"04:49:14"}
+{"level":"info","message":"route : /otp","timestamp":"04:49:30"}
+{"level":"info","message":"method : POST","timestamp":"04:49:30"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"27-IZbya4TZ4hGSq5kf7mZqgunDcyo\\\"\",\"content-type\":\"application/x-www-form-urlencoded; charset=UTF-8\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 8.0.0; LDN-L21 Build/HUAWEILDN-L21)\",\"host\":\"192.168.8.103:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\",\"content-length\":\"107\"}","timestamp":"04:49:30"}
+{"level":"debug","message":"body: {\"payload\":\"{\\\"email\\\":\\\"maliksuleman007@outlook.com\\\",\\\"contactNumber\\\":\\\"03323737593 \\\"}\"}","timestamp":"04:49:30"}
+{"level":"debug","message":"request body : {\"payload\":\"{\\\"email\\\":\\\"maliksuleman007@outlook.com\\\",\\\"contactNumber\\\":\\\"03323737593 \\\"}\"}","timestamp":"04:49:30"}
+{"level":"debug","message":"create query data : {\"otp\":712601}","timestamp":"04:49:30"}
+{"level":"debug","message":"db result : {\"n\":1,\"ok\":1}","timestamp":"04:49:30"}
+{"level":"debug","message":"final response: {\"n\":1,\"ok\":1}","timestamp":"04:49:30"}
+{"level":"info","message":"Listening on port 3000","timestamp":"04:52:24"}
+{"level":"info","message":"route : /otp","timestamp":"04:52:38"}
+{"level":"info","message":"method : POST","timestamp":"04:52:38"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"e-O6wjzRYDyhFZBXnno9+gyqQ12rA\\\"\",\"content-type\":\"application/x-www-form-urlencoded; charset=UTF-8\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 8.0.0; LDN-L21 Build/HUAWEILDN-L21)\",\"host\":\"192.168.8.103:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\",\"content-length\":\"107\"}","timestamp":"04:52:38"}
+{"level":"debug","message":"body: {\"payload\":\"{\\\"email\\\":\\\"maliksuleman007@outlook.com\\\",\\\"contactNumber\\\":\\\"03323737593 \\\"}\"}","timestamp":"04:52:38"}
+{"level":"debug","message":"request body : {\"payload\":\"{\\\"email\\\":\\\"maliksuleman007@outlook.com\\\",\\\"contactNumber\\\":\\\"03323737593 \\\"}\"}","timestamp":"04:52:38"}
+{"level":"debug","message":"create query data : {\"otp\":735746}","timestamp":"04:52:38"}
+{"level":"debug","message":"db result : {\"n\":1,\"ok\":1}","timestamp":"04:52:38"}
+{"level":"debug","message":"final response: {\"n\":1,\"ok\":1}","timestamp":"04:52:38"}
+{"level":"info","message":"route : /otp","timestamp":"04:53:20"}
+{"level":"info","message":"method : POST","timestamp":"04:53:20"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"e-O6wjzRYDyhFZBXnno9+gyqQ12rA\\\"\",\"content-type\":\"application/x-www-form-urlencoded; charset=UTF-8\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 8.0.0; LDN-L21 Build/HUAWEILDN-L21)\",\"host\":\"192.168.8.103:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\",\"content-length\":\"107\"}","timestamp":"04:53:20"}
+{"level":"debug","message":"body: {\"payload\":\"{\\\"email\\\":\\\"suleman.bsse2565@iiu.edu.pk\\\",\\\"contactNumber\\\":\\\"03323737593 \\\"}\"}","timestamp":"04:53:20"}
+{"level":"debug","message":"request body : {\"payload\":\"{\\\"email\\\":\\\"suleman.bsse2565@iiu.edu.pk\\\",\\\"contactNumber\\\":\\\"03323737593 \\\"}\"}","timestamp":"04:53:20"}
+{"level":"debug","message":"create query data : {\"otp\":681146}","timestamp":"04:53:20"}
+{"level":"debug","message":"db result : {\"n\":1,\"ok\":1}","timestamp":"04:53:20"}
+{"level":"debug","message":"final response: {\"n\":1,\"ok\":1}","timestamp":"04:53:20"}
+{"level":"info","message":"Listening on port 3000","timestamp":"05:01:47"}
+{"level":"info","message":"route : /coins","timestamp":"05:02:01"}
+{"level":"info","message":"method : GET","timestamp":"05:02:01"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"fd-TmITJhjKCjjkddFgrft3ZEOnhyc\\\"\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 8.0.0; LDN-L21 Build/HUAWEILDN-L21)\",\"host\":\"192.168.8.103:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\"}","timestamp":"05:02:01"}
+{"level":"debug","message":"body: {}","timestamp":"05:02:01"}
+{"level":"debug","message":"request body : {}","timestamp":"05:02:01"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllCoins\",\"collection\":\"coins\"}","timestamp":"05:02:01"}
+{"level":"debug","message":"read query where : {}","timestamp":"05:02:01"}
+{"level":"debug","message":"db result : [{\"_id\":\"5b61a0fd189bc5374c868f4b\",\"symbol\":\"BTC\",\"rate\":\"700$\",\"coinName\":\"Bitcoin\"},{\"_id\":\"5b61a1448df052376b1b003c\",\"symbol\":\"ETH\",\"rate\":\"10$\",\"coinName\":\"Ethereum\"},{\"_id\":\"5b61a1700570d83790c33f73\",\"symbol\":\"XRP\",\"rate\":\"1$\",\"coinName\":\"Ripple\"}]","timestamp":"05:02:01"}
+{"level":"debug","message":"final response: [{\"_id\":\"5b61a0fd189bc5374c868f4b\",\"symbol\":\"BTC\",\"rate\":\"700$\",\"coinName\":\"Bitcoin\"},{\"_id\":\"5b61a1448df052376b1b003c\",\"symbol\":\"ETH\",\"rate\":\"10$\",\"coinName\":\"Ethereum\"},{\"_id\":\"5b61a1700570d83790c33f73\",\"symbol\":\"XRP\",\"rate\":\"1$\",\"coinName\":\"Ripple\"}]","timestamp":"05:02:01"}
+{"level":"info","message":"route : /otp","timestamp":"05:02:22"}
+{"level":"info","message":"method : POST","timestamp":"05:02:22"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"e-O6wjzRYDyhFZBXnno9+gyqQ12rA\\\"\",\"content-type\":\"application/x-www-form-urlencoded; charset=UTF-8\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 8.0.0; LDN-L21 Build/HUAWEILDN-L21)\",\"host\":\"192.168.8.103:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\",\"content-length\":\"107\"}","timestamp":"05:02:22"}
+{"level":"debug","message":"body: {\"payload\":\"{\\\"email\\\":\\\"suleman.bsse2565@iiu.edu.pk\\\",\\\"contactNumber\\\":\\\"03323737593 \\\"}\"}","timestamp":"05:02:22"}
+{"level":"debug","message":"request body : {\"payload\":\"{\\\"email\\\":\\\"suleman.bsse2565@iiu.edu.pk\\\",\\\"contactNumber\\\":\\\"03323737593 \\\"}\"}","timestamp":"05:02:22"}
+{"level":"debug","message":"create query data : {\"otp\":855462}","timestamp":"05:02:22"}
+{"level":"debug","message":"db result : {\"n\":1,\"ok\":1}","timestamp":"05:02:22"}
+{"level":"debug","message":"final response: {\"n\":1,\"ok\":1}","timestamp":"05:02:22"}
+{"level":"info","message":"route : /coins","timestamp":"05:10:06"}
+{"level":"info","message":"method : GET","timestamp":"05:10:06"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"fd-TmITJhjKCjjkddFgrft3ZEOnhyc\\\"\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 8.0.0; LDN-L21 Build/HUAWEILDN-L21)\",\"host\":\"192.168.8.103:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\"}","timestamp":"05:10:06"}
+{"level":"debug","message":"body: {}","timestamp":"05:10:06"}
+{"level":"debug","message":"request body : {}","timestamp":"05:10:06"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllCoins\",\"collection\":\"coins\"}","timestamp":"05:10:06"}
+{"level":"debug","message":"read query where : {}","timestamp":"05:10:06"}
+{"level":"debug","message":"db result : [{\"_id\":\"5b61a0fd189bc5374c868f4b\",\"symbol\":\"BTC\",\"rate\":\"700$\",\"coinName\":\"Bitcoin\"},{\"_id\":\"5b61a1448df052376b1b003c\",\"symbol\":\"ETH\",\"rate\":\"10$\",\"coinName\":\"Ethereum\"},{\"_id\":\"5b61a1700570d83790c33f73\",\"symbol\":\"XRP\",\"rate\":\"1$\",\"coinName\":\"Ripple\"}]","timestamp":"05:10:06"}
+{"level":"debug","message":"final response: [{\"_id\":\"5b61a0fd189bc5374c868f4b\",\"symbol\":\"BTC\",\"rate\":\"700$\",\"coinName\":\"Bitcoin\"},{\"_id\":\"5b61a1448df052376b1b003c\",\"symbol\":\"ETH\",\"rate\":\"10$\",\"coinName\":\"Ethereum\"},{\"_id\":\"5b61a1700570d83790c33f73\",\"symbol\":\"XRP\",\"rate\":\"1$\",\"coinName\":\"Ripple\"}]","timestamp":"05:10:06"}
+{"level":"info","message":"route : /otp","timestamp":"05:10:21"}
+{"level":"info","message":"method : POST","timestamp":"05:10:21"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"e-O6wjzRYDyhFZBXnno9+gyqQ12rA\\\"\",\"content-type\":\"application/x-www-form-urlencoded; charset=UTF-8\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 8.0.0; LDN-L21 Build/HUAWEILDN-L21)\",\"host\":\"192.168.8.103:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\",\"content-length\":\"107\"}","timestamp":"05:10:21"}
+{"level":"debug","message":"body: {\"payload\":\"{\\\"email\\\":\\\"suleman.bsse2565@iiu.edu.pk\\\",\\\"contactNumber\\\":\\\"03323737593 \\\"}\"}","timestamp":"05:10:21"}
+{"level":"debug","message":"request body : {\"payload\":\"{\\\"email\\\":\\\"suleman.bsse2565@iiu.edu.pk\\\",\\\"contactNumber\\\":\\\"03323737593 \\\"}\"}","timestamp":"05:10:21"}
+{"level":"debug","message":"create query data : {\"otp\":548088}","timestamp":"05:10:21"}
+{"level":"debug","message":"db result : {\"n\":1,\"ok\":1}","timestamp":"05:10:21"}
+{"level":"debug","message":"final response: {\"n\":1,\"ok\":1}","timestamp":"05:10:21"}
+{"level":"info","message":"route : /coins","timestamp":"05:10:48"}
+{"level":"info","message":"method : GET","timestamp":"05:10:48"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"fd-TmITJhjKCjjkddFgrft3ZEOnhyc\\\"\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 8.0.0; LDN-L21 Build/HUAWEILDN-L21)\",\"host\":\"192.168.8.103:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\"}","timestamp":"05:10:48"}
+{"level":"debug","message":"body: {}","timestamp":"05:10:48"}
+{"level":"debug","message":"request body : {}","timestamp":"05:10:48"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllCoins\",\"collection\":\"coins\"}","timestamp":"05:10:48"}
+{"level":"debug","message":"read query where : {}","timestamp":"05:10:48"}
+{"level":"debug","message":"db result : [{\"_id\":\"5b61a0fd189bc5374c868f4b\",\"symbol\":\"BTC\",\"rate\":\"700$\",\"coinName\":\"Bitcoin\"},{\"_id\":\"5b61a1448df052376b1b003c\",\"symbol\":\"ETH\",\"rate\":\"10$\",\"coinName\":\"Ethereum\"},{\"_id\":\"5b61a1700570d83790c33f73\",\"symbol\":\"XRP\",\"rate\":\"1$\",\"coinName\":\"Ripple\"}]","timestamp":"05:10:48"}
+{"level":"debug","message":"final response: [{\"_id\":\"5b61a0fd189bc5374c868f4b\",\"symbol\":\"BTC\",\"rate\":\"700$\",\"coinName\":\"Bitcoin\"},{\"_id\":\"5b61a1448df052376b1b003c\",\"symbol\":\"ETH\",\"rate\":\"10$\",\"coinName\":\"Ethereum\"},{\"_id\":\"5b61a1700570d83790c33f73\",\"symbol\":\"XRP\",\"rate\":\"1$\",\"coinName\":\"Ripple\"}]","timestamp":"05:10:48"}
+{"level":"info","message":"Listening on port 3000","timestamp":"07:06:04"}
+{"level":"info","message":"route : /coins","timestamp":"07:08:02"}
+{"level":"info","message":"method : GET","timestamp":"07:08:02"}
+{"level":"verbose","message":"headers: {\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 7.0; SM-G925F Build/NRD90M)\",\"host\":\"192.168.8.100:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\"}","timestamp":"07:08:02"}
+{"level":"debug","message":"body: {}","timestamp":"07:08:02"}
+{"level":"debug","message":"request body : {}","timestamp":"07:08:02"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllCoins\",\"collection\":\"coins\"}","timestamp":"07:08:02"}
+{"level":"debug","message":"read query where : {}","timestamp":"07:08:02"}
+{"level":"debug","message":"db result : [{\"_id\":\"5b61a0fd189bc5374c868f4b\",\"symbol\":\"BTC\",\"rate\":\"700$\",\"coinName\":\"Bitcoin\"},{\"_id\":\"5b61a1448df052376b1b003c\",\"symbol\":\"ETH\",\"rate\":\"10$\",\"coinName\":\"Ethereum\"},{\"_id\":\"5b61a1700570d83790c33f73\",\"symbol\":\"XRP\",\"rate\":\"1$\",\"coinName\":\"Ripple\"}]","timestamp":"07:08:02"}
+{"level":"debug","message":"final response: [{\"_id\":\"5b61a0fd189bc5374c868f4b\",\"symbol\":\"BTC\",\"rate\":\"700$\",\"coinName\":\"Bitcoin\"},{\"_id\":\"5b61a1448df052376b1b003c\",\"symbol\":\"ETH\",\"rate\":\"10$\",\"coinName\":\"Ethereum\"},{\"_id\":\"5b61a1700570d83790c33f73\",\"symbol\":\"XRP\",\"rate\":\"1$\",\"coinName\":\"Ripple\"}]","timestamp":"07:08:02"}
+{"level":"info","message":"route : /otp","timestamp":"07:08:47"}
+{"level":"info","message":"method : POST","timestamp":"07:08:47"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/x-www-form-urlencoded; charset=UTF-8\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 7.0; SM-G925F Build/NRD90M)\",\"host\":\"192.168.8.100:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\",\"content-length\":\"101\"}","timestamp":"07:08:47"}
+{"level":"debug","message":"body: {\"payload\":\"{\\\"email\\\":\\\"hafiz.bsse2605@iiu.edu.pk\\\",\\\"contactNumber\\\":\\\"12345678\\\"}\"}","timestamp":"07:08:47"}
+{"level":"debug","message":"request body : {\"payload\":\"{\\\"email\\\":\\\"hafiz.bsse2605@iiu.edu.pk\\\",\\\"contactNumber\\\":\\\"12345678\\\"}\"}","timestamp":"07:08:47"}
+{"level":"debug","message":"create query data : {\"otp\":484671}","timestamp":"07:08:47"}
+{"level":"debug","message":"db result : {\"n\":1,\"ok\":1}","timestamp":"07:08:47"}
+{"level":"debug","message":"final response: {\"n\":1,\"ok\":1}","timestamp":"07:08:47"}
+{"level":"info","message":"route : /coins","timestamp":"07:19:23"}
+{"level":"info","message":"method : GET","timestamp":"07:19:23"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"fd-TmITJhjKCjjkddFgrft3ZEOnhyc\\\"\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 7.0; SM-G925F Build/NRD90M)\",\"host\":\"192.168.8.100:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\"}","timestamp":"07:19:23"}
+{"level":"debug","message":"body: {}","timestamp":"07:19:23"}
+{"level":"debug","message":"request body : {}","timestamp":"07:19:23"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllCoins\",\"collection\":\"coins\"}","timestamp":"07:19:23"}
+{"level":"debug","message":"read query where : {}","timestamp":"07:19:23"}
+{"level":"debug","message":"db result : [{\"_id\":\"5b61a0fd189bc5374c868f4b\",\"symbol\":\"BTC\",\"rate\":\"700$\",\"coinName\":\"Bitcoin\"},{\"_id\":\"5b61a1448df052376b1b003c\",\"symbol\":\"ETH\",\"rate\":\"10$\",\"coinName\":\"Ethereum\"},{\"_id\":\"5b61a1700570d83790c33f73\",\"symbol\":\"XRP\",\"rate\":\"1$\",\"coinName\":\"Ripple\"}]","timestamp":"07:19:23"}
+{"level":"debug","message":"final response: [{\"_id\":\"5b61a0fd189bc5374c868f4b\",\"symbol\":\"BTC\",\"rate\":\"700$\",\"coinName\":\"Bitcoin\"},{\"_id\":\"5b61a1448df052376b1b003c\",\"symbol\":\"ETH\",\"rate\":\"10$\",\"coinName\":\"Ethereum\"},{\"_id\":\"5b61a1700570d83790c33f73\",\"symbol\":\"XRP\",\"rate\":\"1$\",\"coinName\":\"Ripple\"}]","timestamp":"07:19:23"}
+{"level":"info","message":"route : /otp","timestamp":"07:20:14"}
+{"level":"info","message":"method : POST","timestamp":"07:20:14"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"e-O6wjzRYDyhFZBXnno9+gyqQ12rA\\\"\",\"content-type\":\"application/x-www-form-urlencoded; charset=UTF-8\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 7.0; SM-G925F Build/NRD90M)\",\"host\":\"192.168.8.100:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\",\"content-length\":\"99\"}","timestamp":"07:20:14"}
+{"level":"debug","message":"body: {\"payload\":\"{\\\"email\\\":\\\"hafiz.combsse@gmail.com\\\",\\\"contactNumber\\\":\\\"11111111\\\"}\"}","timestamp":"07:20:14"}
+{"level":"debug","message":"request body : {\"payload\":\"{\\\"email\\\":\\\"hafiz.combsse@gmail.com\\\",\\\"contactNumber\\\":\\\"11111111\\\"}\"}","timestamp":"07:20:14"}
+{"level":"debug","message":"create query data : {\"otp\":961204}","timestamp":"07:20:14"}
+{"level":"debug","message":"db result : {\"n\":1,\"ok\":1}","timestamp":"07:20:14"}
+{"level":"debug","message":"final response: {\"n\":1,\"ok\":1}","timestamp":"07:20:14"}
+{"level":"info","message":"route : /coins","timestamp":"07:22:00"}
+{"level":"info","message":"method : GET","timestamp":"07:22:00"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"fd-TmITJhjKCjjkddFgrft3ZEOnhyc\\\"\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 7.0; SM-G925F Build/NRD90M)\",\"host\":\"192.168.8.100:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\"}","timestamp":"07:22:00"}
+{"level":"debug","message":"body: {}","timestamp":"07:22:00"}
+{"level":"debug","message":"request body : {}","timestamp":"07:22:00"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllCoins\",\"collection\":\"coins\"}","timestamp":"07:22:00"}
+{"level":"debug","message":"read query where : {}","timestamp":"07:22:00"}
+{"level":"debug","message":"db result : [{\"_id\":\"5b61a0fd189bc5374c868f4b\",\"symbol\":\"BTC\",\"rate\":\"700$\",\"coinName\":\"Bitcoin\"},{\"_id\":\"5b61a1448df052376b1b003c\",\"symbol\":\"ETH\",\"rate\":\"10$\",\"coinName\":\"Ethereum\"},{\"_id\":\"5b61a1700570d83790c33f73\",\"symbol\":\"XRP\",\"rate\":\"1$\",\"coinName\":\"Ripple\"}]","timestamp":"07:22:00"}
+{"level":"debug","message":"final response: [{\"_id\":\"5b61a0fd189bc5374c868f4b\",\"symbol\":\"BTC\",\"rate\":\"700$\",\"coinName\":\"Bitcoin\"},{\"_id\":\"5b61a1448df052376b1b003c\",\"symbol\":\"ETH\",\"rate\":\"10$\",\"coinName\":\"Ethereum\"},{\"_id\":\"5b61a1700570d83790c33f73\",\"symbol\":\"XRP\",\"rate\":\"1$\",\"coinName\":\"Ripple\"}]","timestamp":"07:22:00"}
+{"level":"info","message":"route : /coins","timestamp":"07:31:47"}
+{"level":"info","message":"method : GET","timestamp":"07:31:47"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"fd-TmITJhjKCjjkddFgrft3ZEOnhyc\\\"\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 7.0; SM-G925F Build/NRD90M)\",\"host\":\"192.168.8.100:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\"}","timestamp":"07:31:47"}
+{"level":"debug","message":"body: {}","timestamp":"07:31:47"}
+{"level":"debug","message":"request body : {}","timestamp":"07:31:47"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllCoins\",\"collection\":\"coins\"}","timestamp":"07:31:47"}
+{"level":"debug","message":"read query where : {}","timestamp":"07:31:47"}
+{"level":"debug","message":"db result : [{\"_id\":\"5b61a0fd189bc5374c868f4b\",\"symbol\":\"BTC\",\"rate\":\"700$\",\"coinName\":\"Bitcoin\"},{\"_id\":\"5b61a1448df052376b1b003c\",\"symbol\":\"ETH\",\"rate\":\"10$\",\"coinName\":\"Ethereum\"},{\"_id\":\"5b61a1700570d83790c33f73\",\"symbol\":\"XRP\",\"rate\":\"1$\",\"coinName\":\"Ripple\"}]","timestamp":"07:31:47"}
+{"level":"debug","message":"final response: [{\"_id\":\"5b61a0fd189bc5374c868f4b\",\"symbol\":\"BTC\",\"rate\":\"700$\",\"coinName\":\"Bitcoin\"},{\"_id\":\"5b61a1448df052376b1b003c\",\"symbol\":\"ETH\",\"rate\":\"10$\",\"coinName\":\"Ethereum\"},{\"_id\":\"5b61a1700570d83790c33f73\",\"symbol\":\"XRP\",\"rate\":\"1$\",\"coinName\":\"Ripple\"}]","timestamp":"07:31:47"}
+{"level":"info","message":"route : /otp","timestamp":"07:32:15"}
+{"level":"info","message":"method : POST","timestamp":"07:32:15"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"e-O6wjzRYDyhFZBXnno9+gyqQ12rA\\\"\",\"content-type\":\"application/x-www-form-urlencoded; charset=UTF-8\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 7.0; SM-G925F Build/NRD90M)\",\"host\":\"192.168.8.100:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\",\"content-length\":\"88\"}","timestamp":"07:32:15"}
+{"level":"debug","message":"body: {\"payload\":\"{\\\"email\\\":\\\"hgff@gmail.com\\\",\\\"contactNumber\\\":\\\"111111\\\"}\"}","timestamp":"07:32:15"}
+{"level":"debug","message":"request body : {\"payload\":\"{\\\"email\\\":\\\"hgff@gmail.com\\\",\\\"contactNumber\\\":\\\"111111\\\"}\"}","timestamp":"07:32:15"}
+{"level":"debug","message":"create query data : {\"otp\":331399}","timestamp":"07:32:15"}
+{"level":"debug","message":"db result : {\"n\":1,\"ok\":1}","timestamp":"07:32:15"}
+{"level":"debug","message":"final response: {\"n\":1,\"ok\":1}","timestamp":"07:32:15"}
+{"level":"info","message":"route : /signup","timestamp":"07:35:08"}
+{"level":"info","message":"method : POST","timestamp":"07:35:08"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/x-www-form-urlencoded; charset=UTF-8\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 7.0; SM-G925F Build/NRD90M)\",\"host\":\"192.168.8.100:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\",\"content-length\":\"240\"}","timestamp":"07:35:08"}
+{"level":"debug","message":"body: {\"payload\":\"{\\\"firstName\\\":\\\"hgfd\\\",\\\"email\\\":\\\"hgff@gmail.com\\\",\\\"username\\\":\\\"hafiz\\\",\\\"passward\\\":\\\"1234\\\",\\\"coinId\\\":\\\"12f568hg876\\\",\\\"contactNumber\\\":\\\"111111\\\",\\\"otpCode\\\":123455}\"}","timestamp":"07:35:08"}
+{"level":"debug","message":"request body : {\"payload\":{\"firstName\":\"hgfd\",\"email\":\"hgff@gmail.com\",\"username\":\"hafiz\",\"passward\":\"1234\",\"coinId\":\"12f568hg876\",\"contactNumber\":111111,\"otpCode\":123455}}","timestamp":"07:35:08"}
+{"level":"debug","message":"read query data : {\"payload\":{\"firstName\":\"hgfd\",\"email\":\"hgff@gmail.com\",\"username\":\"hafiz\",\"passward\":\"1234\",\"coinId\":\"12f568hg876\",\"contactNumber\":111111,\"otpCode\":123455},\"serveFrom\":\"database\",\"route\":\"otpConf\",\"collection\":\"otp\",\"where\":{\"contactNumber\":111111}}","timestamp":"07:35:08"}
+{"level":"debug","message":"read query where : {\"contactNumber\":111111}","timestamp":"07:35:08"}
+{"level":"debug","message":"db result : []","timestamp":"07:35:08"}
+{"level":"debug","message":"create query data : {\"firstName\":\"hgfd\",\"email\":\"hgff@gmail.com\",\"username\":\"hafiz\",\"passward\":\"1234\",\"coinId\":\"12f568hg876\",\"contactNumber\":111111,\"otpCode\":123455}","timestamp":"07:35:08"}
+{"level":"debug","message":"db result : {\"n\":1,\"ok\":1}","timestamp":"07:35:08"}
+{"level":"debug","message":"final response: {\"n\":1,\"ok\":1}","timestamp":"07:35:08"}
+{"level":"info","message":"route : /coins","timestamp":"07:36:03"}
+{"level":"info","message":"method : GET","timestamp":"07:36:03"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"fd-TmITJhjKCjjkddFgrft3ZEOnhyc\\\"\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 7.0; SM-G925F Build/NRD90M)\",\"host\":\"192.168.8.100:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\"}","timestamp":"07:36:03"}
+{"level":"debug","message":"body: {}","timestamp":"07:36:03"}
+{"level":"debug","message":"request body : {}","timestamp":"07:36:03"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllCoins\",\"collection\":\"coins\"}","timestamp":"07:36:03"}
+{"level":"debug","message":"read query where : {}","timestamp":"07:36:03"}
+{"level":"debug","message":"db result : [{\"_id\":\"5b61a0fd189bc5374c868f4b\",\"symbol\":\"BTC\",\"rate\":\"700$\",\"coinName\":\"Bitcoin\"},{\"_id\":\"5b61a1448df052376b1b003c\",\"symbol\":\"ETH\",\"rate\":\"10$\",\"coinName\":\"Ethereum\"},{\"_id\":\"5b61a1700570d83790c33f73\",\"symbol\":\"XRP\",\"rate\":\"1$\",\"coinName\":\"Ripple\"}]","timestamp":"07:36:03"}
+{"level":"debug","message":"final response: [{\"_id\":\"5b61a0fd189bc5374c868f4b\",\"symbol\":\"BTC\",\"rate\":\"700$\",\"coinName\":\"Bitcoin\"},{\"_id\":\"5b61a1448df052376b1b003c\",\"symbol\":\"ETH\",\"rate\":\"10$\",\"coinName\":\"Ethereum\"},{\"_id\":\"5b61a1700570d83790c33f73\",\"symbol\":\"XRP\",\"rate\":\"1$\",\"coinName\":\"Ripple\"}]","timestamp":"07:36:03"}
+{"level":"info","message":"route : /coins","timestamp":"07:44:23"}
+{"level":"info","message":"method : GET","timestamp":"07:44:23"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"fd-TmITJhjKCjjkddFgrft3ZEOnhyc\\\"\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 7.0; SM-G925F Build/NRD90M)\",\"host\":\"192.168.8.100:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\"}","timestamp":"07:44:23"}
+{"level":"debug","message":"body: {}","timestamp":"07:44:23"}
+{"level":"debug","message":"request body : {}","timestamp":"07:44:23"}
+{"level":"debug","message":"read query data : {\"serveFrom\":\"database\",\"route\":\"getAllCoins\",\"collection\":\"coins\"}","timestamp":"07:44:23"}
+{"level":"debug","message":"read query where : {}","timestamp":"07:44:23"}
+{"level":"debug","message":"db result : [{\"_id\":\"5b61a0fd189bc5374c868f4b\",\"symbol\":\"BTC\",\"rate\":\"700$\",\"coinName\":\"Bitcoin\"},{\"_id\":\"5b61a1448df052376b1b003c\",\"symbol\":\"ETH\",\"rate\":\"10$\",\"coinName\":\"Ethereum\"},{\"_id\":\"5b61a1700570d83790c33f73\",\"symbol\":\"XRP\",\"rate\":\"1$\",\"coinName\":\"Ripple\"}]","timestamp":"07:44:23"}
+{"level":"debug","message":"final response: [{\"_id\":\"5b61a0fd189bc5374c868f4b\",\"symbol\":\"BTC\",\"rate\":\"700$\",\"coinName\":\"Bitcoin\"},{\"_id\":\"5b61a1448df052376b1b003c\",\"symbol\":\"ETH\",\"rate\":\"10$\",\"coinName\":\"Ethereum\"},{\"_id\":\"5b61a1700570d83790c33f73\",\"symbol\":\"XRP\",\"rate\":\"1$\",\"coinName\":\"Ripple\"}]","timestamp":"07:44:23"}
+{"level":"info","message":"route : /otp","timestamp":"07:45:21"}
+{"level":"info","message":"method : POST","timestamp":"07:45:21"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"e-O6wjzRYDyhFZBXnno9+gyqQ12rA\\\"\",\"content-type\":\"application/x-www-form-urlencoded; charset=UTF-8\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 7.0; SM-G925F Build/NRD90M)\",\"host\":\"192.168.8.100:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\",\"content-length\":\"91\"}","timestamp":"07:45:21"}
+{"level":"debug","message":"body: {\"payload\":\"{\\\"email\\\":\\\"hafiz@gmail.com\\\",\\\"contactNumber\\\":\\\"12345678\\\"}\"}","timestamp":"07:45:21"}
+{"level":"debug","message":"request body : {\"payload\":\"{\\\"email\\\":\\\"hafiz@gmail.com\\\",\\\"contactNumber\\\":\\\"12345678\\\"}\"}","timestamp":"07:45:21"}
+{"level":"debug","message":"create query data : {\"otp\":512220}","timestamp":"07:45:21"}
+{"level":"debug","message":"db result : {\"n\":1,\"ok\":1}","timestamp":"07:45:21"}
+{"level":"debug","message":"final response: {\"n\":1,\"ok\":1}","timestamp":"07:45:21"}
+{"level":"info","message":"route : /signup","timestamp":"07:46:20"}
+{"level":"info","message":"method : POST","timestamp":"07:46:20"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"e-O6wjzRYDyhFZBXnno9+gyqQ12rA\\\"\",\"content-type\":\"application/x-www-form-urlencoded; charset=UTF-8\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 7.0; SM-G925F Build/NRD90M)\",\"host\":\"192.168.8.100:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\",\"content-length\":\"243\"}","timestamp":"07:46:20"}
+{"level":"debug","message":"body: {\"payload\":\"{\\\"firstName\\\":\\\"kjhg\\\",\\\"email\\\":\\\"hafiz@gmail.com\\\",\\\"username\\\":\\\"hafiz\\\",\\\"passward\\\":\\\"1111\\\",\\\"coinId\\\":\\\"12f568hg876\\\",\\\"contactNumber\\\":\\\"12345678\\\",\\\"otpCode\\\":123456}\"}","timestamp":"07:46:20"}
+{"level":"debug","message":"request body : {\"payload\":{\"firstName\":\"kjhg\",\"email\":\"hafiz@gmail.com\",\"username\":\"hafiz\",\"passward\":\"1111\",\"coinId\":\"12f568hg876\",\"contactNumber\":12345678,\"otpCode\":123456}}","timestamp":"07:46:20"}
+{"level":"debug","message":"read query data : {\"payload\":{\"firstName\":\"kjhg\",\"email\":\"hafiz@gmail.com\",\"username\":\"hafiz\",\"passward\":\"1111\",\"coinId\":\"12f568hg876\",\"contactNumber\":12345678,\"otpCode\":123456},\"serveFrom\":\"database\",\"route\":\"otpConf\",\"collection\":\"otp\",\"where\":{\"contactNumber\":12345678}}","timestamp":"07:46:20"}
+{"level":"debug","message":"read query where : {\"contactNumber\":12345678}","timestamp":"07:46:20"}
+{"level":"debug","message":"db result : [{\"_id\":\"5b6ab5f6c7bb291a4da08a24\",\"otp\":943511,\"contactNumber\":12345678}]","timestamp":"07:46:20"}
+{"level":"debug","message":"create query data : {\"firstName\":\"kjhg\",\"email\":\"hafiz@gmail.com\",\"username\":\"hafiz\",\"passward\":\"1111\",\"coinId\":\"12f568hg876\",\"contactNumber\":12345678,\"otpCode\":123456}","timestamp":"07:46:20"}
+{"level":"debug","message":"db result : {\"n\":1,\"ok\":1}","timestamp":"07:46:20"}
+{"level":"debug","message":"final response: {\"n\":1,\"ok\":1}","timestamp":"07:46:20"}
+{"level":"info","message":"Listening on port 3000","timestamp":"07:47:39"}
+{"level":"info","message":"route : /otp","timestamp":"07:47:59"}
+{"level":"info","message":"method : POST","timestamp":"07:47:59"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"e-O6wjzRYDyhFZBXnno9+gyqQ12rA\\\"\",\"content-type\":\"application/x-www-form-urlencoded; charset=UTF-8\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 7.0; SM-G925F Build/NRD90M)\",\"host\":\"192.168.8.100:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\",\"content-length\":\"91\"}","timestamp":"07:47:59"}
+{"level":"debug","message":"body: {\"payload\":\"{\\\"email\\\":\\\"hafiz@gmail.com\\\",\\\"contactNumber\\\":\\\"12345678\\\"}\"}","timestamp":"07:47:59"}
+{"level":"debug","message":"request body : {\"payload\":\"{\\\"email\\\":\\\"hafiz@gmail.com\\\",\\\"contactNumber\\\":\\\"12345678\\\"}\"}","timestamp":"07:47:59"}
+{"level":"debug","message":"create query data : {\"otp\":349199}","timestamp":"07:47:59"}
+{"level":"debug","message":"db result : {\"n\":1,\"ok\":1}","timestamp":"07:47:59"}
+{"level":"debug","message":"final response: {\"n\":1,\"ok\":1}","timestamp":"07:47:59"}
+{"level":"info","message":"route : /signup","timestamp":"07:48:16"}
+{"level":"info","message":"method : POST","timestamp":"07:48:16"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"e-O6wjzRYDyhFZBXnno9+gyqQ12rA\\\"\",\"content-type\":\"application/x-www-form-urlencoded; charset=UTF-8\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 7.0; SM-G925F Build/NRD90M)\",\"host\":\"192.168.8.100:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\",\"content-length\":\"241\"}","timestamp":"07:48:16"}
+{"level":"debug","message":"body: {\"payload\":\"{\\\"firstName\\\":\\\"kjhg\\\",\\\"email\\\":\\\"hafiz@gmail.com\\\",\\\"username\\\":\\\"hafiz\\\",\\\"passward\\\":\\\"1111\\\",\\\"coinId\\\":\\\"12f568hg876\\\",\\\"contactNumber\\\":\\\"12345678\\\",\\\"otpCode\\\":1234}\"}","timestamp":"07:48:16"}
+{"level":"debug","message":"request body : {\"payload\":{\"firstName\":\"kjhg\",\"email\":\"hafiz@gmail.com\",\"username\":\"hafiz\",\"passward\":\"1111\",\"coinId\":\"12f568hg876\",\"contactNumber\":12345678,\"otpCode\":1234}}","timestamp":"07:48:16"}
+{"level":"debug","message":"read query data : {\"payload\":{\"firstName\":\"kjhg\",\"email\":\"hafiz@gmail.com\",\"username\":\"hafiz\",\"passward\":\"1111\",\"coinId\":\"12f568hg876\",\"contactNumber\":12345678,\"otpCode\":1234},\"serveFrom\":\"database\",\"route\":\"otpConf\",\"collection\":\"otp\",\"where\":{\"contactNumber\":12345678}}","timestamp":"07:48:16"}
+{"level":"debug","message":"read query where : {\"contactNumber\":12345678}","timestamp":"07:48:16"}
+{"level":"debug","message":"db result : [{\"_id\":\"5b6ab5f6c7bb291a4da08a24\",\"otp\":943511,\"contactNumber\":12345678}]","timestamp":"07:48:16"}
+{"level":"debug","message":"create query data : {\"firstName\":\"kjhg\",\"email\":\"hafiz@gmail.com\",\"username\":\"hafiz\",\"passward\":\"1111\",\"coinId\":\"12f568hg876\",\"contactNumber\":12345678,\"otpCode\":1234}","timestamp":"07:48:16"}
+{"level":"debug","message":"db result : {\"n\":1,\"ok\":1}","timestamp":"07:48:16"}
+{"level":"debug","message":"final response: {\"n\":1,\"ok\":1}","timestamp":"07:48:16"}
+{"level":"info","message":"Listening on port 3000","timestamp":"08:31:39"}
+{"level":"info","message":"route : /otp","timestamp":"08:32:56"}
+{"level":"info","message":"method : POST","timestamp":"08:32:56"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"e-O6wjzRYDyhFZBXnno9+gyqQ12rA\\\"\",\"content-type\":\"application/x-www-form-urlencoded; charset=UTF-8\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 7.0; SM-G925F Build/NRD90M)\",\"host\":\"192.168.8.100:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\",\"content-length\":\"103\"}","timestamp":"08:32:56"}
+{"level":"debug","message":"body: {\"payload\":\"{\\\"email\\\":\\\"suleman.bsse2605@iiu.edu.pk\\\",\\\"contactNumber\\\":\\\"33333333\\\"}\"}","timestamp":"08:32:56"}
+{"level":"debug","message":"request body : {\"payload\":\"{\\\"email\\\":\\\"suleman.bsse2605@iiu.edu.pk\\\",\\\"contactNumber\\\":\\\"33333333\\\"}\"}","timestamp":"08:32:56"}
+{"level":"debug","message":"create query data : {\"otp\":255980}","timestamp":"08:32:56"}
+{"level":"debug","message":"db result : {\"n\":1,\"ok\":1}","timestamp":"08:32:56"}
+{"level":"debug","message":"final response: {\"n\":1,\"ok\":1}","timestamp":"08:32:56"}
+{"level":"info","message":"route : /otp","timestamp":"08:33:14"}
+{"level":"info","message":"method : POST","timestamp":"08:33:14"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"e-O6wjzRYDyhFZBXnno9+gyqQ12rA\\\"\",\"content-type\":\"application/x-www-form-urlencoded; charset=UTF-8\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 7.0; SM-G925F Build/NRD90M)\",\"host\":\"192.168.8.100:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\",\"content-length\":\"103\"}","timestamp":"08:33:14"}
+{"level":"debug","message":"body: {\"payload\":\"{\\\"email\\\":\\\"suleman.bsse2605@iiu.edu.pk\\\",\\\"contactNumber\\\":\\\"33333333\\\"}\"}","timestamp":"08:33:14"}
+{"level":"debug","message":"request body : {\"payload\":\"{\\\"email\\\":\\\"suleman.bsse2605@iiu.edu.pk\\\",\\\"contactNumber\\\":\\\"33333333\\\"}\"}","timestamp":"08:33:14"}
+{"level":"debug","message":"create query data : {\"otp\":684190}","timestamp":"08:33:14"}
+{"level":"debug","message":"db result : {\"n\":1,\"ok\":1}","timestamp":"08:33:14"}
+{"level":"debug","message":"final response: {\"n\":1,\"ok\":1}","timestamp":"08:33:14"}
+{"level":"info","message":"route : /otp","timestamp":"08:33:35"}
+{"level":"info","message":"method : POST","timestamp":"08:33:35"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"e-O6wjzRYDyhFZBXnno9+gyqQ12rA\\\"\",\"content-type\":\"application/x-www-form-urlencoded; charset=UTF-8\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 7.0; SM-G925F Build/NRD90M)\",\"host\":\"192.168.8.100:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\",\"content-length\":\"103\"}","timestamp":"08:33:35"}
+{"level":"debug","message":"body: {\"payload\":\"{\\\"email\\\":\\\"suleman.bsse2565@iiu.edu.pk\\\",\\\"contactNumber\\\":\\\"33333333\\\"}\"}","timestamp":"08:33:35"}
+{"level":"debug","message":"request body : {\"payload\":\"{\\\"email\\\":\\\"suleman.bsse2565@iiu.edu.pk\\\",\\\"contactNumber\\\":\\\"33333333\\\"}\"}","timestamp":"08:33:35"}
+{"level":"debug","message":"create query data : {\"otp\":725937}","timestamp":"08:33:35"}
+{"level":"debug","message":"db result : {\"n\":1,\"ok\":1}","timestamp":"08:33:35"}
+{"level":"debug","message":"final response: {\"n\":1,\"ok\":1}","timestamp":"08:33:35"}
+{"level":"info","message":"route : /otp","timestamp":"08:35:00"}
+{"level":"info","message":"method : POST","timestamp":"08:35:00"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"e-O6wjzRYDyhFZBXnno9+gyqQ12rA\\\"\",\"content-type\":\"application/x-www-form-urlencoded; charset=UTF-8\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 7.0; SM-G925F Build/NRD90M)\",\"host\":\"192.168.8.100:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\",\"content-length\":\"103\"}","timestamp":"08:35:00"}
+{"level":"debug","message":"body: {\"payload\":\"{\\\"email\\\":\\\"suleman.bsse2565@iiu.edu.pk\\\",\\\"contactNumber\\\":\\\"33333333\\\"}\"}","timestamp":"08:35:00"}
+{"level":"debug","message":"request body : {\"payload\":\"{\\\"email\\\":\\\"suleman.bsse2565@iiu.edu.pk\\\",\\\"contactNumber\\\":\\\"33333333\\\"}\"}","timestamp":"08:35:00"}
+{"level":"debug","message":"create query data : {\"otp\":617683}","timestamp":"08:35:00"}
+{"level":"debug","message":"db result : {\"n\":1,\"ok\":1}","timestamp":"08:35:00"}
+{"level":"debug","message":"final response: {\"n\":1,\"ok\":1}","timestamp":"08:35:00"}
+{"level":"info","message":"route : /otp","timestamp":"08:36:28"}
+{"level":"info","message":"method : POST","timestamp":"08:36:28"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"e-O6wjzRYDyhFZBXnno9+gyqQ12rA\\\"\",\"content-type\":\"application/x-www-form-urlencoded; charset=UTF-8\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 7.0; SM-G925F Build/NRD90M)\",\"host\":\"192.168.8.100:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\",\"content-length\":\"103\"}","timestamp":"08:36:28"}
+{"level":"debug","message":"body: {\"payload\":\"{\\\"email\\\":\\\"suleman.bsse2565@iiu.edu.pk\\\",\\\"contactNumber\\\":\\\"33333333\\\"}\"}","timestamp":"08:36:28"}
+{"level":"debug","message":"request body : {\"payload\":\"{\\\"email\\\":\\\"suleman.bsse2565@iiu.edu.pk\\\",\\\"contactNumber\\\":\\\"33333333\\\"}\"}","timestamp":"08:36:28"}
+{"level":"debug","message":"create query data : {\"otp\":848783}","timestamp":"08:36:28"}
+{"level":"debug","message":"db result : {\"n\":1,\"ok\":1}","timestamp":"08:36:28"}
+{"level":"debug","message":"final response: {\"n\":1,\"ok\":1}","timestamp":"08:36:28"}
+{"level":"info","message":"route : /otp","timestamp":"08:42:20"}
+{"level":"info","message":"method : POST","timestamp":"08:42:20"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"e-O6wjzRYDyhFZBXnno9+gyqQ12rA\\\"\",\"content-type\":\"application/x-www-form-urlencoded; charset=UTF-8\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 7.0; SM-G925F Build/NRD90M)\",\"host\":\"192.168.8.100:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\",\"content-length\":\"103\"}","timestamp":"08:42:20"}
+{"level":"debug","message":"body: {\"payload\":\"{\\\"email\\\":\\\"suleman.bsse2565@iiu.edu.pk\\\",\\\"contactNumber\\\":\\\"33333333\\\"}\"}","timestamp":"08:42:20"}
+{"level":"debug","message":"request body : {\"payload\":\"{\\\"email\\\":\\\"suleman.bsse2565@iiu.edu.pk\\\",\\\"contactNumber\\\":\\\"33333333\\\"}\"}","timestamp":"08:42:20"}
+{"level":"debug","message":"create query data : {\"otp\":356421}","timestamp":"08:42:20"}
+{"level":"debug","message":"db result : {\"n\":1,\"ok\":1}","timestamp":"08:42:20"}
+{"level":"debug","message":"final response: {\"n\":1,\"ok\":1}","timestamp":"08:42:20"}
+{"level":"info","message":"Listening on port 3000","timestamp":"08:42:45"}
+{"level":"info","message":"route : /otp","timestamp":"08:43:08"}
+{"level":"info","message":"method : POST","timestamp":"08:43:08"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"e-O6wjzRYDyhFZBXnno9+gyqQ12rA\\\"\",\"content-type\":\"application/x-www-form-urlencoded; charset=UTF-8\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 7.0; SM-G925F Build/NRD90M)\",\"host\":\"192.168.8.100:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\",\"content-length\":\"103\"}","timestamp":"08:43:08"}
+{"level":"debug","message":"body: {\"payload\":\"{\\\"email\\\":\\\"suleman.bsse2565@iiu.edu.pk\\\",\\\"contactNumber\\\":\\\"33333333\\\"}\"}","timestamp":"08:43:08"}
+{"level":"debug","message":"request body : {\"payload\":\"{\\\"email\\\":\\\"suleman.bsse2565@iiu.edu.pk\\\",\\\"contactNumber\\\":\\\"33333333\\\"}\"}","timestamp":"08:43:08"}
+{"level":"debug","message":"create query data : {\"otp\":881681}","timestamp":"08:43:08"}
+{"level":"debug","message":"db result : {\"n\":1,\"ok\":1}","timestamp":"08:43:09"}
+{"level":"debug","message":"final response: {\"n\":1,\"ok\":1}","timestamp":"08:43:09"}
+{"level":"info","message":"route : /otp","timestamp":"08:45:25"}
+{"level":"info","message":"Listening on port 3000","timestamp":"08:54:06"}
+{"level":"info","message":"route : /otp","timestamp":"08:54:15"}
+{"level":"info","message":"Listening on port 3000","timestamp":"08:56:26"}
+{"level":"info","message":"route : /otp","timestamp":"08:56:33"}
+{"level":"info","message":"method : POST","timestamp":"08:56:33"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/json\",\"cache-control\":\"no-cache\",\"postman-token\":\"5841e6a9-cab6-4a8b-b617-580eb93fa12b\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"content-length\":\"88\",\"connection\":\"keep-alive\"}","timestamp":"08:56:33"}
+{"level":"debug","message":"body: {\"payload\":{\"email\":\"suleman.bsse2565@iiu.edu.pk\",\"contactNumber\":\"22222222\"}}","timestamp":"08:56:33"}
+{"level":"debug","message":"request body : {\"payload\":{\"email\":\"suleman.bsse2565@iiu.edu.pk\",\"contactNumber\":\"22222222\"}}","timestamp":"08:56:33"}
+{"level":"debug","message":"create query data : {\"email\":\"suleman.bsse2565@iiu.edu.pk\",\"contactNumber\":\"22222222\"}","timestamp":"08:57:02"}
+{"level":"debug","message":"db result : {\"n\":1,\"ok\":1}","timestamp":"08:57:02"}
+{"level":"debug","message":"final response: {\"n\":1,\"ok\":1}","timestamp":"08:57:08"}
+{"level":"info","message":"Listening on port 3000","timestamp":"08:58:15"}
+{"level":"info","message":"Listening on port 3000","timestamp":"08:59:27"}
+{"level":"info","message":"route : /otp","timestamp":"08:59:33"}
+{"level":"info","message":"Listening on port 3000","timestamp":"09:03:40"}
+{"level":"info","message":"route : /otp","timestamp":"09:03:54"}
+{"level":"info","message":"Listening on port 3000","timestamp":"09:06:53"}
+{"level":"info","message":"route : /otp","timestamp":"09:06:57"}
+{"level":"info","message":"method : POST","timestamp":"09:06:57"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"e-O6wjzRYDyhFZBXnno9+gyqQ12rA\\\"\",\"content-type\":\"application/x-www-form-urlencoded; charset=UTF-8\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 7.0; SM-G925F Build/NRD90M)\",\"host\":\"192.168.8.100:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\",\"content-length\":\"103\"}","timestamp":"09:06:57"}
+{"level":"debug","message":"body: {\"payload\":\"{\\\"email\\\":\\\"suleman.bsse2565@iiu.edu.pk\\\",\\\"contactNumber\\\":\\\"33333333\\\"}\"}","timestamp":"09:06:57"}
+{"level":"debug","message":"request body : {\"payload\":\"{\\\"email\\\":\\\"suleman.bsse2565@iiu.edu.pk\\\",\\\"contactNumber\\\":\\\"33333333\\\"}\"}","timestamp":"09:06:57"}
+{"level":"error","message":"Exception:","timestamp":"09:07:01"}
+{"level":"error","message":"TypeError: data.payload.param is not a function\n    at exports.sendOtp (/home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/api_ctrl.js:351:42)\n    at Layer.handle [as handle_request] (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/express/lib/router/route.js:137:13)\n    at Layer.handle [as handle_request] (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/express/lib/router/layer.js:91:12)\n    at next (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/express/lib/router/route.js:137:13)\n    at exports.logHttpReq (/home/hafiz/Blockchain_Fyp/nodejs_seed/utils/utility.js:56:12)\n    at Layer.handle [as handle_request] (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/express/lib/router/route.js:137:13)\n    at Route.dispatch (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/express/lib/router/route.js:112:3)\n    at Layer.handle [as handle_request] (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/express/lib/router/layer.js:95:5)","timestamp":"09:07:01"}
+{"level":"debug","message":"final response: {\"code\":\"RC0500\",\"message\":\"Internal Server Error!\",\"errorDescription\":\"data.payload.param is not a function, type : undefined\"}","timestamp":"09:07:01"}
+{"level":"info","message":"route : /otp","timestamp":"09:07:01"}
+{"level":"info","message":"Listening on port 3000","timestamp":"09:07:40"}
+{"level":"info","message":"route : /otp","timestamp":"09:07:42"}
+{"level":"info","message":"Listening on port 3000","timestamp":"09:10:52"}
+{"level":"info","message":"route : /otp","timestamp":"09:10:55"}
+{"level":"info","message":"Listening on port 3000","timestamp":"09:11:59"}
+{"level":"info","message":"route : /otp","timestamp":"09:12:04"}
+{"level":"info","message":"Listening on port 3000","timestamp":"09:13:58"}
+{"level":"info","message":"route : /otp","timestamp":"09:14:03"}
+{"level":"info","message":"Listening on port 3000","timestamp":"09:21:18"}
+{"level":"info","message":"route : /otp","timestamp":"09:21:19"}
+{"level":"info","message":"Listening on port 3000","timestamp":"09:22:04"}
+{"level":"info","message":"route : /otp","timestamp":"09:22:07"}
+{"level":"info","message":"method : POST","timestamp":"09:22:07"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"e-O6wjzRYDyhFZBXnno9+gyqQ12rA\\\"\",\"content-type\":\"application/x-www-form-urlencoded; charset=UTF-8\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 7.0; SM-G925F Build/NRD90M)\",\"host\":\"192.168.8.100:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\",\"content-length\":\"103\"}","timestamp":"09:22:07"}
+{"level":"debug","message":"body: {\"payload\":\"{\\\"email\\\":\\\"suleman.bsse2565@iiu.edu.pk\\\",\\\"contactNumber\\\":\\\"33333333\\\"}\"}","timestamp":"09:22:07"}
+{"level":"debug","message":"request body : {\"payload\":\"{\\\"email\\\":\\\"suleman.bsse2565@iiu.edu.pk\\\",\\\"contactNumber\\\":\\\"33333333\\\"}\"}","timestamp":"09:22:07"}
+{"level":"error","message":"Exception:","timestamp":"09:22:11"}
+{"level":"error","message":"TypeError: Cannot read property 'contactNumber' of undefined\n    at exports.sendOtp (/home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/api_ctrl.js:352:36)\n    at Layer.handle [as handle_request] (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/express/lib/router/route.js:137:13)\n    at Layer.handle [as handle_request] (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/express/lib/router/layer.js:91:12)\n    at next (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/express/lib/router/route.js:137:13)\n    at exports.logHttpReq (/home/hafiz/Blockchain_Fyp/nodejs_seed/utils/utility.js:56:12)\n    at Layer.handle [as handle_request] (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/express/lib/router/route.js:137:13)\n    at Route.dispatch (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/express/lib/router/route.js:112:3)\n    at Layer.handle [as handle_request] (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/express/lib/router/layer.js:95:5)","timestamp":"09:22:11"}
+{"level":"debug","message":"final response: {\"code\":\"RC0500\",\"message\":\"Internal Server Error!\",\"errorDescription\":\"Cannot read property 'contactNumber' of undefined, type : undefined\"}","timestamp":"09:22:11"}
+{"level":"info","message":"route : /otp","timestamp":"09:22:11"}
+{"level":"info","message":"Listening on port 3000","timestamp":"09:22:47"}
+{"level":"info","message":"route : /otp","timestamp":"09:22:47"}
+{"level":"info","message":"method : POST","timestamp":"09:22:47"}
+{"level":"verbose","message":"headers: {\"if-none-match\":\"W/\\\"e-O6wjzRYDyhFZBXnno9+gyqQ12rA\\\"\",\"content-type\":\"application/x-www-form-urlencoded; charset=UTF-8\",\"user-agent\":\"Dalvik/2.1.0 (Linux; U; Android 7.0; SM-G925F Build/NRD90M)\",\"host\":\"192.168.8.100:3000\",\"connection\":\"Keep-Alive\",\"accept-encoding\":\"gzip\",\"content-length\":\"103\"}","timestamp":"09:22:47"}
+{"level":"debug","message":"body: {\"payload\":\"{\\\"email\\\":\\\"suleman.bsse2565@iiu.edu.pk\\\",\\\"contactNumber\\\":\\\"33333333\\\"}\"}","timestamp":"09:22:47"}
+{"level":"debug","message":"request body : {\"payload\":\"{\\\"email\\\":\\\"suleman.bsse2565@iiu.edu.pk\\\",\\\"contactNumber\\\":\\\"33333333\\\"}\"}","timestamp":"09:22:47"}
+{"level":"error","message":"Exception:","timestamp":"09:22:51"}
+{"level":"error","message":"TypeError: Cannot read property 'contactNumber' of undefined\n    at exports.sendOtp (/home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/api_ctrl.js:352:36)\n    at Layer.handle [as handle_request] (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/express/lib/router/route.js:137:13)\n    at Layer.handle [as handle_request] (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/express/lib/router/layer.js:91:12)\n    at next (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/express/lib/router/route.js:137:13)\n    at exports.logHttpReq (/home/hafiz/Blockchain_Fyp/nodejs_seed/utils/utility.js:56:12)\n    at Layer.handle [as handle_request] (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/express/lib/router/route.js:137:13)\n    at Route.dispatch (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/express/lib/router/route.js:112:3)\n    at Layer.handle [as handle_request] (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/express/lib/router/layer.js:95:5)","timestamp":"09:22:51"}
+{"level":"debug","message":"final response: {\"code\":\"RC0500\",\"message\":\"Internal Server Error!\",\"errorDescription\":\"Cannot read property 'contactNumber' of undefined, type : undefined\"}","timestamp":"09:22:51"}
+{"level":"info","message":"route : /otp","timestamp":"09:22:51"}

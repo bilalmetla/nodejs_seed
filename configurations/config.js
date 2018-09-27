@@ -19,13 +19,13 @@ module.exports = {
         }
     },
     email:{
-        from:"suleman.bsse2565@iiu.edu.pk",
+        from:"hafiz.bsse2605@iiu.edu.pk",
         services: "gmail",
-        password : "emotional",
+        password : "hamzisumbuli",
         otp :{           
             subject : "no-reply-emailVerification",
             html : "Type this code to signup ",
         }
     },
-    supportedDB : constants.supportedDatabases.nedb
+    supportedDB : constants.supportedDatabases.mongodb
 }
