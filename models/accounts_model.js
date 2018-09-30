@@ -21,8 +21,8 @@ exports.updateAccount = function(data, next){
     try{
         data.collection = "accounts";
       //  data.updatePayload = { $set: {accountTitle: data.payload.accountTitle} };
-        data.updatePayload = {$set: {accountTitle:data.payload.accountTitle}};
-        data.where = {_id : data.payload.accountId};
+      data.where = {accountTitle : data.payload.accountTitle};
+        data.updatePayload = {$set: {accountTitle:data.payload.newaccountTitle}};
         dbService.update(data, function (err, result) {
             return next(err, result);
         });
@@ -38,6 +38,7 @@ exports.updateAccount = function(data, next){
 exports.deleteAccount = function(data, next){
     try{
         data.collection = "accounts";
+        data.where = {accountTitle : data.payload.accountTitle};
         dbService.delete(data, function (err, result) {
             return next(err, result);
         });

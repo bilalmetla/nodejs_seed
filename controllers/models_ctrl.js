@@ -42,6 +42,12 @@ function sendRequest(route,data, next) {
             case 'sendOtp':
                 models.otp.sendOtp(data, next);
                 break;
+            case 'createTransaction':
+                models.transaction.createTransaction(data, next);
+                break;
+            case 'getTransactions':
+                models.transaction.getTransactions(data, next);
+                break;
         }
     } catch (e) {
         logger.error("Exception:" )  ;

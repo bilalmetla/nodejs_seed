@@ -56,7 +56,7 @@ module.exports = {
         body:{
             payload: joi.object({
                 accountTitle: joi.string().required(),
-                accountId: joi.string().required()
+                newaccountTitle: joi.string().required(),
             }).required(),
         }
     },
@@ -87,6 +87,20 @@ module.exports = {
                 email: joi.string().email().required(),
                     contactNumber: joi.number().required()
             }).required(),
+        }
+    },
+    createTransaction:{
+        body:{
+            payload: joi.object({
+                accountTitle: joi.string().required(),
+                amountTransfer: joi.number().required(),
+                walletAddress: joi.string().required(),
+            }).required(),
+        }
+    },
+    getTransaction: {
+        body:{
+
         }
     },
     
