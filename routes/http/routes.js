@@ -17,7 +17,9 @@ router.post('/login', utils.logHttpReq, expressValidate(validations.login), util
 /*POST request for Signup*/
 router.post('/accounts', utils.logHttpReq,expressValidate(validations.createAccount), utils.validationResponse, apis.createAccount, utils.httpResponse);
 /*GET accounts of specific users.  */
+
 router.get('/accounts', utils.logHttpReq ,expressValidate(validations.getAccounts), utils.validationResponse, apis.getAccounts, utils.httpResponse);
+
 /*GET accounts of specific users.  */
 router.put('/accounts', utils.logHttpReq,expressValidate(validations.updateAccount), utils.validationResponse, apis.updateAccount, utils.httpResponse);
 /*GET accounts of specific users.  */

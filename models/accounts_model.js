@@ -38,7 +38,9 @@ exports.updateAccount = function(data, next){
 exports.deleteAccount = function(data, next){
     try{
         data.collection = "accounts";
+
         data.where = {accountTitle : data.payload.accountTitle};
+
         dbService.delete(data, function (err, result) {
             return next(err, result);
         });
