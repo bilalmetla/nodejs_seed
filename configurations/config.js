@@ -21,7 +21,7 @@ module.exports = {
     email:{
         from:"hafiz.bsse2605@iiu.edu.pk",
         services: "gmail",
-        password : "hamzisumbuli",
+        password : "blockchain2605",
         otp :{           
             subject : "no-reply-emailVerification",
             html : "Type this code to signup ",

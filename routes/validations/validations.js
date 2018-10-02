@@ -88,7 +88,7 @@ module.exports = {
                     contactNumber: joi.number().required()
             }).required(),
         }
-    },
+    }, 
     createTransaction:{
         body:{
             payload: joi.object({
