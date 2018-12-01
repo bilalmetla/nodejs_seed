@@ -48,6 +48,15 @@ function sendRequest(route,data, next) {
             case 'getTransactions':
                 models.transaction.getTransactions(data, next);
                 break;
+            case 'getBalance':
+                models.transaction.getBalance(data, next);
+                break;
+            case 'getBlock':
+                models.transaction.getBlock(data, next);
+                break;
+            case 'getCurrentGasPrice':
+                models.transaction.getCurrentGasPrice(data, next);
+                break;
         }
     } catch (e) {
         logger.error("Exception:" )  ;

@@ -14,7 +14,24 @@ var myContract = new web3.eth.Contract(JSON.parse(interface), '0xe953dc826ff9714
 });
 var privateKey = new Buffer('e4206fffa16a4af420c2a8c3f50008b349c41c04c8d0ced6d783dd59a972ccb2', 'hex');
 
+if(typeof web3!= 'undefined'){
+   // console.log(web3.eth.isConnected())
+    console.log(web3.eth.accounts[0])
+}else{
+    console.log("Install metamask")
+}
+
 exports.createTransaction =  async (err,txscallback) => { 
+
+    myContract.events.Transfer({filter:{from:'0x8eb731191f33e0f332522126ea2c9c89e8bbffaf'},
+    fromBlock:3408670},function(error,result){
+        if(!error){
+            console.log("result")
+            console.log(result)
+        }else{
+            console.log(error)
+        }
+    })
     var newHash;
     var transferFromABI = await myContract
         .methods
@@ -32,7 +49,7 @@ exports.createTransaction =  async (err,txscallback) => {
         .numberToHex(gasPrice);
     const countHexa = web3
         .utils
-        .numberToHex(106);
+        .numberToHex(110);
     const valueHexa = web3
         .utils
         .numberToHex(0);
@@ -67,12 +84,50 @@ exports.createTransaction =  async (err,txscallback) => {
                 //    console.log(receipt);
                 //});
                // return newHash;
-
-
-
 }; //end of balanceOf
 
-exports.getbalance = async() => {
-    
-}
+exports.getBalance = function (address,balcallback) {
+ web3.eth.getBalance("0x8eb731191f33e0f332522126ea2c9c89e8bbffaf",function(err,balance){
+        if(err){
+            console.log("error")
+            return balcallback(err,null);
+        }else{
+            var balanceofaddr = balance / Math.pow(10, 18);
+            return balcallback(null,balanceofaddr)
+        }
+    });   
+}; //end of balanceOf
+
+exports.gettransaction = function (txshash,txscallback) {
+    web3.eth.getTransaction("0x6611c204e203ef61363de60ba6e09d67f1169b60524289859fe7781f17de7ce5",function(err,txs){
+           if(err){
+               console.log("error")
+               return txscallback(err,null);
+           }else{
+               return txscallback(null,txs)
+           }
+       });   
+   }; 
+
+exports.getBlock = function (blockhash,blockcallback) {
+    web3.eth.getBlock("0x9994e35f2017eee0e5a0538fb103e0d8fd0ea1f83b56771bd5b525c4a207f901",function(err,block){
+           if(err){
+               console.log("error")
+               return blockcallback(err,null);
+           }else{
+               return blockcallback(null,block)
+           }
+       });   
+   }; 
+
+exports.getCurrentGasPrice = function (blockhash,pricecallback) {
+    web3.eth.getGasPrice(function(err,gasprice){
+           if(err){
+               console.log("error")
+               return pricecallback(err,null);
+           }else{
+               return pricecallback(null,gasprice)
+           }
+       });   
+   };    
     

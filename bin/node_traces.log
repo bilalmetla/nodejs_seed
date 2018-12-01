@@ -809,3 +809,161 @@
 {"level":"debug","message":"body: {\"payload\":{\"accountTitle\":\"EthAccount\",\"amountTransfer\":1000,\"walletAddress\":\"dasjd978398kahda\"}}","timestamp":"10:24:39"}
 {"level":"debug","message":"request body : {\"payload\":{\"accountTitle\":\"EthAccount\",\"amountTransfer\":1000,\"walletAddress\":\"dasjd978398kahda\"}}","timestamp":"10:24:39"}
 {"level":"debug","message":"final response: \"0xe7c135a7ba1fd62f289d398737166e7351e98a219b22b5d69d23e77e773a31b1\"","timestamp":"10:24:46"}
+{"level":"info","message":"Listening on port 3000","timestamp":"11:14:45"}
+{"level":"info","message":"route : /transaction","timestamp":"11:15:13"}
+{"level":"info","message":"method : GET","timestamp":"11:15:13"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/json\",\"cache-control\":\"no-cache\",\"postman-token\":\"52fa9500-0447-4f57-98b9-dcaceccf2f0a\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"connection\":\"keep-alive\"}","timestamp":"11:15:13"}
+{"level":"debug","message":"body: {}","timestamp":"11:15:13"}
+{"level":"debug","message":"request body : {}","timestamp":"11:15:13"}
+{"level":"error","message":"Exception:","timestamp":"11:15:13"}
+{"level":"error","message":"ReferenceError: address is not defined\n    at Object.exports.getTransactions (/home/hafiz/Blockchain_Fyp/nodejs_seed/models/transaction_model.js:28:30)\n    at Object.sendRequest (/home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/models_ctrl.js:49:36)\n    at Object.exports.send (/home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/request_broker_ctrl.js:12:24)\n    at /home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/api_ctrl.js:430:31\n    at fn (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/async/lib/async.js:582:34)\n    at Immediate._onImmediate (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/async/lib/async.js:498:34)\n    at runCallback (timers.js:763:18)\n    at tryOnImmediate (timers.js:734:5)\n    at processImmediate (timers.js:716:5)","timestamp":"11:15:13"}
+{"level":"debug","message":"final response: {\"code\":\"RC0500\",\"message\":\"Internal Server Error!\",\"errorDescription\":\"address is not defined, type : undefined\"}","timestamp":"11:15:13"}
+{"level":"info","message":"Listening on port 3000","timestamp":"11:16:20"}
+{"level":"info","message":"route : /transaction","timestamp":"11:16:50"}
+{"level":"info","message":"method : GET","timestamp":"11:16:50"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/json\",\"cache-control\":\"no-cache\",\"postman-token\":\"8914490d-9613-40e6-ad87-fffe1ff7683d\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"connection\":\"keep-alive\"}","timestamp":"11:16:50"}
+{"level":"debug","message":"body: {}","timestamp":"11:16:50"}
+{"level":"debug","message":"request body : {}","timestamp":"11:16:50"}
+{"level":"error","message":"Exception:","timestamp":"11:16:50"}
+{"level":"error","message":"TypeError: Cannot read property 'call' of undefined\n    at Object.exports.balanceOf (/home/hafiz/Blockchain_Fyp/nodejs_seed/services/blockchain_services/interaction.js:78:10)\n    at Object.exports.getTransactions (/home/hafiz/Blockchain_Fyp/nodejs_seed/models/transaction_model.js:28:20)\n    at Object.sendRequest (/home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/models_ctrl.js:49:36)\n    at Object.exports.send (/home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/request_broker_ctrl.js:12:24)\n    at /home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/api_ctrl.js:430:31\n    at fn (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/async/lib/async.js:582:34)\n    at Immediate._onImmediate (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/async/lib/async.js:498:34)\n    at runCallback (timers.js:763:18)\n    at tryOnImmediate (timers.js:734:5)\n    at processImmediate (timers.js:716:5)","timestamp":"11:16:50"}
+{"level":"debug","message":"final response: {\"code\":\"RC0500\",\"message\":\"Internal Server Error!\",\"errorDescription\":\"Cannot read property 'call' of undefined, type : undefined\"}","timestamp":"11:16:50"}
+{"level":"info","message":"Listening on port 3000","timestamp":"11:20:36"}
+{"level":"info","message":"route : /transaction","timestamp":"11:20:38"}
+{"level":"info","message":"method : GET","timestamp":"11:20:38"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/json\",\"cache-control\":\"no-cache\",\"postman-token\":\"5ab20211-a632-47c9-af96-e66edabdd454\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"connection\":\"keep-alive\"}","timestamp":"11:20:38"}
+{"level":"debug","message":"body: {}","timestamp":"11:20:38"}
+{"level":"debug","message":"request body : {}","timestamp":"11:20:38"}
+{"level":"error","message":"Exception:","timestamp":"11:20:38"}
+{"level":"error","message":"Error: Given input \"[object Object]\" is not a number.\n    at Object.numberToHex (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/web3-utils/src/utils.js:264:15)\n    at inputBlockNumberFormatter (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/web3-core-helpers/src/formatters.js:62:125)\n    at Method.inputDefaultBlockNumberFormatter (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/web3-core-helpers/src/formatters.js:53:12)\n    at /home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/web3-core-method/src/index.js:144:38\n    at Array.map (<anonymous>)\n    at Method.formatInput (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/web3-core-method/src/index.js:142:32)\n    at Method.toPayload (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/web3-core-method/src/index.js:177:23)\n    at Eth.send [as getBalance] (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/web3-core-method/src/index.js:467:30)\n    at Object.exports.balanceOf (/home/hafiz/Blockchain_Fyp/nodejs_seed/services/blockchain_services/interaction.js:76:36)\n    at Object.exports.getTransactions (/home/hafiz/Blockchain_Fyp/nodejs_seed/models/transaction_model.js:28:20)\n    at Object.sendRequest (/home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/models_ctrl.js:49:36)\n    at Object.exports.send (/home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/request_broker_ctrl.js:12:24)\n    at /home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/api_ctrl.js:430:31\n    at fn (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/async/lib/async.js:582:34)\n    at Immediate._onImmediate (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/async/lib/async.js:498:34)\n    at runCallback (timers.js:763:18)\n    at tryOnImmediate (timers.js:734:5)\n    at processImmediate (timers.js:716:5)","timestamp":"11:20:39"}
+{"level":"debug","message":"final response: {\"code\":\"RC0500\",\"message\":\"Internal Server Error!\",\"errorDescription\":\"Given input \\\"[object Object]\\\" is not a number., type : undefined\"}","timestamp":"11:20:39"}
+{"level":"info","message":"Listening on port 3000","timestamp":"11:21:43"}
+{"level":"info","message":"route : /transaction","timestamp":"11:21:46"}
+{"level":"info","message":"method : GET","timestamp":"11:21:46"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/json\",\"cache-control\":\"no-cache\",\"postman-token\":\"10b5c220-94e3-46e5-b01e-560edc259cd4\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"connection\":\"keep-alive\"}","timestamp":"11:21:46"}
+{"level":"debug","message":"body: {}","timestamp":"11:21:46"}
+{"level":"debug","message":"request body : {}","timestamp":"11:21:46"}
+{"level":"debug","message":"final response: {}","timestamp":"11:21:46"}
+{"level":"info","message":"Listening on port 3000","timestamp":"11:27:21"}
+{"level":"info","message":"route : /transaction","timestamp":"11:27:35"}
+{"level":"info","message":"method : GET","timestamp":"11:27:35"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/json\",\"cache-control\":\"no-cache\",\"postman-token\":\"e5b23b2e-be94-479b-9073-3843ff129690\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"connection\":\"keep-alive\"}","timestamp":"11:27:35"}
+{"level":"debug","message":"body: {}","timestamp":"11:27:35"}
+{"level":"debug","message":"request body : {}","timestamp":"11:27:35"}
+{"level":"error","message":"Exception:","timestamp":"11:27:35"}
+{"level":"error","message":"TypeError: myContract.balanceOf is not a function\n    at Object.exports.balanceOf (/home/hafiz/Blockchain_Fyp/nodejs_seed/services/blockchain_services/interaction.js:77:10)\n    at Object.exports.getTransactions (/home/hafiz/Blockchain_Fyp/nodejs_seed/models/transaction_model.js:28:20)\n    at Object.sendRequest (/home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/models_ctrl.js:49:36)\n    at Object.exports.send (/home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/request_broker_ctrl.js:12:24)\n    at /home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/api_ctrl.js:430:31\n    at fn (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/async/lib/async.js:582:34)\n    at Immediate._onImmediate (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/async/lib/async.js:498:34)\n    at runCallback (timers.js:763:18)\n    at tryOnImmediate (timers.js:734:5)\n    at processImmediate (timers.js:716:5)","timestamp":"11:27:35"}
+{"level":"debug","message":"final response: {\"code\":\"RC0500\",\"message\":\"Internal Server Error!\",\"errorDescription\":\"myContract.balanceOf is not a function, type : undefined\"}","timestamp":"11:27:35"}
+{"level":"info","message":"Listening on port 3000","timestamp":"11:29:43"}
+{"level":"info","message":"route : /transaction","timestamp":"11:30:23"}
+{"level":"info","message":"method : GET","timestamp":"11:30:23"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/json\",\"cache-control\":\"no-cache\",\"postman-token\":\"0ca30a58-18cd-4835-b5a6-ef074b796619\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"connection\":\"keep-alive\"}","timestamp":"11:30:23"}
+{"level":"debug","message":"body: {}","timestamp":"11:30:23"}
+{"level":"debug","message":"request body : {}","timestamp":"11:30:23"}
+{"level":"debug","message":"final response: {}","timestamp":"11:30:23"}
+{"level":"info","message":"Listening on port 3000","timestamp":"11:31:52"}
+{"level":"info","message":"route : /transaction","timestamp":"11:32:04"}
+{"level":"info","message":"method : GET","timestamp":"11:32:04"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/json\",\"cache-control\":\"no-cache\",\"postman-token\":\"19b17d44-e8c6-4658-b782-4c2b162ff006\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"connection\":\"keep-alive\"}","timestamp":"11:32:04"}
+{"level":"debug","message":"body: {}","timestamp":"11:32:04"}
+{"level":"debug","message":"request body : {}","timestamp":"11:32:04"}
+{"level":"error","message":"Exception:","timestamp":"11:32:04"}
+{"level":"error","message":"ReferenceError: balance is not defined\n    at Object.exports.balanceOf (/home/hafiz/Blockchain_Fyp/nodejs_seed/services/blockchain_services/interaction.js:84:16)\n    at Object.exports.getTransactions (/home/hafiz/Blockchain_Fyp/nodejs_seed/models/transaction_model.js:28:20)\n    at Object.sendRequest (/home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/models_ctrl.js:49:36)\n    at Object.exports.send (/home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/request_broker_ctrl.js:12:24)\n    at /home/hafiz/Blockchain_Fyp/nodejs_seed/controllers/api_ctrl.js:430:31\n    at fn (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/async/lib/async.js:582:34)\n    at Immediate._onImmediate (/home/hafiz/Blockchain_Fyp/nodejs_seed/node_modules/async/lib/async.js:498:34)\n    at runCallback (timers.js:763:18)\n    at tryOnImmediate (timers.js:734:5)\n    at processImmediate (timers.js:716:5)","timestamp":"11:32:04"}
+{"level":"debug","message":"final response: {\"code\":\"RC0500\",\"message\":\"Internal Server Error!\",\"errorDescription\":\"balance is not defined, type : undefined\"}","timestamp":"11:32:04"}
+{"level":"info","message":"Listening on port 3000","timestamp":"11:56:37"}
+{"level":"info","message":"route : /transaction","timestamp":"11:56:40"}
+{"level":"info","message":"method : GET","timestamp":"11:56:40"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/json\",\"cache-control\":\"no-cache\",\"postman-token\":\"0807c992-8e3d-4720-92b4-8c19c9703fed\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"connection\":\"keep-alive\"}","timestamp":"11:56:40"}
+{"level":"debug","message":"body: {}","timestamp":"11:56:40"}
+{"level":"debug","message":"request body : {}","timestamp":"11:56:40"}
+{"level":"info","message":"Listening on port 3000","timestamp":"11:59:18"}
+{"level":"info","message":"route : /transaction","timestamp":"11:59:22"}
+{"level":"info","message":"method : GET","timestamp":"11:59:22"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/json\",\"cache-control\":\"no-cache\",\"postman-token\":\"cc912834-52da-449a-bff0-838327090582\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"connection\":\"keep-alive\"}","timestamp":"11:59:22"}
+{"level":"debug","message":"body: {}","timestamp":"11:59:22"}
+{"level":"debug","message":"request body : {}","timestamp":"11:59:22"}
+{"level":"debug","message":"final response: \"9709644268724814777\"","timestamp":"11:59:23"}
+{"level":"info","message":"Listening on port 3000","timestamp":"12:04:30"}
+{"level":"info","message":"route : /transaction","timestamp":"12:04:33"}
+{"level":"info","message":"method : GET","timestamp":"12:04:33"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/json\",\"cache-control\":\"no-cache\",\"postman-token\":\"9fd37b31-cf6a-45f8-8c8b-dce01506777b\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"connection\":\"keep-alive\"}","timestamp":"12:04:33"}
+{"level":"debug","message":"body: {}","timestamp":"12:04:33"}
+{"level":"debug","message":"request body : {}","timestamp":"12:04:33"}
+{"level":"debug","message":"final response: {\"blockHash\":\"0x9994e35f2017eee0e5a0538fb103e0d8fd0ea1f83b56771bd5b525c4a207f901\",\"blockNumber\":3408753,\"from\":\"0x8Eb731191F33E0f332522126EA2C9c89E8bbFFaf\",\"gas\":63897,\"gasPrice\":\"26500000001\",\"hash\":\"0x6611c204e203ef61363de60ba6e09d67f1169b60524289859fe7781f17de7ce5\",\"input\":\"0xa9059cbb00000000000000000000000036a662850f399a47278b18163fbc9cb46334dacb000000000000000000000000000000000000000000000001a055690d9db80000\",\"nonce\":104,\"r\":\"0xbb4e5605bfaf3cdfa3e9df523e532ca9b3298c1c35889d3bb56f0f5b681bb921\",\"s\":\"0x12e68849955384841d1b533f07d7a43be289befab5320c3c2518f2a2c06d81e0\",\"to\":\"0xE953dC826FF971499A1a90feBB3043421a14A5A4\",\"transactionIndex\":1,\"v\":\"0x1c\",\"value\":\"0\"}","timestamp":"12:04:34"}
+{"level":"info","message":"Listening on port 3000","timestamp":"17:09:15"}
+{"level":"info","message":"route : /transaction","timestamp":"17:09:30"}
+{"level":"info","message":"method : GET","timestamp":"17:09:30"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/json\",\"cache-control\":\"no-cache\",\"postman-token\":\"32151724-17a4-46e2-af2c-626dbaf8f5a6\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"connection\":\"keep-alive\"}","timestamp":"17:09:30"}
+{"level":"debug","message":"body: {}","timestamp":"17:09:30"}
+{"level":"debug","message":"request body : {}","timestamp":"17:09:30"}
+{"level":"info","message":"Listening on port 3000","timestamp":"17:10:54"}
+{"level":"info","message":"route : /transaction","timestamp":"17:11:15"}
+{"level":"info","message":"method : GET","timestamp":"17:11:15"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/json\",\"cache-control\":\"no-cache\",\"postman-token\":\"cf602d77-b412-4a0d-8979-189745c00409\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"connection\":\"keep-alive\"}","timestamp":"17:11:15"}
+{"level":"debug","message":"body: {}","timestamp":"17:11:15"}
+{"level":"debug","message":"request body : {}","timestamp":"17:11:15"}
+{"level":"debug","message":"final response: {\"difficulty\":\"2\",\"extraData\":\"0xd683010813846765746886676f312e3130856c696e7578000000000000000000c969d163d1bc7fac3fd3eb72c8a27d3fdf1ac91bcac92a06d7d950fb91753fc83da7b0b0881d47f34b31dda4daccd6a56c5061bf93079484b8b1a51a4307cc7000\",\"gasLimit\":7151749,\"gasUsed\":5973305,\"hash\":\"0x9994e35f2017eee0e5a0538fb103e0d8fd0ea1f83b56771bd5b525c4a207f901\",\"logsBloom\":\"0x000400000000010000020000000090000010000000000000020008000000000000000000100400100000000022000000000010001000000000000000180000001000000000000000000000080000000031000800000010004000000000008000000000000000000000000000000010000000000000000000000000100000000000001080000000000000000000000000008000000400000000000a0000000100000000000080000000000000400000000002000000000000100000000000000000000002000000000810080010000000000000000000080080000000000018000800000000000000000000000000000000000000000000001401080000800000\",\"miner\":\"0x0000000000000000000000000000000000000000\",\"mixHash\":\"0x0000000000000000000000000000000000000000000000000000000000000000\",\"nonce\":\"0x0000000000000000\",\"number\":3408753,\"parentHash\":\"0x8efceec5207ebab60df44060d2f6aaccfd8fc284293f4ee12a6affd160bd85f0\",\"receiptsRoot\":\"0xdf9d26c0f8fb632ab6893aeaa569909adac808a26bb9e4b65d470f99ddb4b39f\",\"sha3Uncles\":\"0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347\",\"size\":21217,\"stateRoot\":\"0x6be44e1c3a78cdd4967c4b82ce096c75aa7f2ea76c80e5375eff90a791f5c718\",\"timestamp\":1543259922,\"totalDifficulty\":\"6290218\",\"transactions\":[\"0xdd921d0296bd5b0bc5ab02e8169a73061c451f6d27cd7df9628272617f2b786f\",\"0x6611c204e203ef61363de60ba6e09d67f1169b60524289859fe7781f17de7ce5\",\"0xbda21369a642257217e8ed783d1add04707555301a2e3f763b59a12b0f0fc5f9\",\"0xee013329f0db16cdd72d4ad38031d587e75c7f9cbfa3a493ee697031060f5e62\",\"0xf9dd21da878edc58ea334a43cd2489d4152fe2f71d01a77280ebb2dad47f8f9b\",\"0x723a77e2916f2dc6188f38685d040323dc773314270b9df038f0bdb64758f1a5\",\"0x4704d605cc9d7b1594eb14b6ed1483915086f34699b3c7d7d45229ea7f8374c5\",\"0x2542afa2037cd8e41271329347a2e766be7c635c02c03983af243c9bc6066e89\",\"0xaa4ee44db92f2a2382cb5646e9659fc71d1004c61eadbc54b6213fead9cb700d\"],\"transactionsRoot\":\"0x756e753be8103a08e1fcbc1f038212a37717fe03ef59c060d998f33b9a9c9495\",\"uncles\":[]}","timestamp":"17:11:16"}
+{"level":"info","message":"Listening on port 3000","timestamp":"17:16:23"}
+{"level":"info","message":"route : /transaction","timestamp":"17:17:34"}
+{"level":"info","message":"method : GET","timestamp":"17:17:34"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/json\",\"cache-control\":\"no-cache\",\"postman-token\":\"03b468d6-e7d3-4688-94de-1d254ad9ffff\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"connection\":\"keep-alive\"}","timestamp":"17:17:34"}
+{"level":"debug","message":"body: {}","timestamp":"17:17:34"}
+{"level":"debug","message":"request body : {}","timestamp":"17:17:34"}
+{"level":"debug","message":"final response: \"1000000000\"","timestamp":"17:17:35"}
+{"level":"info","message":"Listening on port 3000","timestamp":"17:36:07"}
+{"level":"info","message":"route : /transaction","timestamp":"17:36:13"}
+{"level":"info","message":"method : POST","timestamp":"17:36:13"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/json\",\"cache-control\":\"no-cache\",\"postman-token\":\"f219e586-c463-4537-8a13-a6ee852649f8\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"content-length\":\"110\",\"connection\":\"keep-alive\"}","timestamp":"17:36:13"}
+{"level":"debug","message":"body: {\"payload\":{\"accountTitle\":\"EthAccount\",\"amountTransfer\":1000,\"walletAddress\":\"dasjd978398kahda\"}}","timestamp":"17:36:13"}
+{"level":"debug","message":"request body : {\"payload\":{\"accountTitle\":\"EthAccount\",\"amountTransfer\":1000,\"walletAddress\":\"dasjd978398kahda\"}}","timestamp":"17:36:13"}
+{"level":"info","message":"Listening on port 3000","timestamp":"18:01:05"}
+{"level":"info","message":"route : /transaction","timestamp":"18:01:29"}
+{"level":"info","message":"method : POST","timestamp":"18:01:29"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/json\",\"cache-control\":\"no-cache\",\"postman-token\":\"43793804-f2ec-496a-b60c-4bc0366ae9bd\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"content-length\":\"110\",\"connection\":\"keep-alive\"}","timestamp":"18:01:29"}
+{"level":"debug","message":"body: {\"payload\":{\"accountTitle\":\"EthAccount\",\"amountTransfer\":1000,\"walletAddress\":\"dasjd978398kahda\"}}","timestamp":"18:01:29"}
+{"level":"debug","message":"request body : {\"payload\":{\"accountTitle\":\"EthAccount\",\"amountTransfer\":1000,\"walletAddress\":\"dasjd978398kahda\"}}","timestamp":"18:01:29"}
+{"level":"info","message":"Listening on port 3000","timestamp":"18:02:11"}
+{"level":"info","message":"route : /transaction","timestamp":"18:02:13"}
+{"level":"info","message":"method : POST","timestamp":"18:02:13"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/json\",\"cache-control\":\"no-cache\",\"postman-token\":\"9154e88e-d7dd-482c-83be-4285a3765e7d\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"content-length\":\"110\",\"connection\":\"keep-alive\"}","timestamp":"18:02:13"}
+{"level":"debug","message":"body: {\"payload\":{\"accountTitle\":\"EthAccount\",\"amountTransfer\":1000,\"walletAddress\":\"dasjd978398kahda\"}}","timestamp":"18:02:13"}
+{"level":"debug","message":"request body : {\"payload\":{\"accountTitle\":\"EthAccount\",\"amountTransfer\":1000,\"walletAddress\":\"dasjd978398kahda\"}}","timestamp":"18:02:13"}
+{"level":"info","message":"Listening on port 3000","timestamp":"18:06:58"}
+{"level":"info","message":"route : /transaction","timestamp":"18:07:19"}
+{"level":"info","message":"method : POST","timestamp":"18:07:19"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/json\",\"cache-control\":\"no-cache\",\"postman-token\":\"ac876a2b-ccc1-4b14-837b-49c4a1237761\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"content-length\":\"110\",\"connection\":\"keep-alive\"}","timestamp":"18:07:19"}
+{"level":"debug","message":"body: {\"payload\":{\"accountTitle\":\"EthAccount\",\"amountTransfer\":1000,\"walletAddress\":\"dasjd978398kahda\"}}","timestamp":"18:07:19"}
+{"level":"debug","message":"request body : {\"payload\":{\"accountTitle\":\"EthAccount\",\"amountTransfer\":1000,\"walletAddress\":\"dasjd978398kahda\"}}","timestamp":"18:07:19"}
+{"level":"debug","message":"final response: {}","timestamp":"18:07:20"}
+{"level":"info","message":"Listening on port 3000","timestamp":"18:07:53"}
+{"level":"info","message":"route : /transaction","timestamp":"18:08:40"}
+{"level":"info","message":"method : POST","timestamp":"18:08:40"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/json\",\"cache-control\":\"no-cache\",\"postman-token\":\"f86e2d88-72bd-4037-9a67-afac8238b845\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"content-length\":\"110\",\"connection\":\"keep-alive\"}","timestamp":"18:08:40"}
+{"level":"debug","message":"body: {\"payload\":{\"accountTitle\":\"EthAccount\",\"amountTransfer\":1000,\"walletAddress\":\"dasjd978398kahda\"}}","timestamp":"18:08:40"}
+{"level":"debug","message":"request body : {\"payload\":{\"accountTitle\":\"EthAccount\",\"amountTransfer\":1000,\"walletAddress\":\"dasjd978398kahda\"}}","timestamp":"18:08:40"}
+{"level":"debug","message":"final response: \"0xe3dba278c1fa3dc4a7839ac15330f4d3d31a0d067daf621a767fe0478fe51426\"","timestamp":"18:08:42"}
+{"level":"info","message":"Listening on port 3000","timestamp":"18:39:06"}
+{"level":"info","message":"route : /transaction","timestamp":"18:39:20"}
+{"level":"info","message":"method : POST","timestamp":"18:39:20"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/json\",\"cache-control\":\"no-cache\",\"postman-token\":\"19a9ce73-e6e1-42a8-9185-2ea13bcff9d4\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"content-length\":\"110\",\"connection\":\"keep-alive\"}","timestamp":"18:39:20"}
+{"level":"debug","message":"body: {\"payload\":{\"accountTitle\":\"EthAccount\",\"amountTransfer\":1000,\"walletAddress\":\"dasjd978398kahda\"}}","timestamp":"18:39:20"}
+{"level":"debug","message":"request body : {\"payload\":{\"accountTitle\":\"EthAccount\",\"amountTransfer\":1000,\"walletAddress\":\"dasjd978398kahda\"}}","timestamp":"18:39:20"}
+{"level":"info","message":"Listening on port 3000","timestamp":"18:52:48"}
+{"level":"info","message":"route : /transaction","timestamp":"18:52:51"}
+{"level":"info","message":"method : POST","timestamp":"18:52:51"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/json\",\"cache-control\":\"no-cache\",\"postman-token\":\"08cd4bed-64f8-414a-8bd7-564ad6e5a76d\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"content-length\":\"110\",\"connection\":\"keep-alive\"}","timestamp":"18:52:51"}
+{"level":"debug","message":"body: {\"payload\":{\"accountTitle\":\"EthAccount\",\"amountTransfer\":1000,\"walletAddress\":\"dasjd978398kahda\"}}","timestamp":"18:52:51"}
+{"level":"debug","message":"request body : {\"payload\":{\"accountTitle\":\"EthAccount\",\"amountTransfer\":1000,\"walletAddress\":\"dasjd978398kahda\"}}","timestamp":"18:52:51"}
+{"level":"debug","message":"final response: \"0x2d66ccba8adc72f0f7ef0c3b33b4e9ac5b6129f2765333716fb9dc697239b994\"","timestamp":"18:52:57"}
+{"level":"info","message":"Listening on port 3000","timestamp":"19:19:38"}
+{"level":"info","message":"route : /transaction","timestamp":"19:19:43"}
+{"level":"info","message":"method : POST","timestamp":"19:19:43"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/json\",\"cache-control\":\"no-cache\",\"postman-token\":\"c2d3116b-2885-4669-8d28-fe0251e34bfc\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"content-length\":\"110\",\"connection\":\"keep-alive\"}","timestamp":"19:19:43"}
+{"level":"debug","message":"body: {\"payload\":{\"accountTitle\":\"EthAccount\",\"amountTransfer\":1000,\"walletAddress\":\"dasjd978398kahda\"}}","timestamp":"19:19:43"}
+{"level":"debug","message":"request body : {\"payload\":{\"accountTitle\":\"EthAccount\",\"amountTransfer\":1000,\"walletAddress\":\"dasjd978398kahda\"}}","timestamp":"19:19:43"}
+{"level":"debug","message":"final response: \"0xc03117b0edafba4dd8fecc455ed2bec5c3de4e708b6685ebefef25569e6b44dd\"","timestamp":"19:19:45"}
+{"level":"info","message":"Listening on port 3000","timestamp":"19:26:14"}
+{"level":"info","message":"route : /transaction","timestamp":"19:26:20"}
+{"level":"info","message":"method : POST","timestamp":"19:26:20"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/json\",\"cache-control\":\"no-cache\",\"postman-token\":\"40644c62-205e-4130-ba08-d37269b68d72\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"content-length\":\"110\",\"connection\":\"keep-alive\"}","timestamp":"19:26:20"}
+{"level":"debug","message":"body: {\"payload\":{\"accountTitle\":\"EthAccount\",\"amountTransfer\":1000,\"walletAddress\":\"dasjd978398kahda\"}}","timestamp":"19:26:20"}
+{"level":"debug","message":"request body : {\"payload\":{\"accountTitle\":\"EthAccount\",\"amountTransfer\":1000,\"walletAddress\":\"dasjd978398kahda\"}}","timestamp":"19:26:20"}
+{"level":"debug","message":"final response: {}","timestamp":"19:26:20"}

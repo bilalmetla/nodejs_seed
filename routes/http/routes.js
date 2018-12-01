@@ -32,6 +32,12 @@ router.post('/otp', utils.logHttpReq, utils.validationResponse, apis.sendOtp, ut
 router.post('/transaction', utils.logHttpReq,expressValidate(validations.createTransaction), utils.validationResponse, apis.createTransaction, utils.httpResponse);
 /*GET transactions listing.  */
 router.get('/transaction', utils.logHttpReq ,expressValidate(validations.getTransaction), utils.validationResponse, apis.getTransactions, utils.httpResponse);
+/*GET Address Balance.  */
+router.post('/balance', utils.logHttpReq ,expressValidate(validations.getBalance), utils.validationResponse, apis.getBalance, utils.httpResponse);
+/*GET transactions listing.  */
+router.post('/block', utils.logHttpReq ,expressValidate(validations.getBlock), utils.validationResponse, apis.getBlock, utils.httpResponse);
+/*GET transactions listing.  */
+router.get('/gasprice', utils.logHttpReq ,expressValidate(validations.getGasPrice), utils.validationResponse, apis.getCurrentGasPrice, utils.httpResponse);
 
 module.exports = router;
 

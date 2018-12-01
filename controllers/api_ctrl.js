@@ -392,6 +392,103 @@ exports.createTransaction = function(req, res, next){
         data.serveFrom = constants.servingFromDB;
         data.route = "createTransaction";
         async.waterfall([
+            function(callback){
+                requestBroker.send(data, function (error, response) {
+                    return callback(error, response);
+                });
+            }
+
+        ], function(err, results){
+            if(err){
+                return next(err);
+            }
+            else{
+                return next(results);
+            }
+        });
+
+
+    }catch(e){
+        logger.error("Exception:" );
+        logger.error(e.stack);
+        utils.serverException(e, next);
+    }
+
+}
+
+exports.getBalance = function(req, res, next){
+    try{
+        logger.debug("request body : " + JSON.stringify(req.body));
+        var data  = {};
+        data.payload = req.body.payload;
+        data.serveFrom = constants.servingFromDB;
+        data.route = "getBalance";
+        async.waterfall([
+            function(callback){
+                requestBroker.send(data, function (error, response) {
+                    return callback(error, response);
+                });
+            }
+
+        ], function(err, results){
+            if(err){
+                return next(err);
+            }
+            else{
+                return next(results);
+            }
+        });
+
+
+    }catch(e){
+        logger.error("Exception:" );
+        logger.error(e.stack);
+        utils.serverException(e, next);
+    }
+
+}
+
+exports.getBlock = function(req, res, next){
+    try{
+        logger.debug("request body : " + JSON.stringify(req.body));
+        var data  = {};
+        data.payload = req.body.payload;
+        data.serveFrom = constants.servingFromDB;
+        data.route = "getBlock";
+        async.waterfall([
+
+            function(callback){
+                requestBroker.send(data, function (error, response) {
+                    return callback(error, response);
+                });
+            }
+
+        ], function(err, results){
+            if(err){
+                return next(err);
+            }
+            else{
+                return next(results);
+            }
+        });
+
+
+    }catch(e){
+        logger.error("Exception:" );
+        logger.error(e.stack);
+        utils.serverException(e, next);
+    }
+
+}
+
+exports.getCurrentGasPrice = function(req, res, next){
+    try{
+        logger.debug("request body : " + JSON.stringify(req.body));
+        var data  = {};
+        data.payload = req.body.payload;
+        data.serveFrom = constants.servingFromDB;
+        data.route = "getCurrentGasPrice";
+        async.waterfall([
 
             function(callback){
                 requestBroker.send(data, function (error, response) {

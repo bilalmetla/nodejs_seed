@@ -103,6 +103,25 @@ module.exports = {
 
         }
     },
+    getBalance: {
+        body:{
+            payload: joi.object({
+                address: joi.string().required(),
+            }).required(),
+        }
+    },
+    getBlock: {
+        body:{
+            payload: joi.object({
+            address: joi.string().required(),
+            }).required(),
+        }
+    },
+    getGasPrice: {
+        body:{
+
+        }
+    },
     
     
 }
