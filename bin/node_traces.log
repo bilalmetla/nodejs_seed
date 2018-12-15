@@ -967,3 +967,32 @@
 {"level":"debug","message":"body: {\"payload\":{\"accountTitle\":\"EthAccount\",\"amountTransfer\":1000,\"walletAddress\":\"dasjd978398kahda\"}}","timestamp":"19:26:20"}
 {"level":"debug","message":"request body : {\"payload\":{\"accountTitle\":\"EthAccount\",\"amountTransfer\":1000,\"walletAddress\":\"dasjd978398kahda\"}}","timestamp":"19:26:20"}
 {"level":"debug","message":"final response: {}","timestamp":"19:26:20"}
+{"level":"info","message":"Listening on port 3000","timestamp":"14:08:33"}
+{"level":"info","message":"route : /login","timestamp":"14:08:44"}
+{"level":"info","message":"method : POST","timestamp":"14:08:44"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/json\",\"cache-control\":\"no-cache\",\"postman-token\":\"7ab6b785-d3d5-4b98-ac12-24ecd53930ed\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"content-length\":\"60\",\"connection\":\"keep-alive\"}","timestamp":"14:08:44"}
+{"level":"debug","message":"body: {\"payload\":{\"username\":\"hafiz\",\"passward\":\"2605\"}}","timestamp":"14:08:44"}
+{"level":"debug","message":"request body : {\"payload\":{\"username\":\"hafiz\",\"passward\":\"2605\"}}","timestamp":"14:08:44"}
+{"level":"debug","message":"read query data : {\"payload\":{\"username\":\"hafiz\",\"passward\":\"2605\"},\"serveFrom\":\"database\",\"route\":\"login\",\"collection\":\"users\",\"where\":{\"username\":\"hafiz\"}}","timestamp":"14:08:44"}
+{"level":"debug","message":"read query where : {\"username\":\"hafiz\"}","timestamp":"14:08:45"}
+{"level":"debug","message":"db result : []","timestamp":"14:08:45"}
+{"level":"debug","message":"final response: {\"result\":{\"code\":\"002\",\"message\":\"User not exist\"}}","timestamp":"14:08:45"}
+{"level":"info","message":"route : /login","timestamp":"14:09:15"}
+{"level":"info","message":"method : POST","timestamp":"14:09:15"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/json\",\"cache-control\":\"no-cache\",\"postman-token\":\"10574404-816c-4403-8288-e60e82383298\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"content-length\":\"64\",\"connection\":\"keep-alive\"}","timestamp":"14:09:15"}
+{"level":"debug","message":"body: {\"payload\":{\"username\":\"hafiz2605\",\"passward\":\"1111\"}}","timestamp":"14:09:15"}
+{"level":"debug","message":"request body : {\"payload\":{\"username\":\"hafiz2605\",\"passward\":\"1111\"}}","timestamp":"14:09:15"}
+{"level":"debug","message":"read query data : {\"payload\":{\"username\":\"hafiz2605\",\"passward\":\"1111\"},\"serveFrom\":\"database\",\"route\":\"login\",\"collection\":\"users\",\"where\":{\"username\":\"hafiz2605\"}}","timestamp":"14:09:15"}
+{"level":"debug","message":"read query where : {\"username\":\"hafiz2605\"}","timestamp":"14:09:15"}
+{"level":"debug","message":"db result : []","timestamp":"14:09:15"}
+{"level":"debug","message":"final response: {\"result\":{\"code\":\"002\",\"message\":\"User not exist\"}}","timestamp":"14:09:15"}
+{"level":"info","message":"Listening on port 3000","timestamp":"14:11:03"}
+{"level":"info","message":"route : /login","timestamp":"14:11:19"}
+{"level":"info","message":"method : POST","timestamp":"14:11:19"}
+{"level":"verbose","message":"headers: {\"content-type\":\"application/json\",\"cache-control\":\"no-cache\",\"postman-token\":\"025bca73-9b63-4c69-8093-a0d3b7125861\",\"user-agent\":\"PostmanRuntime/7.1.5\",\"accept\":\"*/*\",\"host\":\"localhost:3000\",\"accept-encoding\":\"gzip, deflate\",\"content-length\":\"62\",\"connection\":\"keep-alive\"}","timestamp":"14:11:19"}
+{"level":"debug","message":"body: {\"payload\":{\"username\":\"Suleman\",\"passward\":\"1111\"}}","timestamp":"14:11:19"}
+{"level":"debug","message":"request body : {\"payload\":{\"username\":\"Suleman\",\"passward\":\"1111\"}}","timestamp":"14:11:19"}
+{"level":"debug","message":"read query data : {\"payload\":{\"username\":\"Suleman\",\"passward\":\"1111\"},\"serveFrom\":\"database\",\"route\":\"login\",\"collection\":\"users\",\"where\":{\"username\":\"Suleman\"}}","timestamp":"14:11:19"}
+{"level":"debug","message":"read query where : {\"username\":\"Suleman\"}","timestamp":"14:11:19"}
+{"level":"debug","message":"db result : []","timestamp":"14:11:19"}
+{"level":"debug","message":"final response: {\"result\":{\"code\":\"002\",\"message\":\"User not exist\"}}","timestamp":"14:11:19"}
