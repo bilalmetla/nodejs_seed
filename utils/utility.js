@@ -6,7 +6,7 @@ var logger = require('../services/logger_service');
 exports.httpResponse =  function(response, req, res, next){
     logger.debug("final response: " + JSON.stringify(response));
     return res.send(response);
-}
+}   
 
 exports.validationResponse =  function(validation_resp, req, res, next){
     logger.debug("validation response: " + JSON.stringify(validation_resp));
@@ -20,7 +20,7 @@ exports.validationResponse =  function(validation_resp, req, res, next){
     else{
         return next();
     }
-}
+}   
 
 exports.parseReqBody =  function(req, res, next){
     var body = req.body;

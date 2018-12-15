@@ -154,6 +154,16 @@ exports.createAccount = function(req, res, next){
                 requestBroker.send(data, function (error, response) {
                     return callback(error, response);
                 });
+            },
+            function(response, callback){
+                if(response.length==0){
+                    var error ={"result":{code: "002", message: "Can not create account" } }            
+                    return callback(error);
+                }
+                else{
+                    var result = {"result":{code: "0200", message: "Successfull",result:response}};
+                    return callback(null,result);
+                }
             }
 
         ], function(err, results){
@@ -396,6 +406,16 @@ exports.createTransaction = function(req, res, next){
                 requestBroker.send(data, function (error, response) {
                     return callback(error, response);
                 });
+            },
+            function(response, callback){
+                if(response.length==0){
+                    var error ={"result":{code: "002", message: "Can not create transactions" } }            
+                    return callback(error);
+                }
+                else{
+                    var result = {"result":{code: "0200", message: "Successfull",result:response}};
+                    return callback(null,result);
+                }                
             }
 
         ], function(err, results){
@@ -428,6 +448,15 @@ exports.getBalance = function(req, res, next){
                 requestBroker.send(data, function (error, response) {
                     return callback(error, response);
                 });
+            },function(response, callback){
+                if(response.length==0){
+                    var error ={"result":{code: "002", message: "Address does not exist" } }            
+                    return callback(error);
+                }
+                else{
+                    var result = {"result":{code: "0200", message: "Successfull",result:response}};
+                    return callback(null,result);
+                }                
             }
 
         ], function(err, results){
@@ -461,6 +490,15 @@ exports.getBlock = function(req, res, next){
                 requestBroker.send(data, function (error, response) {
                     return callback(error, response);
                 });
+            },function(response, callback){
+                if(response.length==0){
+                    var error ={"result":{code: "002", message: "Block not found" } }            
+                    return callback(error);
+                }
+                else{
+                    var result = {"result":{code: "0200", message: "Successfull",result:response}};
+                    return callback(null,result);
+                }                
             }
 
         ], function(err, results){
@@ -494,6 +532,16 @@ exports.getCurrentGasPrice = function(req, res, next){
                 requestBroker.send(data, function (error, response) {
                     return callback(error, response);
                 });
+            },
+            function(response, callback){
+                if(response.length==0){
+                    var error ={"result":{code: "002", message: "error finding current gas price" } }            
+                    return callback(error);
+                }
+                else{
+                    var result = {"result":{code: "0200", message: "Successfull",result:response}};
+                    return callback(null,result);
+                }                
             }
 
         ], function(err, results){
@@ -527,6 +575,16 @@ exports.getTransactions = function(req, res, next){
                 requestBroker.send(data, function (error, response) {
                     return callback(error, response);
                 });
+            },
+            function(response, callback){
+                if(response.length==0){
+                    var error ={"result":{code: "002", message: "Transaction does not exist" } }            
+                    return callback(error);
+                }
+                else{
+                    var result = {"result":{code: "0200", message: "Successfull",result:response}};
+                    return callback(null,result);
+                }                
             }
 
         ], function(err, results){

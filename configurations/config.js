@@ -27,5 +27,5 @@ module.exports = {
             html : "Type this code to signup ",
         }
     },
-    supportedDB : constants.supportedDatabases.nedb
+    supportedDB : constants.supportedDatabases.mongodb
 }

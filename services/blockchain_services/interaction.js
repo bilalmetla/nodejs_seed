@@ -14,12 +14,19 @@ var myContract = new web3.eth.Contract(JSON.parse(interface), '0xe953dc826ff9714
 });
 var privateKey = new Buffer('e4206fffa16a4af420c2a8c3f50008b349c41c04c8d0ced6d783dd59a972ccb2', 'hex');
 
-if(typeof web3!= 'undefined'){
-   // console.log(web3.eth.isConnected())
-    console.log(web3.eth.accounts[0])
-}else{
-    console.log("Install metamask")
-}
+
+exports.createAccount = async function (address,accountCallback) {
+     var account = await web3.eth.accounts.create()
+      return accountCallback(null,account)   
+   }; //end of balanceOf
+
+   /**
+    * get account address by private key
+    */
+exports.getAccountbyPrivateKey = async function (address,accountCallback) {
+    var account = await web3.eth.accounts.privateKeyToAccount('0x8352c6584d19075413d357ff6282a1dd43a4420b62958d83079a41eeb8201b32')
+     return accountCallback(null,account)   
+  }; //end of balanceOf
 
 exports.createTransaction =  async (err,txscallback) => { 
 
@@ -49,7 +56,7 @@ exports.createTransaction =  async (err,txscallback) => {
         .numberToHex(gasPrice);
     const countHexa = web3
         .utils
-        .numberToHex(110);
+        .numberToHex(114);
     const valueHexa = web3
         .utils
         .numberToHex(0);
@@ -87,7 +94,7 @@ exports.createTransaction =  async (err,txscallback) => {
 }; //end of balanceOf
 
 exports.getBalance = function (address,balcallback) {
- web3.eth.getBalance("0x8eb731191f33e0f332522126ea2c9c89e8bbffaf",function(err,balance){
+ web3.eth.getBalance(address,function(err,balance){
         if(err){
             console.log("error")
             return balcallback(err,null);

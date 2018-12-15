@@ -41,7 +41,7 @@ exports.read = function (data, callback) {
 exports.create = function (data, callback) {
     logger.debug("create query data : "+ JSON.stringify(data.payload));
     var collection = data.collection;
-    dbConnection.collection(collection).insertOne(data.payload, function(err, results){
+    dbConnection.collection(collection).insertOne(data, function(err, results){
         if(err){
             logger.debug("db error : ");
             logger.debug(err);
