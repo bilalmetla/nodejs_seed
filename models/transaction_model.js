@@ -7,7 +7,39 @@ var blockchain = require('../services/blockchain_services');
 
 exports.createTransaction =async function(data, next){
     try{
-       blockchain.createTransaction(data,function(err,res){
+        data.collection = "accounts";
+        data.where = { accountTitle: data.payload.walletAddress};
+        await dbService.read(data, function (err, result) {
+            if (!err) {
+                result[0].amountTransfor = data.payload.amountTransfer
+                blockchain.createTransaction(result,function(err,res){
+                    if(err){
+                     return next(err,null);
+                    }else{
+                        var response = {}
+                        var response = Object.assign(response,res)
+                        response.collection = "transactions"
+                     dbService.create(response, function (err, result) {
+                         return next(err, result);
+                     });
+                    }
+                });
+                console.log(result)
+            }else{
+                console.log(err)
+            }
+        })
+              
+    }catch (e) {
+        logger.error("Exception:" );
+        logger.error(e.stack);
+        utils.serverException(e, next);
+    }
+}
+
+exports.getBalance =async function(data, next){
+    try{
+       blockchain.getBalance(data.payload.address,function(err,res){
            if(err){
             return next(err,null);
            }
@@ -20,20 +52,7 @@ exports.createTransaction =async function(data, next){
     }
 }
 
-exports.getBalance =async function(data, next){
-    try{
-       blockchain.getBalance(data,function(err,res){
-           if(err){
-            return next(err,null);
-           }
-            return next(null,res);
-       });       
-    }catch (e) {
-        logger.error("Exception:" );
-        logger.error(e.stack);
-        utils.serverException(e, next);
-    }
-}
+
 
 exports.getBlock =async function(data, next){
     try{

@@ -63,7 +63,7 @@ module.exports = {
     deleteAccount:{
         body:{
             payload: joi.object({
-                accountTitle: joi.string().required()
+                accountTitle: joi.string().required(),
             }).required(),
         }
     },
@@ -92,9 +92,10 @@ module.exports = {
     createTransaction:{
         body:{
             payload: joi.object({
-                accountTitle: joi.string().required(),
+                recieverAddress: joi.string().required(),
                 amountTransfer: joi.number().required(),
                 walletAddress: joi.string().required(),
+                
             }).required(),
         }
     },

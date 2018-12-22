@@ -7,7 +7,7 @@ var logger = require('morgan');
 var configs = require("./configurations");
 var session = require('express-session');
 var sessionStore = require('./controllers/session_store');
-
+var cron = require('./etc/cronjob')
 
 
 var indexRouter = require('./routes/http/index');
