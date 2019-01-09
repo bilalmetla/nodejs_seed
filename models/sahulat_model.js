@@ -153,6 +153,7 @@ let sahulatBids = true
 exports.sahulatBids = function(data, next){
     if(sahulatBids){
     try{    
+        
         sahulatBids = false
         let condition = {}
         condition.where = { address: data.address };
