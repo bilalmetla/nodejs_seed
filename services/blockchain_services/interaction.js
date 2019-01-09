@@ -2,7 +2,9 @@ const HDWalletProvider = require('truffle-hdwallet-provider');
 const Web3 = require('web3');
 var Tx = require('ethereumjs-tx');
 const abiDecoder = require('abi-decoder'); 
-const {interface,bytecode} = require('./compile');
+// const {interface,bytecode} = require('./compile');
+var PrivateKeyProvider = require("truffle-privatekey-provider");
+const infuraKey = "https://rinkeby.infura.io/v3/0794f9a581474946ac19ef6e1aa3218a"
 // const provider = new HDWalletProvider(
 //     'solid minor bulk grow glow web trap drastic blood humor field web',
 //     'https://rinkeby.infura.io/v3/1ce4ad6e387048e9aa5dedbfaf35e03b'
@@ -12,10 +14,9 @@ const {interface,bytecode} = require('./compile');
 //     'https://rinkeby.infura.io/v3/0794f9a581474946ac19ef6e1aa3218a'
 //   );
 
-var PrivateKeyProvider = require("truffle-privatekey-provider");
 var privateKey = "3750a3a144cb5048d9a20ae3bf212269bf0193ff92434917792bf5ab20d1e84e";
-var provider = new PrivateKeyProvider(privateKey, "https://rinkeby.infura.io/v3/0794f9a581474946ac19ef6e1aa3218a");
-  const web3 = new Web3(provider);
+var provider = new PrivateKeyProvider(privateKey,infuraKey );
+const web3 = new Web3(provider);
 //const web3 = new Web3(new Web3.providers.HttpProvider("https://rinkeby.infura.io/v3/1ce4ad6e387048e9aa5dedbfaf35e03b"));
 //var net = require('net')
 //const web3 = new Web3(new Web3.providers.IpcProvider('../../../../home/hafiz/hafiz/geth.ipc', net)); // mac os path
@@ -24,7 +25,7 @@ var provider = new PrivateKeyProvider(privateKey, "https://rinkeby.infura.io/v3/
 //     from: '0x8eb731191f33e0f332522126ea2c9c89e8bbffaf', // default from address
 //     gasPrice: '20000000000' // default gas price in wei, 20 gwei in this case
 // });
-var privateKey = new Buffer('0x3750a3a144cb5048d9a20ae3bf212269bf0193ff92434917792bf5ab20d1e84e', 'hex');
+//var privateKey = new Buffer('0x3750a3a144cb5048d9a20ae3bf212269bf0193ff92434917792bf5ab20d1e84e', 'hex');
 exports.createAccount = async function (address,accountCallback) {
       var account = await web3.eth.accounts.create()
     return accountCallback(null,account)
@@ -39,17 +40,17 @@ exports.getAccountbyPrivateKey = async function (address,accountCallback) {
      return accountCallback(null,account)   
   }; //end of balanceOf 
 
-exports.createTransaction =  async (data,txscallback) => { 
-    var amount = "1"
+exports.createTransaction =  async (transaction,txscallback) => { 
+    var privateKey = transaction.privateKey;
+    let satisfyPrivateKey = privateKey.substring(2)
+    var provider = new PrivateKeyProvider(satisfyPrivateKey, infuraKey);
+    const web3 = new Web3(provider);
+    var amount = transaction.amountTransfor.toString()
     var amountToSend = web3.utils.toWei(amount,"ether")
-//    await web3.eth.personal.unlockAccount("0x3766331b6ec7c81d9fdabb8d287d1bff31903284", "blockchain", 6000)
-//    .then(console.log('Account unlocked!'));
-//    await web3.eth.personal.unlockAccount("0xff8a901abff1b6c23fea20a69fe07a27f7003405", "Blockchain@2605", 6000)
-//    .then(console.log('Account unlocked!'));
 
     await web3.eth.sendTransaction({
-        from: '0xC6c2C6230dDC8a7800C3d397D155aCca30C1a59c',
-        to: '0x970B461BB44be719134DC8E923667EF7eDd8C910',
+        from: transaction.sender,
+        to: transaction.reciever,
         value: amountToSend
     })
     .on('transactionHash', function(hash){
@@ -58,9 +59,6 @@ exports.createTransaction =  async (data,txscallback) => {
     .on('receipt', function(receipt){
         console.log(receipt)
         return txscallback(null,receipt)
-    })
-    .on('confirmation', function(confirmationNumber, receipt){ 
-        console.log(confirmationNumber)
     })
     .on('error',function(err){
         console.log(err); 
@@ -80,9 +78,11 @@ exports.getBalance = function (address,balcallback) {
         }
     });   
 }; //end of balanceOf
-
-exports.gettransaction = function (txshash,txscallback) {
-    web3.eth.getTransaction("0x6611c204e203ef61363de60ba6e09d67f1169b60524289859fe7781f17de7ce5",function(err,txs){
+/**
+ * get transaction by blockchain
+ */
+exports.gettransaction = function (data,txscallback) {
+    web3.eth.getTransaction(data.txid,function(err,txs){
            if(err){
                console.log("error")
                return txscallback(err,null);
@@ -92,8 +92,8 @@ exports.gettransaction = function (txshash,txscallback) {
        });   
    }; 
 
-exports.getBlock = function (blockhash,blockcallback) {
-    web3.eth.getBlock("0x9994e35f2017eee0e5a0538fb103e0d8fd0ea1f83b56771bd5b525c4a207f901",function(err,block){
+exports.getBlock = function (data,blockcallback) {
+    web3.eth.getBlock(data.height,function(err,block){
            if(err){
                console.log("error")
                return blockcallback(err,null);
