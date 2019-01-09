@@ -20,10 +20,10 @@ var dbConnection = "";
 }
 
 
-exports.read = function (data, callback) {
+exports.read = function (data,condition, callback) {
     logger.debug("read query data : "+ JSON.stringify(data));
-    var collection = data.collection;
-    var where = data.where || {};
+    var collection = condition.collection;
+    var where = condition.where || {};
     logger.debug("read query where : "+ JSON.stringify(where));
         dbConnection.collection(collection).find(where).toArray(function(err, results){
         if(err){
@@ -38,9 +38,9 @@ exports.read = function (data, callback) {
 }
 
 
-exports.create = function (data, callback) {
+exports.create = function (data,condition, callback) {
     logger.debug("create query data : "+ JSON.stringify(data.payload));
-    var collection = data.collection;
+    var collection = condition.collection;
     dbConnection.collection(collection).insertOne(data, function(err, results){
         if(err){
             logger.debug("db error : ");
@@ -52,12 +52,12 @@ exports.create = function (data, callback) {
     });
 }
 
-exports.update = function (data, callback) {
-    logger.debug("update query data : "+ JSON.stringify(data.updatePayload));
-    var collection = data.collection;
-    var where = data.where;
+exports.update = function (data,condition, callback) {
+    logger.debug("update query data : "+ JSON.stringify(condition.updatePayload));
+    var collection = condition.collection;
+    var where = condition.where;
     logger.debug("update query where : "+ JSON.stringify(where));
-    dbConnection.collection(collection).update(where, data.updatePayload, function(err, results){
+    dbConnection.collection(collection).update(where, condition.updatePayload, function(err, results){
         if(err){
             logger.debug("db error : ");
             logger.debug(err);

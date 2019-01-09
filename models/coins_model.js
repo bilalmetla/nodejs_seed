@@ -4,8 +4,9 @@ var utils = require('../utils');
 
 exports.getAllCoins = function(data, next){
     try{
-        data.collection = "coins";
-        dbService.read(data, function (err, result) {
+        var account = {}
+        account.collection = "coins";
+        dbService.read(data,account, function (err, result) {
             return next(err, result);
         });
 
@@ -19,8 +20,9 @@ exports.getAllCoins = function(data, next){
 
 exports.createCoins = function(data, next){
     try{
-        data.collection = "coins";
-        dbService.create(data, function (err, result) {
+        var account = {}
+        account.collection = "coins";
+        dbService.create(data,account, function (err, result) {
             return next(err, result);
         });
 

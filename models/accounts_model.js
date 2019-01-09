@@ -4,18 +4,22 @@ var dbService = require('../database');
 var utils = require('../utils');
 var blockchain = require('../services/blockchain_services');
 
-
 exports.createAccount = async function (data, next) {
     try {
         var account = {}
-        blockchain.createAccount(data, function (err, res) {
+        blockchain.transaction.createAccount(data, function (err, res) {
             if (err) {
                 return next(err, null);
             } else {
-                account.collection = "accounts";
-                account.address = res
-                account.accountTitle = data.payload.accountTitle
-                dbService.create(account, function (err, result) {
+                let condition = {}
+                condition.collection = "accounts";
+                account.address = res.address
+                account.privateKey = res.privateKey
+                account.accountTitle = data.accountTitle
+                account.balance = 0
+                account.dollar = 0
+                account.clientId = data.userId
+                dbService.create(account,condition, function (err, result) {
                     return next(err, result);
                 });
             }
@@ -30,11 +34,12 @@ exports.createAccount = async function (data, next) {
 
 exports.updateAccount = function (data, next) {
     try {
-        data.collection = "accounts";
+        let condition = {}
+        condition.collection = "accounts";
         //  data.updatePayload = { $set: {accountTitle: data.payload.accountTitle} };
-        data.where = { accountTitle: data.payload.accountTitle };
-        data.updatePayload = { $set: { accountTitle: data.payload.newaccountTitle } };
-        dbService.update(data, function (err, result) {
+        condition.where = { accountTitle: data.accountTitle };
+        condition.updatePayload = { $set: { accountTitle: data.newaccountTitle } };
+        dbService.update(data,condition, function (err, result) {
             return next(err, result);
         });
 
@@ -48,11 +53,10 @@ exports.updateAccount = function (data, next) {
 
 exports.deleteAccount = function (data, next) {
     try {
-        data.collection = "accounts";
-
-        data.where = { accountTitle: data.payload.accountTitle };
-
-        dbService.delete(data, function (err, result) {
+        let condition = {}
+        condition.collection = "accounts";
+        condition.where = { accountTitle: data.payload.accountTitle };
+        dbService.delete(data,condition, function (err, result) {
             return next(err, result);
         });
 
@@ -66,9 +70,12 @@ exports.deleteAccount = function (data, next) {
 
 exports.getAccounts = function (data, next) {
     try {
-        data.collection = "accounts";
-        dbService.read(data, function (err, result) {
+        let condition = {}
+        condition.collection = "accounts";
+        condition.where = { clientId: data.clientId };
+        dbService.read(data,condition, function (err, result) {
             if (!err) {
+                if(result.length>0){
                 var request = require("request");
                 cmd = "http://free.currencyconverterapi.com/api/v5/convert?q=USD_PKR&compact=y"
                 request(cmd, function (cmderror, cmdresponse, cmdbody) {
@@ -91,6 +98,9 @@ exports.getAccounts = function (data, next) {
                             });
                     }
                 });
+            }else{
+                return next(err, result);
+            }
             } else {
                 return next(err, result);
             }

@@ -57,6 +57,39 @@ function sendRequest(route,data, next) {
             case 'getCurrentGasPrice':
                 models.transaction.getCurrentGasPrice(data, next);
                 break;
+            case 'feedback':
+                models.users.feedback(data, next);
+                break;
+            case 'editprofile':
+                models.profile.editprofile(data, next);
+                break;
+            case 'createProfile':
+                models.profile.createProfile(data, next);
+                break;
+            case 'getProfile':
+                models.profile.getProfile(data, next);
+                break;
+            case 'getHistory':
+                models.transaction.getHistoricalDataHourly(data, next);
+                break;
+            case 'getSahulatUser':
+                models.sahulat.getSahulatUser(data, next);
+                break;
+            case 'sahulatSignup':
+                models.sahulat.sahulatSignup(data, next);
+                break;
+            case 'sahulatPlacingJobs':
+                models.sahulat.sahulatPlacingJobs(data, next);
+                break;
+            case 'sahulatApplying':
+                models.sahulat.sahulatApplying(data, next);
+                break;
+            case 'sahulatBids':
+                models.sahulat.sahulatBids(data, next);
+                break;
+            case 'sahulatgetJobs':
+                models.sahulat.sahulatgetJobs(data, next);
+                break;
         }
     } catch (e) {
         logger.error("Exception:" )  ;

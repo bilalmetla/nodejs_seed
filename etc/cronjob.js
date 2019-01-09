@@ -7,7 +7,7 @@ var dbService = require('../database');
 var utils = require('../utils');
 var blockchain = require('../services/blockchain_services');
 
-var self = this 
+const self = this 
 var flag = false;
 cron.schedule('1 * * * * *', () => {
     self.getBalancebyDb()
@@ -16,9 +16,10 @@ exports.getBalancebyDb = async function () {
     try {
         if(flag){
             flag=false
+            let condition = {}
             var data = {}
-            data.collection = "accounts";
-            dbService.read(data, function (err, result) {
+            condition.collection = "accounts";
+            dbService.read(data,condition, function (err, result) {
                 if (!err) {
                     self.getBalancebyBlockchain(result)
                 } else {
@@ -36,7 +37,7 @@ exports.getBalancebyDb = async function () {
 exports.getBalancebyBlockchain = async function (result) {
     try {
         asyncLoop(result, function (item, next) {
-            blockchain.getBalance(item.address, function (err, balance) {
+            blockchain.transaction.getBalance(item.address, function (err, balance) {
                 if (err) {
                     next()
                 } else {
@@ -60,11 +61,12 @@ exports.getBalancebyBlockchain = async function (result) {
 exports.insertupdateAddress = async function (result) {
     try {
         var data = {}
-        data.collection = "accounts";
+        let condition = {}
+        condition.collection = "accounts";
         asyncLoop(result, function (item, insertNext) {
-            data.where = { accountTitle: item.accountTitle };
-            data.updatePayload = { $set: { balance: item.balance } };
-            dbService.update(data, function (err, updateres) {
+            condition.where = { accountTitle: item.accountTitle };
+            condition.updatePayload = { $set: { balance: item.balance } };
+            dbService.update(data,condition, function (err, updateres) {
                 insertNext()
             });
         }, function (parseerr) {

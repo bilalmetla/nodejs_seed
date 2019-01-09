@@ -4,12 +4,12 @@ var utils = require('../utils');
 var constants = require('../constants/');
 
 
-exports.send = function (data, next){
+exports.send = function (data,condition, next){
     try {
 
-        if (data.serveFrom == constants.servingFromDB) {
+        if (condition.serveFrom == constants.servingFromDB) {
 
-            modelsCtrl.sendRequest(data.route, data, next);
+            modelsCtrl.sendRequest(condition.route,data, next);
         }
     }catch(e){
         logger.error("Exception:" )  ;
