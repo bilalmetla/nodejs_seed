@@ -4404,3 +4404,4 @@
 {"level":"debug","message":"body: {}","timestamp":"12:20:43"}
 {"level":"debug","message":"request body : {}","timestamp":"12:20:43"}
 {"level":"debug","message":"final response: \"1000000000\"","timestamp":"12:20:44"}
+{"level":"info","message":"Listening on port 6000","timestamp":"17:37:44"}

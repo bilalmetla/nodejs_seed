@@ -2,7 +2,7 @@ var constants = require("../constants");
 
 module.exports = {
 
-    port : 3000,
+    port : 6000,
     tracing:{
         level : "debug",
         consoleMode : true,
